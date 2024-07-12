@@ -1,6 +1,6 @@
 # imageC Doc
 
-This contains the source for imageC's documentation, hosted at https://qupath.readthedocs.io
+This contains the source for imageC's documentation, hosted at https://imagec.readthedocs.io
 
 ## Building locally
 
