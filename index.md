@@ -9,15 +9,15 @@
 See what's new in the [changelog](https://github.com/joda01/imagec/releases).
 :::
 
-# Welcome to imageC!
+# Welcome to |imageC|!
 
-This page hosts the documentation for **imagec {{ env.config.version }}.x**.
+This page hosts the documentation for **|imageC| {{ env.config.version }}.x**.
 
-The latest release is [**imageC {{ env.config.release }}**](https://github.com/joda01/imagec/releases).
+The latest release is [**|imageC| {{ env.config.release }}**](https://github.com/joda01/imagec/releases).
 
 ## Quick links
 
-Can't install imageC?
+Can't install |imageC|?
 : Check out {ref}`installation` for instructions & solutions to common problems
 
 Images won't open?

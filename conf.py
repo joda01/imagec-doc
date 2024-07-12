@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'EVAnalyzer2 powered by imageC'
+project = 'EVAnalyzer2'
 copyright = '2023-2024, Joachim Danmayr'
 author = 'imageC authors'
 
@@ -76,6 +76,10 @@ rst_prolog = """
 .. |vertical_ellipsis| unicode:: 0x22EE
 
 .. |copyright| unicode:: 0xA9
+
+.. |imageC| replace:: EVAnalyzer2
+
+.. |imageC_powered_by| replace:: EVAnalyzer2 powered by imageC
 """
 
 myst_enable_extensions = [
