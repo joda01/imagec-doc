@@ -1,0 +1,10 @@
+.DS_Store
+
+.vscode/*
+!.vscode/settings.json
+
+_build/**
+venv
+/lib
+/bin
+docs/_build/
