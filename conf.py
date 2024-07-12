@@ -77,9 +77,9 @@ rst_prolog = """
 
 .. |copyright| unicode:: 0xA9
 
-.. |imageC| replace:: EVAnalyzer2
+.. |imagec| replace:: EVAnalyzer2
 
-.. |imageC_powered_by| replace:: EVAnalyzer2 powered by imageC
+.. |imagec_powered_by| replace:: EVAnalyzer2 powered by imageC
 """
 
 myst_enable_extensions = [
