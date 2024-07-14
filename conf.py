@@ -19,7 +19,7 @@
 
 project = 'EVAnalyzer2'
 copyright = '2023-2024, Joachim Danmayr'
-author = 'imageC authors'
+author = 'ImageC authors'
 
 
 # -- General configuration ---------------------------------------------------

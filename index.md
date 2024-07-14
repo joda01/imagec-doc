@@ -27,7 +27,7 @@ Not sure where to begin?
 : See {ref}`first-steps` for a quick guide, before heading to {ref}`tutorials` for more details & videos
 
 Got more questions?
-: The [Scientific Community Image Forum](https://forum.image.sc/tag/imagec) is the best place to discuss imageC with users & developers
+: The [Scientific Community Image Forum](https://forum.image.sc/tag/imagec) is the best place to discuss ImageC with users & developers
 
 
 ```{toctree}
@@ -35,6 +35,7 @@ Got more questions?
 :maxdepth: 2
 
 docs/intro/index
+docs/starting/index
 ```
 
 % Indices and tables

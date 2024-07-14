@@ -1,6 +1,6 @@
-# imageC Doc
+# ImageC Doc
 
-This contains the source for imageC's documentation, hosted at https://imagec-doc.readthedocs.io/en/latest/
+This contains the source for ImageC's documentation, hosted at https://imagec-doc.readthedocs.io/en/latest/
 
 ## Building locally
 

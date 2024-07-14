@@ -1,34 +1,24 @@
 # Installation
 
-## Which imageC download do I need?
+## Which ImageC download do I need?
 
-### imageC for Linux
+It is recommended to use ImageC under Linux for best stability and performance.
+Because of licensing issues, ImageC is not available for Mac yet.
 
-It is recommended to use imageC under Linux for best stability and performance.
+On **Linux** use `imagec-x64-linux-bundle.zip` from the [GithHub release](https://github.com/joda01/imagec/releases) page.
 
-### imageC for Windows
-
-On **Windows**, you have two options when downloading imageC:
-
-* **Windows installer (msi)** use this if you want to install imageC, so that it appears in the {guilabel}`Start` menu like most apps
-* **Windows portable (exe)** use this if you want to just unzip a folder containing imageC, and run it from there - with no further installation needed
-
-(imageC-versions-for-mac)=
-### imageC for Mac
-
-Because of licensing issues, imageC is not available for Mac yet.
-
+On **Windows** use `imagec-x64-win-bundle.zip` form the [GithHub release](https://github.com/joda01/imagec/releases) page. 
 
 
 ## Download & install
 
-There are signed and unsigned versions available for imageC.
+There are signed and unsigned versions available for ImageC.
 Each major version is signed and marked the the label `[signed]` in the title of the [GithHub release](https://github.com/joda01/imagec/releases).
 If you use an unsigned version you may need to take a few extra steps to get it to run:
 
 - On **Linux**, download and extract the `.zip` file
-  - You'll probably have to use `chmod u+x /path/to/imageC/imagec.sh` to make the launcher executable
-  - Launch the application by typing `./path/to/imageC/imagec.sh` from your terminal.
+  - You'll probably have to use `chmod u+x /path/to/ImageC/imagec.sh` to make the launcher executable
+  - Launch the application by typing `./path/to/ImageC/imagec.sh` from your terminal.
 - On **Windows**, if you downloaded the `.zip` file, extract it and then double-click on the `imagec.exe` to launch the application
   - If you see a warning, choosing {guilabel}`More info` and {guilabel}`Run anyway` should let you proceed
 - On **Windows**, if you want to use a signed version, download the `imagec-x64-win-signed.exe` from a release with title `[signed]`.
