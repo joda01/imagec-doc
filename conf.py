@@ -77,9 +77,6 @@ rst_prolog = """
 
 .. |copyright| unicode:: 0xA9
 
-.. |imagec| replace:: EVAnalyzer2
-
-.. |imagec_powered_by| replace:: EVAnalyzer2 powered by imageC
 """
 
 myst_enable_extensions = [
@@ -105,8 +102,8 @@ html_logo = 'docs/images/imagec_128.png'
 
 html_favicon = 'docs/images/imagec.ico'
 
-release = '0.5.1'
-version = '0.5'
+release = '1.0.0-alpha.103'
+version = '1.0.0-alpha.103'
 
 # myst_heading_anchors = 2
 

@@ -56,3 +56,10 @@ For download links and information about their licenses, see [the Acknowledgemen
 
 > All this refers only to the documentation on this repo. 
 > For license info about the QuPath *software*, see https://github.com/qupath/qupath
+
+
+### Deploy build docker image
+
+docker build --target live -t joda001/imagec-doc:live .
+docker build --target build -t joda001/imagec-doc:v1.0.0 .
+docker push  joda001/imagec-doc:v1.0.0
