@@ -8,6 +8,8 @@ This contains the source for imageC's documentation, hosted at https://imagec-do
 2) Execute `make html`
 
 
+https://www.sphinx-doc.org/en/master/usage/configuration.html
+
 ### Deploy build docker image
 
 docker build --target live -t joda001/imagec-doc:live .

@@ -4,20 +4,20 @@
 :::
 
 :::{sidebar} New release online!
-**|imagec| {{ env.config.release }}** is available at [https://joda01.github.io/imagec](https://joda01.github.io/imagec).
+**imagec {{ env.config.release }}** is available at [https://joda01.github.io/imagec](https://joda01.github.io/imagec).
 
 See what's new in the [changelog](https://github.com/joda01/imagec/releases).
 :::
 
-# Welcome to |imagec|!
+# Welcome to imagec!
 
-This page hosts the documentation for **|imagec| {{ env.config.version }}.x**.
+This page hosts the documentation for **imagec {{ env.config.version }}.x**.
 
-The latest release is [**|imagec| {{ env.config.release }}**](https://github.com/joda01/imagec/releases).
+The latest release is [**imagec {{ env.config.release }}**](https://github.com/joda01/imagec/releases).
 
 ## Quick links
 
-Can't install |imagec|?
+Can't install imagec?
 : Check out {ref}`installation` for instructions & solutions to common problems
 
 Images won't open?
