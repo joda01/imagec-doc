@@ -1,16 +1,24 @@
-# What is QuPath?
+# What is imageC?
 
-**QuPath is open source software for bioimage analysis.**
+**imageC is open source software for high throughput bioimage analysis.**
 
-QuPath is often used for **digital pathology** applications because it offers a powerful set of tools for working with **whole slide images** - but it can be applied to lots of other kinds of image as well.
+imageC is often used for **single vesicle quantification** applications because it offers a powerful set of templates optimized for working the **EV field** - but it can be applied to lots of other kinds of image and applications as well.
 
 Features include:
 
-- Powerful annotation & visualization tools using a modern JavaFX interface
-- Built-in algorithms for common tasks, including cell and tissue detection
-- Interactive machine learning, both for object and pixel classification
-- Compatibility with other popular open tools, including ImageJ, OpenCV, Java Topology Suite and OMERO
-- Support for many image formats through Bio-Formats and OpenSlide, including whole slide images and multiplexed data
-- Groovy scripting for customization and deeper data interrogation
+- [BioFormats support](https://github.com/ome/bioformats)  
+- [OME-XML support](https://docs.openmicroscopy.org/)      
+- XLSX report generation                                   
+- Max. channels                                            
+- Max image size                                           
+- Support for big tiff                                     
+- AI based object detection                                
+- Database based result processing                         
+- Heatmap generation                                       
+- Image density map generation                             
+- In image object marker                                   
+- Built-in reporting tool                                  
+- Side by side image comparison                            
 
-To find out more, check out the [original publication introducing QuPath](https://doi.org/10.1038/s41598-017-17204-5) or {doc}`dive into the tutorials <../tutorials/index>` to see some of what it can do.
+
+To find out more, check out the [original publication introducing imageC](https://pubmed.ncbi.nlm.nih.gov/36437554/) or {doc}`dive into the tutorials <../tutorials/index>` to see some of what it can do.

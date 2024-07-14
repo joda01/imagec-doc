@@ -4,20 +4,20 @@
 :::
 
 :::{sidebar} New release online!
-**imageC {{ env.config.release }}** is available at [https://joda01.github.io/imagec](https://joda01.github.io/imagec).
+**|imagec| {{ env.config.release }}** is available at [https://joda01.github.io/imagec](https://joda01.github.io/imagec).
 
 See what's new in the [changelog](https://github.com/joda01/imagec/releases).
 :::
 
-# Welcome to imageC!
+# Welcome to |imagec|!
 
-This page hosts the documentation for **imagec {{ env.config.version }}.x**.
+This page hosts the documentation for **|imagec| {{ env.config.version }}.x**.
 
-The latest release is [**imageC {{ env.config.release }}**](https://github.com/joda01/imagec/releases).
+The latest release is [**|imagec| {{ env.config.release }}**](https://github.com/joda01/imagec/releases).
 
 ## Quick links
 
-Can't install imageC?
+Can't install |imagec|?
 : Check out {ref}`installation` for instructions & solutions to common problems
 
 Images won't open?
@@ -27,7 +27,7 @@ Not sure where to begin?
 : See {ref}`first-steps` for a quick guide, before heading to {ref}`tutorials` for more details & videos
 
 Got more questions?
-: The [Scientific Community Image Forum](https://forum.image.sc/tag/qupath) is the best place to discuss QuPath with users & developers
+: The [Scientific Community Image Forum](https://forum.image.sc/tag/imagec) is the best place to discuss imageC with users & developers
 
 
 ```{toctree}

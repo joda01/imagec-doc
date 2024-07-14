@@ -1,0 +1,1 @@
+FROM joda001/imagec-doc:v1.0.0 AS live

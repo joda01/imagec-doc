@@ -17,8 +17,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'imageC'
-copyright = '2023-2024, imageC doc authors'
+project = 'EVAnalyzer2'
+copyright = '2023-2024, Joachim Danmayr'
 author = 'imageC authors'
 
 
@@ -76,6 +76,7 @@ rst_prolog = """
 .. |vertical_ellipsis| unicode:: 0x22EE
 
 .. |copyright| unicode:: 0xA9
+
 """
 
 myst_enable_extensions = [
@@ -101,8 +102,8 @@ html_logo = 'docs/images/imagec_128.png'
 
 html_favicon = 'docs/images/imagec.ico'
 
-release = '0.5.1'
-version = '0.5'
+release = '1.0.0-alpha.103'
+version = '1.0.0-alpha.103'
 
 # myst_heading_anchors = 2
 
