@@ -1,4 +1,4 @@
-.. include:: citing/2021.inc
+.. include:: citing/2022.inc
 
 :ref:`Top <Citing top>`
 

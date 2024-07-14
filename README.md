@@ -4,58 +4,8 @@ This contains the source for imageC's documentation, hosted at https://imagec-do
 
 ## Building locally
 
-To build this locally, create a virtual environment, eg:
-
-```bash
-python -m venv ./venv
-. ./venv/bin/activate
-```
-
-or using conda/mamba:
-
-```bash
-conda env create -n qupath-docs python=3.12
-conda activate qupath-docs
-```
-
-Then install the requirements for this repo:
-
-```bash
-pip install -r requirements.txt
-```
-
-You'll also need the command line tool `Make` (e.g., [GNU Make](https://www.gnu.org/software/make/)).
-
-Then, you can run `make` to see available build options.
-`make html` will make the HTML version of the website, which is probably the
-most useful option. The built HTML files will be in `_build/html`, and can
-be opened in a web browser without running a local HTTP server.
-
-Alternatively, you can install `sphinx-autobuild` and `watchfiles`
-into your virtual environment to run a HTTP server and have the HTML files
-automatically rebuilt when any changes are made:
-
-```bash
-sphinx-autobuild . _build/html
-```
-
-## License
-
-All original content here is shared under a Creative Commons license ([CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
-
-Here's the formal bit:
-
----
-
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Except where otherwise noted, this website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-
----
-
-In some places, the docs include public images from other sources, e.g. within screenshots.
-For download links and information about their licenses, see [the Acknowledgements page](https://qupath.readthedocs.io/en/stable/docs/intro/acknowledgements.html).
-
-> All this refers only to the documentation on this repo. 
-> For license info about the QuPath *software*, see https://github.com/qupath/qupath
+1) Start in docker image `joda001/imagec-doc:v1.0.0`
+2) Execute `make html`
 
 
 ### Deploy build docker image

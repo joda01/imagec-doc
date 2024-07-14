@@ -27,7 +27,7 @@ Not sure where to begin?
 : See {ref}`first-steps` for a quick guide, before heading to {ref}`tutorials` for more details & videos
 
 Got more questions?
-: The [Scientific Community Image Forum](https://forum.image.sc/tag/qupath) is the best place to discuss QuPath with users & developers
+: The [Scientific Community Image Forum](https://forum.image.sc/tag/imagec) is the best place to discuss imageC with users & developers
 
 
 ```{toctree}

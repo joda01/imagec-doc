@@ -21,4 +21,4 @@ Features include:
 - Side by side image comparison                            
 
 
-To find out more, check out the [original publication introducing QuPath](https://doi.org/10.1038/s41598-017-17204-5) or {doc}`dive into the tutorials <../tutorials/index>` to see some of what it can do.
+To find out more, check out the [original publication introducing imageC](https://pubmed.ncbi.nlm.nih.gov/36437554/) or {doc}`dive into the tutorials <../tutorials/index>` to see some of what it can do.
