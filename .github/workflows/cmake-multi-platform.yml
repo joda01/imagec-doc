@@ -37,8 +37,7 @@ jobs:
       
   release:
     needs:
-      - build-windows
-      - build-linux
+      - build-doc
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
