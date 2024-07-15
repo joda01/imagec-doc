@@ -37,7 +37,7 @@ Tile based image loading is only supported for bigTIFF images with file extensio
 BioFormats [command line tools](https://www.openmicroscopy.org/bio-formats/downloads/) can be used to convert your imaged to tiled bigTiff if necessary.
 
 - Download bftools from <https://www.openmicroscopy.org/bio-formats/downloads/>
-- Execute `bfconvert -pyramid-scale 2 -tilex 512 -tiley 512 <input_image> <output_image>.btf`
+- Execute `bfconvert -pyramid-scale 4 -tilex 512 -tiley 512 <input_image> <output_image>.btf`
 
 In addition many microscopy malefactors support big tiff export out of the box using the microscopy software itself.
 
