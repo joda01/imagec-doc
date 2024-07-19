@@ -31,7 +31,7 @@ ImageC start screen
 :::
 
 By clicking the {guilabel}`New project` button a project wizard is opened.
-You are asked for some basic experiment information:
+Enter basic information on your project and group your images. 
 
 
 :::{figure} images/screenshot_start_wizard.png
@@ -49,11 +49,11 @@ ImageC new project wizard
 
   "Scientist name", "Name of the person who is responsible for this analysis", "Optional"
   "Organization", "Organization responsible for the analysis", "Optional"
-  "Working directory", "Directory where the images to analyze are stored in", "Mandatory"
-  "Images in well order", Describes in which order the images are placed in the well. The number is the image index in well.,"Mandatory"
-  "Group by", "Group images either by Filename regex or Directory.","Mandatory"
-  "Filename regex", "Regex to extract plate row, plate column and image index from the image filename.","Mandatory"
-  "Regex test", "Used to test the regex settings.",""
+  "Working directory", "Storage Directory of the "to be analyzed" images", "Mandatory"
+  "Order of Images in well", If images are taken from in a (6, 12, 24, 96, 384) well format, the order of the images position in the well can be determined here. ,"Optional"
+  "Group by", "Images may be left ungrouped, or can be grouped by Filename regex or Directory.","Mandatory"
+  "Filename regex", "If Images are grouped by filename, the regex should indicate the order of the images: Regex to extract plate row, plate column and image index from the image filename.","Mandatory"
+  "Regex test", "Used to test the regex settings. Enter your Image Name and see if the wells are recognized. in the regex test result",""
   "Regex test result", "Result of the regex applied on the text given in the regex test field.",""
   "Notes", "Some free text notes on the experiment.",""
 
@@ -61,7 +61,7 @@ ImageC new project wizard
 ```
 
 :::{caution}
-Make sure that the grouping options and regex settings are correct, as they are needed for valid statistics calculations.
+Make sure that the grouping options and regex settings are correct, as they are needed for valid image sorting and mean well infos.
 :::
 
 :::{sidebar} Regex
@@ -89,15 +89,15 @@ To experiment with regular expressions, have a look at [regex101](https://regex1
 :::
 
 It is important to set the correct grouping options in combination with the correct filename regular expression.
-Based on these settings, ImageC performs some statistical calculations of the results during a running analysis.
+Based on these settings, ImageC performs calculations of the results during a running analysis.
 This dramatically improves the speed of report generation.
 However, if the grouping settings are wrong, these statistics will also be calculated in a wrong way.
 
 When grouping by {guilabel}`Foldername` or {guilabel}`Filename` is selected ImageC will pre-calculate the statistics based on the determined group.
-Average, Median, Min, Max, Standard deviation, Sum and Count are calculated for each group in advanced
+Average, Median, Min, Max, Standard deviation, Sum and Count are calculated for each group
 When opening a analysis result (see {doc}`dive into the tutorials <../starting/results>`) these pre-calculated values are loaded for a fluid and fast view.
 
-It is not possible to modify the grouping settings subsequently, as this would necessitate the repetition of the precalculation, which is not currently supported by ImageC.
+A change of the grouping settings after analysis is currently not supported by ImageC. If the grouping settings are changed the analysis has to be repeated.
 
 
 The {guilabel}`Working Directory` should be set to the folder where the images to be analyzed are stored.
@@ -115,17 +115,23 @@ Once ImageC has been successfully launched and the new project wizard has been c
 ImageC overview panel
 :::
 
-The overview panel displays the actual for analysis created channels in the middle of the screen.
-With the {guilabel}`Add` buttons in the button box new channels can be added.
+The overview panel displays the options for analysis of a channel in the middle of the screen.
+With the {guilabel}`Add image channel` buttons,  new channels can be added.
 
 On the right hand side the parsed [OME](formats-ome) meta data from the selected image is shown.
 
-A list of all images found in the selected working directory is displayed in the bottom toolbar.
+A list of all images found in the selected working directory is displayed in the bottom toolbar. If a BIG TIF image is used, the image is subsequently cut into smaller tiles and the single tiles are displayed next to the image. 
 
 ## Adding a channel
 
 By clicking {guilabel}`Add Image Channel` a new channel is added to the analysis settings.
 Up to 10 channels can be added.
+All predefined EVAnalyzer pipelines are included in this version. 
+Select {guilabel} `EV channel` for loading a pipeline (preprocessing, object filtering, detection) optimized for EV quantification from single vesicle imaging images with low background. 
+Select {guilabel} `Cell brightfield` for loading a pipeline (preprocessing, object filtering, detection) optimized for cell detection on brightfields images.
+Select {guilabel} `Nucleus` for loading a pipeline (preprocessing, object filtering, detection) optimized for nucleus detection after fluorescent labelling of the nuclei (e.g. Hoechst, DAPI).
+Select {guilabel} `EV in cell` for loading a pipeline (preprocessing, object filtering, detection) optimized for EV quantification in complex material like cells.
+Select 
 
 :::{figure} images/screenshot_add_channel.png
 :class:
@@ -133,7 +139,7 @@ Up to 10 channels can be added.
 Setting with one added channel
 :::
 
-When the analysis is started, each channel of all images found in the working directory is processed.
+When the analysis is started, each defined channels of all images found in the working directory are processed.Non defined channels are not processed.
 The results for each channel are stored in a file based database with the extension {file}`.duckdb` for later reporting generation and statistics.
 
 By clicking on a channel, the channel editor is opened.
@@ -145,14 +151,14 @@ The channel editor allows to specify channel meta data, preprocessing steps, det
 Channel editor
 :::
 
-For a fast start select add an {guilabel}`EV channel` by selecting the {guilabel}`EV channel` entry from the template dropdown and click {guilabel}`Add Image Channel`.
-Channel templates are useful if same settings for a channel are used more often.
-Template files are JSON files and stored in the {file}`./templates` directory beside the ImageC binary.
+
+Defined template settings are stored as JSON template files and stored in the {file}`./templates` directory beside the ImageC binary.
 
 At the right hand side a live preview is displayed.
-It shows the resulting image after all applied preprocessing steps and filters.
-Changing a parameter will directly affect the preview.
+It shows the resulting object detection after all applied preprocessing steps and filters.
+Changing a parameter will directly change the preview, enabling a fast and easy adjustment and fine-tuning of the settings. A live object count is displayed at the bottom of the image.
 Based on image size and the complexity of the selected preprocessing algorithms it could take a couple of seconds for refreshing the preview.
+The preview can additionally be zoomed in and out and a second window with the original image and the processed image side by side further enables smooth detection setting. 
 
 :::{hint}
 See the section [Channels](channels) for detailed information about the channel settings parameter.
@@ -192,14 +198,14 @@ Plate size can be selected in the {guilabel}`Heatmap` sidebar to the left.
 Plate view
 :::
 
-The plate view displays the statistics per well based on the {guilabel}`Group by` settings of the analysis.
-If {guilabel}`Ungrouped` was selected as {guilabel}`Group by` method, all data ara summarized to the well `A1`.
+The plate view displays the Mean values and standard deviation as determined from all individual images taken in the respective well/ group. Image grouping is predefined in {guilabel}`Group by` settings.
+If {guilabel}`Ungrouped` was selected as {guilabel}`Group by` method, all data are summarized to the well `A1`.
 
-The left sidebar lets you view channel, measurement and statistic selections.
+The left sidebar enables to select "Channel, measurement and statistics" that should be displayed in the well plate.
 
 The right-hand sidebar shows information about the selected well.
 
-The coloring of the wells is done using a color map with the mean value of all wells as the centre of the spectrum and the minimum and maximum as the outer left and outer right limits of the spectrum.
+Wells are coloured using a  heatmap calculated from all data displayed, with the mean value of all wells as the centre of the spectrum and the minimum and maximum as the outer left and outer right limits of the spectrum.
 
 A double click on a well will prompt the opening of a detailed view of the selected well.
 
