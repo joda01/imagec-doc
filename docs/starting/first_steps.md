@@ -231,5 +231,37 @@ The {guilabel}`Well view` displays each image of the well ordered by the image i
 The image index was extracted from the filename during the analysis using the specified regex.
 To reorder the image position displayed in the well view matrix use the {guilabel}`Well order` settings field.
 
+If images are to be excluded from the statistics, this can be done via the menu item {guilabel}`Mark as invalid`.
+As invalid marked images are crossed out and are not taken into account in all subsequent calculations.
+
+To go one step deeper, looking into detail information about a single image, double click on an image in the {guilabel}`Well view`.
+
+The image view presents a density map of the image.
+By default a are size of `200px 200px` is used to calculate the density map.
+ImageC calculates the average value of the selected measurement of all valid objects within this `200px 200px` squares.
+
+The square size can be changed using the left hand side panel.
+Be careful though, if the square size is too small for large images, you may run out of RAM.
+
+:::{figure} images/screenshot_image_view.png
+:class:
+
+Image view
+:::
+
+ImageC allows you to inspect a selected density map square in the original image by double-clicking on these squares.
+You are asked to enter a filename for the exported image, which is shown afterwards.
+This exported image shows the selected area, making it easy to analyze the image in detail.
+
+:::{figure} images/screenshot_image_zoom.png
+:class: 
+:scale: 35%
+
+Image details
+:::
+
+
+
+
 ## Export to XLSX
 
