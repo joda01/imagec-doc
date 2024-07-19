@@ -45,6 +45,7 @@ In addition many microscopy malefactors support big tiff export out of the box u
 It should be noted that support for pyramid-scaled images is not yet available in ImageC, although this is currently being developed. To ensure compatibility with future versions, it is recommended that all images with pyramid scaling be converted.
 :::
 
+(formats-ome)=
 ## OME xml
 
 ImageC supports reading OME XML meta data stored beside image files.

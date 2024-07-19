@@ -104,9 +104,8 @@ The {guilabel}`Working Directory` should be set to the folder where the images t
 ImageC will perform a recursive folder search with the selected {guilabel}`Working Directory` as the base folder to find all supported image files.
 All found files are listed in the {guilabel}`Overview` panel.
 
-## View Panels
 
-### Overview
+## Overview Panel
 
 Once ImageC has been successfully launched and the new project wizard has been closed via the {guilabel}`Apply` button, the {guilabel}`Overview` panel is displayed.
 
@@ -116,12 +115,85 @@ Once ImageC has been successfully launched and the new project wizard has been c
 ImageC overview panel
 :::
 
-## Channels
+The overview panel displays the actual for analysis created channels in the middle of the screen.
+With the {guilabel}`Add` buttons in the button box new channels can be added.
 
-### Channel settings
+On the right hand side the parsed [OME](formats-ome) meta data from the selected image is shown.
 
+A list of all images found in the selected working directory is displayed in the bottom toolbar.
 
-### Voronoi settings
+## Adding a channel
 
+By clicking {guilabel}`Add Image Channel` a new channel is added to the analysis settings.
+Up to 10 channels can be added.
 
-### Intersection settings
+:::{figure} images/screenshot_add_channel.png
+:class:
+
+Setting with one added channel
+:::
+
+When the analysis is started, each channel of all images found in the working directory is processed.
+The results for each channel are stored in a file based database with the extension {file}`.duckdb` for later reporting generation and statistics.
+
+By clicking on a channel, the channel editor is opened.
+The channel editor allows to specify channel meta data, preprocessing steps, detection settings as well as filters for objects and images.
+
+:::{figure} images/screenshot_channel_editor.png
+:class:
+
+Channel editor
+:::
+
+For a fast start select add an {guilabel}`EV channel` by selecting the {guilabel}`EV channel` entry from the template dropdown and click {guilabel}`Add Image Channel`.
+Channel templates are useful if same settings for a channel are used more often.
+Template files are JSON files and stored in the {file}`./templates` directory beside the ImageC binary.
+
+At the right hand side a live preview is displayed.
+It shows the resulting image after all applied preprocessing steps and filters.
+Changing a parameter will directly affect the preview.
+Based on image size and the complexity of the selected preprocessing algorithms it could take a couple of seconds for refreshing the preview.
+
+:::{hint}
+See the section [Channels](channels) for detailed information about the channel settings parameter.
+:::
+
+## Starting the analysis
+
+With the back button on the top left the overview panel is displayed again.
+After all channels are added and all needed channel settings are done, the analysis can be started by pressing the {guilabel}`Run` button on the top.
+
+:::{figure} images/screenshot_running.png
+:class:
+
+Analysis running
+:::
+
+A dialogue box informs you about the progress of the analysis.
+At the bottom right of the dialog a {guilabel}`Open results folder` button is placed.
+Press this button to open the file explorer showing the folder with results of the actual analysis run.
+
+With {guilabel}`Stop` button a running analysis can be interrupted.
+It may take a couple of minutes to stop a running analysis since all still in progress tasks have to be finished.
+
+Press the {guilabel}`Close` button to close the dialog after a successful finished analysis run.
+
+## Viewing results
+
+To view the results go back to the start screen using the {guilabel}`House` button at the top left in the toolbar.
+On the start screen use {guilabel}`Open Results` and navigate to the {file}`imagec` results folder selecting the {file}`results.duckdb` file.
+
+ImageC opens the `Plate` view panel per default.
+
+:::{figure} images/screenshot_well_view.png
+:class:
+
+Plate view
+:::
+
+The plate view displays the statistics per well based on the {guilabel}`Group by` settings of the analysis.
+
+In the left sidebar selections about the channel, measurement and statistics to view can be made.
+
+## Export to XLSX
+

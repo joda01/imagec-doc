@@ -4,9 +4,6 @@
 :maxdepth: 2
 
 first_steps
+channels
 viewing
-annotating
-cell_counting
-essential_tips
-help
 ```
