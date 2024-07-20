@@ -113,4 +113,8 @@ myst_substitutions = {
     "icon_info": '<img src="../images/icons/icons8-info-50-circle.png" class="inline-icon" />',
     "tool_info": '<img src="../images/icons/icons8-info-50-circle.png" class="tool-icon" />',
 
+    "play": '<img src="../images/icons/icons8-play-50.png" />',
+    "icon_play": '<img src="../images/icons/icons8-play-50.png" class="inline-icon" />',
+    "tool_play": '<img src="../images/icons/icons8-play-50.png" class="tool-icon" />',
+
 }

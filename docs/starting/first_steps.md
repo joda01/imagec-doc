@@ -127,10 +127,10 @@ A list of all images found in the selected working directory is displayed in the
 By clicking {guilabel}`Add Image Channel` a new channel is added to the analysis settings.
 Up to 10 channels can be added.
 All predefined EVAnalyzer pipelines are included in this version. 
-Select {guilabel} `EV channel` for loading a pipeline (preprocessing, object filtering, detection) optimized for EV quantification from single vesicle imaging images with low background. 
-Select {guilabel} `Cell brightfield` for loading a pipeline (preprocessing, object filtering, detection) optimized for cell detection on brightfields images.
-Select {guilabel} `Nucleus` for loading a pipeline (preprocessing, object filtering, detection) optimized for nucleus detection after fluorescent labelling of the nuclei (e.g. Hoechst, DAPI).
-Select {guilabel} `EV in cell` for loading a pipeline (preprocessing, object filtering, detection) optimized for EV quantification in complex material like cells.
+Select {guilabel}`EV channel` for loading a pipeline (preprocessing, object filtering, detection) optimized for EV quantification from single vesicle imaging images with low background. 
+Select {guilabel}`Cell brightfield` for loading a pipeline (preprocessing, object filtering, detection) optimized for cell detection on brightfields images.
+Select {guilabel}`Nucleus` for loading a pipeline (preprocessing, object filtering, detection) optimized for nucleus detection after fluorescent labelling of the nuclei (e.g. Hoechst, DAPI).
+Select {guilabel}`EV in cell` for loading a pipeline (preprocessing, object filtering, detection) optimized for EV quantification in complex material like cells.
 Select 
 
 :::{figure} images/screenshot_add_channel.png
@@ -167,7 +167,7 @@ See the section [Channels](channels-and-slots) for detailed information about th
 ## Starting the analysis
 
 With the back button on the top left the overview panel is displayed again.
-After all channels are added and all needed channel settings are done, the analysis can be started by pressing the {guilabel}`Run` button on the top.
+After all channels are added and all needed channel settings are done, the analysis can be started by pressing the {{icon_play}} button on the top.
 
 :::{figure} images/screenshot_running.png
 :class: small-image
