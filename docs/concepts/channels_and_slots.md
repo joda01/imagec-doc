@@ -50,7 +50,7 @@ In order to facilitate the configuration of the channel, the OME meta date, incl
 A slot is defined as a kind of virtual channel. It is not a physical entity within an image; rather, it is generated based on the information contained in the image channels.
 Slots are identified by an index in the range of `A` to `F`.
 
-In the actual release {{ env.config.release }} if ImageC two types of slots are available: {guilabel}`Voronoi` and {guilabel}`Intersection`.
+In the actual release {{ env.config.release }} of ImageC two types of slots are available: {guilabel}`Voronoi` and {guilabel}`Intersection`.
 
 
 :::{note}
@@ -60,11 +60,4 @@ The input of a slot channel is the output of an image channel!
 :::{caution}
 It is imperative that each channel and slot index is unique, as is each channel and slot name.
 Otherwise an error occurs when trying to start the analysis.
-
-
-:::{figure} images/screenshot_unique_name.png
-:class: small-image
-
-:::
-
 :::

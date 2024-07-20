@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'EVAnalyzer2'
+project = 'ImageC'
 copyright = '2023-2024, Joachim Danmayr'
 author = 'ImageC authors'
 

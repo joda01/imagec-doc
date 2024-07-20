@@ -24,6 +24,7 @@ Use the [decision aid](decision-aid) to get a feeling if ImageC meets your requi
 docs/intro/index
 docs/starting/index
 docs/concepts/index
+docs/advanced/index
 ```
 
 % Indices and tables

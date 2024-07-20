@@ -1,7 +1,7 @@
 # Concepts
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 3
 
 channels_and_slots
 image_channels
