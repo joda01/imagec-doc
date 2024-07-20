@@ -21,4 +21,4 @@ Features include:
 - Side by side image comparison                            
 
 
-To find out more, check out the [original publication introducing ImageC](https://pubmed.ncbi.nlm.nih.gov/36437554/) or {doc}`dive into the tutorials <../tutorials/index>` to see some of what it can do.
+To find out more, check out the [original publication introducing ImageC](https://pubmed.ncbi.nlm.nih.gov/36437554/).

@@ -12,7 +12,7 @@ The tutorial will demonstrate the following:
 - Export results
 
 
-## Getting started
+## Analyze images
 
 :::{note}
 If you have problems running ImageC see {doc}`here <../intro/installation>`.
@@ -35,7 +35,7 @@ Enter basic information on your project and group your images.
 
 
 :::{figure} images/screenshot_start_wizard.png
-:class: full-image
+:class: small-image
 
 ImageC new project wizard
 :::
@@ -170,7 +170,7 @@ With the back button on the top left the overview panel is displayed again.
 After all channels are added and all needed channel settings are done, the analysis can be started by pressing the {guilabel}`Run` button on the top.
 
 :::{figure} images/screenshot_running.png
-:class: full-image
+:class: small-image
 
 Analysis running
 :::

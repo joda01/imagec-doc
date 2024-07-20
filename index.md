@@ -15,7 +15,7 @@ This page hosts the documentation for **ImageC {{ env.config.version }}.x**.
 
 
 ```{toctree}
-:caption: 'Full contents:'
+:caption: 'Contents:'
 :maxdepth: 2
 
 docs/intro/index

@@ -7,7 +7,7 @@ If the resulting data should be further processed outside ImageC the export func
 Clicking on {guilabel}`Export` exports the current view (plate, well or image) to an XLSX formatted file which can be opened with e.g. Excel or R.
 
 :::{figure} images/screenshot_export.png
-:class: full-image
+:class: medium-image
 
 Export dialog
 :::

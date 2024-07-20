@@ -2,12 +2,19 @@
 
 ## Which ImageC download do I need?
 
+:::{hint}
 It is recommended to use ImageC under Linux for best stability and performance.
+:::
+
+:::{note}
 Because of licensing issues, ImageC is not available for Mac yet.
+:::
+
 
 On **Linux** use `imagec-x64-linux-bundle.zip` from the [GithHub release](https://github.com/joda01/imagec/releases) page.
 
 On **Windows** use `imagec-x64-win-bundle.zip` form the [GithHub release](https://github.com/joda01/imagec/releases) page. 
+
 
 
 ## Download & install
@@ -24,9 +31,7 @@ If you use an unsigned version you may need to take a few extra steps to get it 
 - On **Windows**, if you want to use a signed version, download the {program}`imagec-x64-win-signed.exe` from a release with title `[signed]`.
   - Copy the downloaded `exe` into the folder beside the `imagec.exe`.
   - Double-click on the {program}`imagec-x64-win-signed.exe` to launch the application
-- On **macOS**, right-click the `.pkg` file, then choose 'Open' (you might need to do this twice)
-  - If you're using an M1/M2/M3 Mac, please check out the [notes on Apple silicon](apple-silicon)
 
-See {ref}`Troubleshooting` for more information.
+
 
 
