@@ -127,6 +127,12 @@ myst_substitutions = {
     "tool_ome": '<img src="../images/icons/ome.png" class="tool-icon" />',
 
 
+    "externallink": '<img src="../images/icons/icons8-external-link-50.png" />',
+    "icon_externallink": '<img src="../images/icons/icons8-external-link-50.png" class="inline-icon" />',
+    "tool_externallink": '<img src="../images/icons/icons8-external-link-50.png" class="tool-icon" />',
+
+
+
     "max_channels": "10",
     "max_slots": "6"
 }
