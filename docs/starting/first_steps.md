@@ -104,7 +104,7 @@ The {guilabel}`Working Directory` should be set to the folder where the images t
 ImageC will perform a recursive folder search with the selected {guilabel}`Working Directory` as the base folder to find all supported image files.
 All found files are listed in the {guilabel}`Overview` panel.
 
-
+(overview-panel)=
 ## Overview Panel
 
 Once ImageC has been successfully launched and the new project wizard has been closed via the {guilabel}`Apply` button, the {guilabel}`Overview` panel is displayed.

@@ -117,4 +117,6 @@ myst_substitutions = {
     "icon_play": '<img src="../images/icons/icons8-play-50.png" class="inline-icon" />',
     "tool_play": '<img src="../images/icons/icons8-play-50.png" class="tool-icon" />',
 
+    "max_channels": "10",
+    "max_slots": "6"
 }

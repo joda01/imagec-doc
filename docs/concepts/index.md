@@ -3,8 +3,8 @@
 ```{toctree}
 :maxdepth: 2
 
-channels
+channels_and_slots
 image_channels
-voronoi_channels
-intersection_channels
+voronoi_slots
+intersection_slots
 ```
