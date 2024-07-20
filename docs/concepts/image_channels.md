@@ -1,5 +1,9 @@
 (image-channels)=
 # Image channels
 
+Clicking on an image channel in the {guilabel}`Overview panel` opens the Image Channel Settings panel.
 
-A channel is invariably associated with a channel in an image in the range of `0` to `9`.
+:::{figure} images/screenshot_image_channel_settings.png
+:class: full-image
+
+:::

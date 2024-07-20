@@ -52,3 +52,9 @@ This raises the legitimate question of which of these programmes can best help m
 (decision-aid)=
 ## Decision aid
 
+
+:::{figure} images/decission_matrix.drawio.svg
+:class: full-image
+
+:::
+
