@@ -4,6 +4,8 @@
 :maxdepth: 2
 
 first_steps
-channels
 viewing
+export
+help
+
 ```
