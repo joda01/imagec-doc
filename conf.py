@@ -103,7 +103,7 @@ html_logo = 'docs/images/imagec_128.png'
 html_favicon = 'docs/images/imagec.ico'
 
 release = '1.0.0-alpha.103'
-version = '1.0.0-alpha.103'
+version = '1.0.0-alpha'
 
 # myst_heading_anchors = 2
 
@@ -116,6 +116,16 @@ myst_substitutions = {
     "play": '<img src="../images/icons/icons8-play-50.png" />',
     "icon_play": '<img src="../images/icons/icons8-play-50.png" class="inline-icon" />',
     "tool_play": '<img src="../images/icons/icons8-play-50.png" class="tool-icon" />',
+
+
+    "bioformats": '<img src="../images/icons/omero-features-icons_bio-formats.svg" />',
+    "icon_bioformats": '<img src="../images/icons/omero-features-icons_bio-formats.svg" class="inline-icon" />',
+    "tool_bioformats": '<img src="../images/icons/omero-features-icons_bio-formats.svg" class="tool-icon" />',
+
+    "ome": '<img src="../images/icons/ome.png" />',
+    "icon_ome": '<img src="../images/icons/ome.png" class="inline-icon" />',
+    "tool_ome": '<img src="../images/icons/ome.png" class="tool-icon" />',
+
 
     "max_channels": "10",
     "max_slots": "6"

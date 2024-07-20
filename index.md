@@ -13,6 +13,9 @@ See what's new in the [changelog](https://github.com/joda01/imagec/releases).
 
 This page hosts the documentation for **ImageC {{ env.config.version }}.x**.
 
+Start With [What's ImageC](about-imagec) to get in touch.
+
+Use the [decision aid](decision-aid) to get a feeling if ImageC meets your requirements.
 
 ```{toctree}
 :caption: 'Contents:'
