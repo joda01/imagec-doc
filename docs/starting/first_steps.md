@@ -25,7 +25,7 @@ At this point three options are available: create a new project, open an existin
 
 
 :::{figure} images/screenshot_start_screen.png
-:class:  full-image
+:class: full-image
 
 ImageC start screen
 :::
@@ -35,7 +35,7 @@ Enter basic information on your project and group your images.
 
 
 :::{figure} images/screenshot_start_wizard.png
-:class:
+:class: full-image
 
 ImageC new project wizard
 :::
@@ -47,10 +47,10 @@ ImageC new project wizard
   :header: "Title", "Description", ""
   :align: center
 
-  "Scientist name", "Name of the person who is responsible for this analysis", "Optional"
-  "Organization", "Organization responsible for the analysis", "Optional"
-  "Working directory", "Storage Directory of the "to be analyzed" images", "Mandatory"
-  "Order of Images in well", If images are taken from in a (6, 12, 24, 96, 384) well format, the order of the images position in the well can be determined here. ,"Optional"
+  "Scientist name", "Name of the person who is responsible for this analysis.", "Optional"
+  "Organization", "Organization responsible for the analysis.", "Optional"
+  "Working directory", "Storage Directory of the 'to be analyzed' images.", "Mandatory"
+  "Order of Images in well", "If images are taken from in a (6, 12, 24, 96, 384) well format, the order of the images position in the well can be determined here.","Optional"
   "Group by", "Images may be left ungrouped, or can be grouped by Filename regex or Directory.","Mandatory"
   "Filename regex", "If Images are grouped by filename, the regex should indicate the order of the images: Regex to extract plate row, plate column and image index from the image filename.","Mandatory"
   "Regex test", "Used to test the regex settings. Enter your Image Name and see if the wells are recognized. in the regex test result",""
@@ -95,7 +95,7 @@ However, if the grouping settings are wrong, these statistics will also be calcu
 
 When grouping by {guilabel}`Foldername` or {guilabel}`Filename` is selected ImageC will pre-calculate the statistics based on the determined group.
 Average, Median, Min, Max, Standard deviation, Sum and Count are calculated for each group
-When opening a analysis result (see {doc}`dive into the tutorials <../starting/results>`) these pre-calculated values are loaded for a fluid and fast view.
+When opening a analysis result (see {doc}`dive into the tutorials <../starting/viewing>`) these pre-calculated values are loaded for a fluid and fast view.
 
 A change of the grouping settings after analysis is currently not supported by ImageC. If the grouping settings are changed the analysis has to be repeated.
 
@@ -110,7 +110,7 @@ All found files are listed in the {guilabel}`Overview` panel.
 Once ImageC has been successfully launched and the new project wizard has been closed via the {guilabel}`Apply` button, the {guilabel}`Overview` panel is displayed.
 
 :::{figure} images/screenshot_overview.png
-:class:
+:class: full-image
 
 ImageC overview panel
 :::
@@ -134,7 +134,7 @@ Select {guilabel} `EV in cell` for loading a pipeline (preprocessing, object fil
 Select 
 
 :::{figure} images/screenshot_add_channel.png
-:class:
+:class: full-image
 
 Setting with one added channel
 :::
@@ -146,7 +146,7 @@ By clicking on a channel, the channel editor is opened.
 The channel editor allows to specify channel meta data, preprocessing steps, detection settings as well as filters for objects and images.
 
 :::{figure} images/screenshot_channel_editor.png
-:class:
+:class: full-image
 
 Channel editor
 :::
@@ -161,7 +161,7 @@ Based on image size and the complexity of the selected preprocessing algorithms 
 The preview can additionally be zoomed in and out and a second window with the original image and the processed image side by side further enables smooth detection setting. 
 
 :::{hint}
-See the section [Channels](channels) for detailed information about the channel settings parameter.
+See the section [Channels](channels-and-slots) for detailed information about the channel settings parameter.
 :::
 
 ## Starting the analysis
@@ -170,7 +170,7 @@ With the back button on the top left the overview panel is displayed again.
 After all channels are added and all needed channel settings are done, the analysis can be started by pressing the {guilabel}`Run` button on the top.
 
 :::{figure} images/screenshot_running.png
-:class:
+:class: full-image
 
 Analysis running
 :::

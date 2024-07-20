@@ -20,6 +20,7 @@ This page hosts the documentation for **ImageC {{ env.config.version }}.x**.
 
 docs/intro/index
 docs/starting/index
+docs/concepts/index
 ```
 
 % Indices and tables

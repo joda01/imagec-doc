@@ -9,8 +9,7 @@ Click on this icon to get further information about the function.
 
 
 :::{figure} images/screenshot_help_dialog.png
-:class:
-:scale: 80%
+:class: small-image
 
 Info/Help dialog
 :::

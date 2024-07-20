@@ -10,7 +10,7 @@ ImageC opens the `Plate` view panel per default showing the results as heatmap.
 Plate size can be selected in the {guilabel}`Heatmap` sidebar to the left.
 
 :::{figure} images/screenshot_plate_view.png
-:class:
+:class: full-image
 
 Plate view
 :::
@@ -29,7 +29,7 @@ Wells are coloured using a  heatmap calculated from all data displayed, with the
 A double click on a well will prompt the opening of a detailed view of the selected well.
 
 :::{figure} images/screenshot_well_view.png
-:class:
+:class: full-image
 
 Well view
 :::
@@ -65,7 +65,7 @@ The square size can be changed using the left hand side panel.
 Be careful though, if the square size is too small for large images, you may run out of RAM.
 
 :::{figure} images/screenshot_image_view.png
-:class:
+:class: full-image
 
 Image view
 :::
@@ -75,8 +75,7 @@ You are asked to enter a filename for the exported image, which is shown afterwa
 This exported image shows the selected area, making it easy to analyze the image in detail.
 
 :::{figure} images/screenshot_image_zoom.png
-:class: 
-:scale: 35%
+:class: small-image
 
 Image details
 :::
