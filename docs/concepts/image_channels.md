@@ -224,3 +224,4 @@ In the event that the selected threshold value is less than the value observed a
 ## Cross channel measurement
 
 ImageC offers the capability to utilize the object areas (regions of interest) from one channel and perform measurements in a different channel based on these regions.
+In
