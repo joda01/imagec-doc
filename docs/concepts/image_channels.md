@@ -14,7 +14,7 @@ The {guilabel}`Meta` section is used to specify some basic channel information.
 
 The {guilabel}`Channel index` setting selects the image channel to process.
 With {guilabel}`Channel type` the category of the channel is defined.
-Nevertheless, the specific channel type has no impact on the analysis, with the exception of channels of the {guilabel}`Reference spot` type, which are analysed prior to the other channel types.
+Nevertheless, the specific channel type has no impact on the analysis, with the exception of channels of the {guilabel}`Reference spot` type, which are analyzed prior to the other channel types.
 
 ## Preprocessing
 
@@ -145,11 +145,11 @@ It is recommended that the watershed be activated only when necessary, as it is 
 
 #### Snap area
 
-This can be the case when calculating the colocalisation between objects in different channels if the channels are not 100% exactly on top of each other.
+This can be the case when calculating the colocalization between objects in different channels if the channels are not 100% exactly on top of each other.
 For such use cases a snap area can be activated.
 
 A snap area is defined as a circle painted around an object, with the centre of mass of the object positioned at the centre of the circle.
-It extends the object area with this circle in case of colocalisation calculation. 
+It extends the object area with this circle in case of colocalization calculation. 
 
 
 ## Object filtering
@@ -224,4 +224,17 @@ In the event that the selected threshold value is less than the value observed a
 ## Cross channel measurement
 
 ImageC offers the capability to utilize the object areas (regions of interest) from one channel and perform measurements in a different channel based on these regions.
-In
+Two cross channel measurement options are available: {guilabel}`Cross channel intensity` and {guilabel}`Cross channel count`.
+
+To perform a cross-channel measurement, enter one or more comma-separated channel or slot indexes in the text box.
+Allowed pattern is: {regexp}`[0-9][A-F]`.
+
+### Cross channel intensity
+
+Takes the ROIs from the source and measures the intensity value of this source in an other channel.
+One potential application of this methodology is to utilize the identified cell regions to quantify the mean intensity of these regions within an EV channel.
+
+### Cross channel count
+
+Takes the ROIs from the source and counts how many ROIs within that source ROI are found in another channel.
+One potential application of this approach would be to utilize the detected cell areas to enumerate the number of identified EVs (spots) within these regions.

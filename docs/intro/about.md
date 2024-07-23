@@ -15,17 +15,17 @@ ImageC is often used for **single vesicle quantification** applications because 
 
 - [BioFormats support](https://github.com/ome/bioformats) {{icon_bioformats}}
 - [OME-XML support](https://docs.openmicroscopy.org/) {{icon_ome}} 
-- XLSX report generation                                   
-- Max. channels                                            
-- Max image size                                           
+- Support of cross channel measurements
+- Database based result processing
+- XLSX report generation                
+- Unlimited image size (e.g. histological)                                    
 - Support for big tiff                                     
 - AI based object detection                                
-- Database based result processing                         
-- Heatmap generation                                       
-- Image density map generation                             
-- In image object marker                                   
-- Built-in reporting tool                                  
-- Side by side image comparison                            
+- Heatmap generation              
+- Image density map generation
+- In image object marker                       
+- Built-in reporting tool
+- Side by side image comparison
 :::
 
 ## Is ImageC suitable for me?
