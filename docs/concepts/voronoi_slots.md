@@ -48,3 +48,9 @@ Remove the value if no are size limitation should be done.
 ImageC offers the option to overlay and intersect a calculated Voronoi diagram with another surface.
 This option is particularly beneficial in scenarios where a cell area channel exists.
 The intersection of the calculated Voronoi grid with the cell area channel results in a more accurate cell approximation, as any areas that are not part of the actual terrain are removed.
+
+
+## Object filter
+
+Similarly, the application of object filters to the [image channels](image-channels) it is also a possibility for voronoi slots.
+Object filter in voronoi slots are applied to the calculated Voronoi diagram areas.
