@@ -5,9 +5,9 @@ Clicking on an image channel in the {guilabel}`Overview panel` opens the Image C
 
 :::{figure} images/screenshot_image_channel_settings.png
 :class: full-image
-
 :::
 
+(channels-meta)=
 ## Meta
 
 The {guilabel}`Meta` section is used to specify some basic channel information.
@@ -51,8 +51,7 @@ Image preprocessing helps in advanced to reduce the background noise to get a sh
 
 :::{figure} images/threshold.drawio.svg
 :class: full-image
-
-
+:::
 :::
 
 In case of using thresholds for object detection a threshold method must be chosen.
@@ -99,6 +98,7 @@ Compatible models can be downloaded from [imagec.org](https://imagec.org).
 A manual how to train your own model can be found in the advanced chapter, section [AI training](ai-training).
 
 :::
+
 In such use cases, ImageC permits the utilization of artificial intelligence models for object segmentation as an alternative to thresholding techniques.
 
 ImageC compatible models for object segmentation can be downloaded from [imagec.org](https://imagec.org) below the Download section.
@@ -125,6 +125,7 @@ Based on peaks extracted from the intensity values the valleys between the peaks
 
 :::{figure} images/watershed.drawio.svg
 :class: full-image
+:::
 
 :::
 
@@ -158,8 +159,9 @@ It extends the object area with this circle in case of colocalization calculatio
 Circularity describes the roundness of an object, with a perfect circle having a circularity of `1`. 
 The circularity of an object is calculated as follows:
 
-:::{math} c = \frac{4 \cdot pi \cdot AreaSize}{perimeter^2}
-
+```{math}
+c = \frac{4 \cdot pi \cdot AreaSize}{perimeter^2}
+```
 :::
 
 Despite all efforts in pre-processing and detection scribing, unwanted objects or noise artifacts can still remain.
@@ -209,7 +211,7 @@ If the min. threshold value is lower than the lowe bound of this area, the image
 
 :::{figure} images/threshold_histogram_filter.drawio.svg
 :class: full-image
-
+:::
 
 :::
 

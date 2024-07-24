@@ -14,6 +14,7 @@ Voronoi diagrams can be useful for approximating cell surfaces based on known ce
 
 :::{figure} images/voronoi_example.png
 :class: full-image
+:::
 
 :::
 
