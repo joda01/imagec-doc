@@ -9,11 +9,11 @@ On the start screen use {guilabel}`Open Results` and navigate to the {file}`imag
 ImageC opens the `Plate` view panel per default showing the results as heatmap.
 Plate size can be selected in the {guilabel}`Heatmap` sidebar to the left.
 
-:::{figure} images/screenshot_plate_view.png
+```{figure} images/screenshot_plate_view.png
 :class: full-image
 
 Plate view
-:::
+```
 
 The plate view displays the Mean values and standard deviation as determined from all individual images taken in the respective well/ group. Image grouping is predefined in {guilabel}`Group by` settings.
 If {guilabel}`Ungrouped` was selected as {guilabel}`Group by` method, all data are summarized to the well `A1`.
@@ -28,11 +28,11 @@ Wells are coloured using a  heatmap calculated from all data displayed, with the
 
 A double click on a well will prompt the opening of a detailed view of the selected well.
 
-:::{figure} images/screenshot_well_view.png
+```{figure} images/screenshot_well_view.png
 :class: full-image
 
 Well view
-:::
+```
 
 :::{sidebar} Well order matrix
 
@@ -64,20 +64,20 @@ ImageC calculates the average value of the selected measurement of all valid obj
 The square size can be changed using the left hand side panel.
 Be careful though, if the square size is too small for large images, you may run out of RAM.
 
-:::{figure} images/screenshot_image_view.png
+```{figure} images/screenshot_image_view.png
 :class: full-image
 
 Image view
-:::
+```
 
 ImageC allows you to inspect a selected density map square in the original image by double-clicking on these squares.
 You are asked to enter a filename for the exported image, which is shown afterwards.
 This exported image shows the selected area, making it easy to analyze the image in detail.
 
-:::{figure} images/screenshot_image_zoom.png
+```{figure} images/screenshot_image_zoom.png
 :class: small-image
 
 Image details
-:::
+```
 
 

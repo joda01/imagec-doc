@@ -15,10 +15,10 @@ The processing order of channels and slots is defined as following:
 3. Voronoi slot channels
 4. Intersection slot channel 
 
-:::{figure} images/screenshot_channels.png
+```{figure} images/screenshot_channels.png
 :class: full-image
 OME channel information at the right-hand side
-:::
+```
 
 
 ## Channels
@@ -32,9 +32,9 @@ Time stacks are not yet supported.
 If an image with time stack is processed ony the first image of the T stack is used.
 
 
-:::{image} images/image_channels.drawio.svg
+```{image} images/image_channels.drawio.svg
 :class: full-image
-:::
+```
 
 :::
 

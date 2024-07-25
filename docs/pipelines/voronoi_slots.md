@@ -3,18 +3,18 @@
 By click on {guilabel}`Add voronoi channel` a new voronoi channel is added to the processing list.
 
 
-:::{figure} images/screenshot_voronoi_channel_settings.png
+```{figure} images/screenshot_voronoi_channel_settings.png
 :class: full-image
-:::
+```
 
 :::{sidebar} Voronoi diagram
 A Voronoi diagram, also known as a Thiessen polygon or Dirichlet decomposition, represents a decomposition of space into regions that are determined by a given set of points in space, referred to here as centres.
 The diagram areas are generated so that the enveloping area of each point is the closest to that point.
 Voronoi diagrams can be useful for approximating cell surfaces based on known cell nuclei.
 
-:::{figure} images/voronoi_example.png
+```{figure} images/voronoi_example.png
 :class: full-image
-:::
+```
 
 :::
 
@@ -43,6 +43,7 @@ Also, make sure the preprocessing and detection settings are correct of this cha
 :::{hint}
 Typical {guilabel}`Voronoi points channel` are channels containing nuclei.
 :::
+
 
 ### Max voronoi area radius
 

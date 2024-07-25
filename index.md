@@ -17,15 +17,15 @@ Start with [About ImageC](about-imagec) to get in touch.
 
 Use the [decision aid](decision-aid) to get a feeling if ImageC meets your requirements.
 
-```{toctree}
+:::{toctree}
 :caption: 'Contents:'
 :maxdepth: 2
 
 docs/intro/index
 docs/starting/index
-docs/concepts/index
+docs/pipelines/index
 docs/advanced/index
-```
+:::
 
 % Indices and tables
 

@@ -3,9 +3,9 @@
 
 Clicking on an image channel in the {guilabel}`Overview panel` opens the Image Channel Settings panel.
 
-:::{figure} images/screenshot_image_channel_settings.png
+```{figure} images/screenshot_image_channel_settings.png
 :class: full-image
-:::
+```
 
 (channels-meta)=
 ## Meta
@@ -49,9 +49,9 @@ ImageC provides two object segmentation options: {guilabel}`Threshold` and {guil
 Thresholding is a technique that aims to achieve an intensity value that is higher than the highest intensity value of the background noise and low enough to achieve the lowest intensity value of the regions of interest (ROIs).
 Image preprocessing helps in advanced to reduce the background noise to get a sharp intensity border between background and foreground.
 
-:::{figure} images/threshold.drawio.svg
+```{figure} images/threshold.drawio.svg
 :class: full-image
-:::
+```
 :::
 
 In case of using thresholds for object detection a threshold method must be chosen.
@@ -123,9 +123,9 @@ Subsequent to the object detection stage, two fine-tuning options are available.
 
 Based on peaks extracted from the intensity values the valleys between the peaks are the borders for splitting the objects.
 
-:::{figure} images/watershed.drawio.svg
+```{figure} images/watershed.drawio.svg
 :class: full-image
-:::
+```
 
 :::
 
@@ -209,9 +209,9 @@ Estimate what the largest number of valid objects in an image will be and set th
 The intensity value at the maximum of the histogram of the image multiplied by the {guilabel}`Histogram threshold factor` defines the area of allowed threshold values for the image.
 If the min. threshold value is lower than the lowe bound of this area, the image id filtered out.
 
-:::{figure} images/threshold_histogram_filter.drawio.svg
+```{figure} images/threshold_histogram_filter.drawio.svg
 :class: full-image
-:::
+```
 
 :::
 

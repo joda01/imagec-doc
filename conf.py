@@ -31,7 +31,7 @@ extensions = [
     'myst_parser',
     'sphinx_rtd_theme',
     'sphinx_design',
-    'sphinx.ext.autosectionlabel',
+    #'sphinx.ext.autosectionlabel',
     'sphinx_search.extension'
 ]
 

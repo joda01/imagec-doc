@@ -3,10 +3,9 @@
 
 **ImageC is open source software for high throughput bioimage analysis.**
 
-:::{figure} images/screenshot_channels.png
+```{figure} images/screenshot_channels.png
 :class: full-image
-
-:::
+```
 
 
 ImageC is often used for **single vesicle quantification** applications because it offers a powerful set of templates optimized for working the **EV field** - but it can be applied to lots of other kinds of image and applications as well.
@@ -53,8 +52,7 @@ This raises the legitimate question of which of these programmes can best help m
 ## Decision aid
 
 
-:::{figure} images/decission_matrix.drawio.svg
+```{figure} images/decission_matrix.drawio.svg
 :class: full-image
-
-:::
+```
 

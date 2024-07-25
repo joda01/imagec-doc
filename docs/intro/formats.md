@@ -22,8 +22,10 @@ BigTIFF images are usually split into tiles whereby a typical tile size is `256x
 When analyzing, ImageC opens `36` tiles at once and analyses one such composite tile after another.
 This is necessary because when working with such large images, the entire image cannot be loaded into RAM at once.
 
-```{image} images/tiles.png
+```{figure} images/tiles.drawio.svg
+:class: full-image
 ```
+
 :::
 
 Based on the file extension, ImageC decides whether to use BioFormats or the built-in tiff loader to open the image.

@@ -1,6 +1,6 @@
 # Getting started
 
-```{toctree}
+:::{toctree}
 :maxdepth: 2
 
 first_steps
@@ -8,4 +8,4 @@ viewing
 export
 help
 
-```
+:::

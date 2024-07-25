@@ -8,11 +8,11 @@ If some inline help is available a small {{ icon_info }} is displayed.
 Click on this icon to get further information about the function.
 
 
-:::{figure} images/screenshot_help_dialog.png
+```{figure} images/screenshot_help_dialog.png
 :class: small-image
 
 Info/Help dialog
-:::
+```
 
 ## Forum
 

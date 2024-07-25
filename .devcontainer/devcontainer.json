@@ -24,7 +24,8 @@
 				"streetsidesoftware.code-spell-checker",
 				"vscjava.vscode-java-pack",
 				"xaver.clang-format",
-				"felgo.felgo"
+				"felgo.felgo",
+				"ExecutableBookProject.myst-highlight"
 			]
 		}
 	}

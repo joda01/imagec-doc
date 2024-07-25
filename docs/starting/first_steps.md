@@ -24,41 +24,37 @@ Once ImageC has been successfully launched, the user will be directed to the sta
 At this point three options are available: create a new project, open an existing project, open the results of a previous run.
 
 
-:::{figure} images/screenshot_start_screen.png
+```{figure} images/screenshot_start_screen.png
 :class: full-image
 
 ImageC start screen
-:::
+```
 
 By clicking the {guilabel}`New project` button a project wizard is opened.
 Enter basic information on your project and group your images. 
 
 
-:::{figure} images/screenshot_start_wizard.png
+```{figure} images/screenshot_start_wizard.png
 :class: small-image
 
 ImageC new project wizard
-:::
-
-
-
-```{eval-rst}
-.. csv-table::
-  :header: "Title", "Description", ""
-  :align: center
-
-  "Scientist name", "Name of the person who is responsible for this analysis.", "Optional"
-  "Organization", "Organization responsible for the analysis.", "Optional"
-  "Working directory", "Storage Directory of the 'to be analyzed' images.", "Mandatory"
-  "Order of Images in well", "If images are taken from in a (6, 12, 24, 96, 384) well format, the order of the images position in the well can be determined here.","Optional"
-  "Group by", "Images may be left ungrouped, or can be grouped by Filename regex or Directory.","Mandatory"
-  "Filename regex", "If Images are grouped by filename, the regex should indicate the order of the images: Regex to extract plate row, plate column and image index from the image filename.","Mandatory"
-  "Regex test", "Used to test the regex settings. Enter your Image Name and see if the wells are recognized. in the regex test result",""
-  "Regex test result", "Result of the regex applied on the text given in the regex test field.",""
-  "Notes", "Some free text notes on the experiment.",""
-
-
 ```
+
+
+
+:::{table}
+|Title                   |Description                                             | ...
+|-------------           |-----------------------                                 |---------- |
+|Scientist name          |Name of the person who is responsible for this analysis.|Optional   |
+|Organization            |Organization responsible for the analysis.              |Optional   |
+|Working directory       |Storage Directory of the 'to be analyzed' images.       |Mandatory  |
+|Order of Images in well |If images are taken from in a (6, 12, 24, 96, 384) well format, the order of the images position in the well can be determined here.|"Optional |
+|Group by                |Images may be left ungrouped, or can be grouped by Filename regex or Directory.|Mandatory |
+|Filename regex          |If Images are grouped by filename, the regex should indicate the order of the images: Regex to extract plate row, plate column and image index from the |image filename.|Mandatory
+|Regex test              |Used to test the regex settings. Enter your Image Name and see if the wells are recognized. in the regex test result|   |
+|Regex test result       |Result of the regex applied on the text given in the regex test field.| |
+|Notes                   |Some free text notes on the experiment.|              |
+:::
 
 :::{caution}
 Make sure that the grouping options and regex settings are correct, as they are needed for valid image sorting and mean well infos.
@@ -109,11 +105,11 @@ All found files are listed in the {guilabel}`Overview` panel.
 
 Once ImageC has been successfully launched and the new project wizard has been closed via the {guilabel}`Apply` button, the {guilabel}`Overview` panel is displayed.
 
-:::{figure} images/screenshot_overview.png
+```{figure} images/screenshot_overview.png
 :class: full-image
 
 ImageC overview panel
-:::
+```
 
 The overview panel displays the options for analysis of a channel in the middle of the screen.
 With the {guilabel}`Add image channel` buttons,  new channels can be added.
@@ -133,11 +129,11 @@ Select {guilabel}`Nucleus` for loading a pipeline (preprocessing, object filteri
 Select {guilabel}`EV in cell` for loading a pipeline (preprocessing, object filtering, detection) optimized for EV quantification in complex material like cells.
 Select 
 
-:::{figure} images/screenshot_add_channel.png
+```{figure} images/screenshot_add_channel.png
 :class: full-image
 
 Setting with one added channel
-:::
+```
 
 When the analysis is started, each defined channels of all images found in the working directory are processed.Non defined channels are not processed.
 The results for each channel are stored in a file based database with the extension {file}`.duckdb` for later reporting generation and statistics.
@@ -145,11 +141,11 @@ The results for each channel are stored in a file based database with the extens
 By clicking on a channel, the channel editor is opened.
 The channel editor allows to specify channel meta data, preprocessing steps, detection settings as well as filters for objects and images.
 
-:::{figure} images/screenshot_channel_editor.png
+```{figure} images/screenshot_channel_editor.png
 :class: full-image
 
 Channel editor
-:::
+```
 
 
 Defined template settings are stored as JSON template files and stored in the {file}`./templates` directory beside the ImageC binary.
@@ -169,11 +165,11 @@ See the section [Channels](channels-and-slots) for detailed information about th
 With the back button on the top left the overview panel is displayed again.
 After all channels are added and all needed channel settings are done, the analysis can be started by pressing the {{icon_play}} button on the top.
 
-:::{figure} images/screenshot_running.png
+```{figure} images/screenshot_running.png
 :class: small-image
 
 Analysis running
-:::
+```
 
 A dialogue box informs you about the progress of the analysis.
 At the bottom right of the dialog a {guilabel}`Open results folder` button is placed.

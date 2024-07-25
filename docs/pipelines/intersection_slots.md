@@ -5,9 +5,9 @@ By click on {guilabel}`Add intersection channel` a new intersection channel is a
 Intersection slots are used to calculate the intersection of two or more channels or slots.
 Typical use case is the calculation of the colocalization of two or more channels.
 
-:::{figure} images/screenshot_intersection.png
+```{figure} images/screenshot_intersection.png
 :class: full-image
-:::
+```
 
 
 :::{sidebar} Intersection
@@ -22,9 +22,9 @@ I_{factor} = \frac{A_{intersection}}{Min([A_{area_0}, A_{area_1}, ... A_{area_n}
 The intersection factor $I_{factor}$ is defined by the area size of the intersection divided by the smallest of the areas the intersection was calculated with.
 If 100% of the area is intersecting the factor is 1.
 
-:::{figure} images/intersection.drawio.svg
+```{figure} images/intersection.drawio.svg
 :class: full-image
-:::
+```
 
 :::
 

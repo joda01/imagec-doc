@@ -1,8 +1,9 @@
+(advanced)=
 # Advanced
 
-```{toctree}
+:::{toctree}
 :maxdepth: 2
 
 ai_training
 
-```
+:::
