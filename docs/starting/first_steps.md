@@ -4,9 +4,9 @@
 The following tutorial will provide an overview of the fundamental concepts and functions of ImageC, offering guidance on the initial steps required for effective utilization of the software.
 The tutorial will demonstrate the following:
 
-- ImageC Welcome window
 - Creating a new project
-- Adding channels
+- Defining clusters and classes
+- Adding pipelines
 - Starting an analyzes
 - Open analyzes results
 - Export results
@@ -20,9 +20,7 @@ If you have problems running ImageC see {doc}`here <../intro/installation>`.
 
 ### Running ImageC
 
-Once ImageC has been successfully launched, the user will be directed to the start wizard. 
-At this point three options are available: create a new project, open an existing project, open the results of a previous run.
-
+Once ImageC has been successfully launched, the user will be directed to the start page. 
 
 ```{figure} images/screenshot_start_screen.png
 :class: full-image
@@ -30,30 +28,30 @@ At this point three options are available: create a new project, open an existin
 ImageC start screen
 ```
 
-By clicking the {guilabel}`New project` button a project wizard is opened.
-Enter basic information on your project and group your images. 
+The Settings tab on the left is divided into the following sections {guilabel}`Project`, {guilabel}`Classification`, {guilabel}`Pipeline`, {guilabel}`Images` and {guilabel}`Results`.
 
+(project-settings)=
+## Project tab
 
-```{figure} images/screenshot_start_wizard.png
-:class: small-image
-
-ImageC new project wizard
-```
-
-
+Starting with the project settings, basic information about the experiment and the scientist conducting the experiment needs to be collected.
 
 :::{table}
-|Title                   |Description                                             | ...
-|-------------           |-----------------------                                 |---------- |
-|Scientist name          |Name of the person who is responsible for this analysis.|Optional   |
-|Organization            |Organization responsible for the analysis.              |Optional   |
-|Working directory       |Storage Directory of the 'to be analyzed' images.       |Mandatory  |
-|Order of Images in well |If images are taken from in a (6, 12, 24, 96, 384) well format, the order of the images position in the well can be determined here.|"Optional |
+|Title                   |Description                                                      | ...
+|-------------           |-----------------------                                          |---------- |
+|Working directory       |Storage Directory of the 'to be analyzed' images.                |Mandatory  |
+|Experiment name         |Title of the experiment stored together with the results.        |Optional
+|Scientist               |Name of the person who is responsible for this analysis.         |Optional   |
+|Organization            |Organization responsible for the analysis.                       |Optional   |
+|Experiment ID           |UUID of the experiment to globally identify this experiment.     |Optional   |
+|Job name                |Name of the job to identify the run (auto generated if empty).   |Mandatory* |
 |Group by                |Images may be left ungrouped, or can be grouped by Filename regex or Directory.|Mandatory |
-|Filename regex          |If Images are grouped by filename, the regex should indicate the order of the images: Regex to extract plate row, plate column and image index from the |image filename.|Mandatory
+|Filename regex          |If Images are grouped by filename, the regex should indicate the order of the images: Regex to extract plate row, plate column and image index from the image filename.|Mandatory
 |Regex test              |Used to test the regex settings. Enter your Image Name and see if the wells are recognized. in the regex test result|   |
-|Regex test result       |Result of the regex applied on the text given in the regex test field.| |
-|Notes                   |Some free text notes on the experiment.|              |
+|Z-Stack                 |Define how to handle Z-stacks in the images                      |Mandatory  |
+|T-Stack                 |Define how to handle T-stacks in the images                      |Mandatory  |
+|Well order              |If images are taken from in a (6, 12, 24, 96, 384) well format, the order of the images position in the well can be determined here.|Optional |
+|Plate size              |Size of the uses microscopy plate.                               |Optional|
+|Notes                   |Some free text notes on the experiment.                          |Optional|
 :::
 
 :::{caution}
@@ -85,40 +83,45 @@ To experiment with regular expressions, have a look at [regex101](https://regex1
 :::
 
 It is important to set the correct grouping options in combination with the correct filename regular expression.
-Based on these settings, ImageC performs calculations of the results during a running analysis.
-This dramatically improves the speed of report generation.
+Based on these settings, ImageC performs assignments of the results during a running analysis.
 However, if the grouping settings are wrong, these statistics will also be calculated in a wrong way.
 
-When grouping by {guilabel}`Foldername` or {guilabel}`Filename` is selected ImageC will pre-calculate the statistics based on the determined group.
-Average, Median, Min, Max, Standard deviation, Sum and Count are calculated for each group
-When opening a analysis result (see {doc}`dive into the tutorials <../starting/viewing>`) these pre-calculated values are loaded for a fluid and fast view.
+When grouping by {guilabel}`Foldername` or {guilabel}`Filename` is selected ImageC will calculate the statistics based on the determined group.
+When opening a analysis result (see {doc}`dive into the tutorials <../starting/viewing>`) these calculated values are loaded for a fluid and fast view.
 
-A change of the grouping settings after analysis is currently not supported by ImageC. If the grouping settings are changed the analysis has to be repeated.
+A change of the grouping settings after analysis is currently not supported by ImageC. 
+If the grouping settings are changed the analysis has to be repeated.
 
 
 The {guilabel}`Working Directory` should be set to the folder where the images to be analyzed are stored.
 ImageC will perform a recursive folder search with the selected {guilabel}`Working Directory` as the base folder to find all supported image files.
-All found files are listed in the {guilabel}`Overview` panel.
+All found files are listed in the {guilabel}`Images` panel.
 
-(overview-panel)=
-## Overview Panel
+(images-panel)=
+## Images tab
 
-Once ImageC has been successfully launched and the new project wizard has been closed via the {guilabel}`Apply` button, the {guilabel}`Overview` panel is displayed.
+Once a working directory has been selected and the folder scan is complete, all the images found will be listed in the table located in the {guilabel}`Images` tab.
 
-```{figure} images/screenshot_overview.png
+```{figure} images/screenshot_images.png
 :class: full-image
 
-ImageC overview panel
+ImageC images tab
 ```
 
-The overview panel displays the options for analysis of a channel in the middle of the screen.
-With the {guilabel}`Add image channel` buttons,  new channels can be added.
+By clicking on an image the OME image information of the selected image is loaded and displayed in the properties table below.
+The image selected in this tab is also the image used in the pipeline preview.
 
-On the right hand side the parsed [OME](formats-ome) meta data from the selected image is shown.
+## Classification tab
 
-A list of all images found in the selected working directory is displayed in the bottom toolbar. If a BIG TIF image is used, the image is subsequently cut into smaller tiles and the single tiles are displayed next to the image. 
+Once a working directory has been selected and the folder scan is complete, all the images found will be listed in the table located in the {guilabel}`Images` tab.
 
-## Adding a channel
+```{figure} images/screenshot_classification.png
+:class: full-image
+
+ImageC classification tab
+```
+
+## Pipeline tab
 
 By clicking {guilabel}`Add Image Channel` a new channel is added to the analysis settings.
 Up to 10 channels can be added.
