@@ -30,7 +30,7 @@ ImageC start screen
 
 The Settings tab on the left is divided into the following sections {guilabel}`Project`, {guilabel}`Classification`, {guilabel}`Pipeline`, {guilabel}`Images` and {guilabel}`Results`.
 
-(project-settings)=
+(project-tab)=
 ## Project tab
 
 Starting with the project settings, basic information about the experiment and the scientist conducting the experiment needs to be collected.
@@ -97,10 +97,15 @@ The {guilabel}`Working Directory` should be set to the folder where the images t
 ImageC will perform a recursive folder search with the selected {guilabel}`Working Directory` as the base folder to find all supported image files.
 All found files are listed in the {guilabel}`Images` panel.
 
-(images-panel)=
+(images-tab)=
 ## Images tab
 
 Once a working directory has been selected and the folder scan is complete, all the images found will be listed in the table located in the {guilabel}`Images` tab.
+
+By clicking on an image the OME image information of the selected image is loaded and displayed in the properties table below.
+The image selected in this tab is also the image used in the pipeline preview.
+
+To the top a search field allows to filter the images in the list against its filename.
 
 ```{figure} images/screenshot_images.png
 :class: full-image
@@ -108,12 +113,10 @@ Once a working directory has been selected and the folder scan is complete, all 
 ImageC images tab
 ```
 
-By clicking on an image the OME image information of the selected image is loaded and displayed in the properties table below.
-The image selected in this tab is also the image used in the pipeline preview.
-
+(classification-tab)=
 ## Classification tab
 
-Once a working directory has been selected and the folder scan is complete, all the images found will be listed in the table located in the {guilabel}`Images` tab.
+First before creating pipelines and starting the analysis the object clusters and classes must be defined.
 
 ```{figure} images/screenshot_classification.png
 :class: full-image
@@ -121,65 +124,80 @@ Once a working directory has been selected and the folder scan is complete, all 
 ImageC classification tab
 ```
 
+Clusters and classes are used to scope the detected objects needed for a later on statists generation.
+ImageC allows to either define own clusters and classes or to load a preset of clusters and classes from a template.
+
+As a best practice clusters represents the image channel the object was extracted from and classes the different object types.
+For a quick start the {guilabel}`Fluorescence microscopy` template can be selected.
+To edit a loaded preset the option {guilabel}`New from template` can be used.
+
+(pipeline-tab)=
 ## Pipeline tab
 
-By clicking {guilabel}`Add Image Channel` a new channel is added to the analysis settings.
-Up to 10 channels can be added.
-All predefined EVAnalyzer pipelines are included in this version. 
+Within the pipeline tab the image processing pipelines can be managed.
+ImageC has no limit in the number of pipelines which can be added to a project.
+During a analyzes run each pipeline is processed.
+Pipeline dependencies are automatically resolved by ImageC.
+
+By clicking {guilabel}`Add pipeline ...` a drop down with predefined analyzing pipelines is opened.
+All past EVAnalyzer pipelines are included in this version, marked with the small EV icon to the left. 
 Select {guilabel}`EV channel` for loading a pipeline (preprocessing, object filtering, detection) optimized for EV quantification from single vesicle imaging images with low background. 
 Select {guilabel}`Cell brightfield` for loading a pipeline (preprocessing, object filtering, detection) optimized for cell detection on brightfields images.
 Select {guilabel}`Nucleus` for loading a pipeline (preprocessing, object filtering, detection) optimized for nucleus detection after fluorescent labelling of the nuclei (e.g. Hoechst, DAPI).
 Select {guilabel}`EV in cell` for loading a pipeline (preprocessing, object filtering, detection) optimized for EV quantification in complex material like cells.
-Select 
+Use the {guilabel}`Empty pipeline` option to start with an empty pipeline.
 
-```{figure} images/screenshot_add_channel.png
+```{figure} images/screenshot_pipelines.png
 :class: full-image
 
 Setting with one added channel
 ```
 
-When the analysis is started, each defined channels of all images found in the working directory are processed.Non defined channels are not processed.
-The results for each channel are stored in a file based database with the extension {file}`.duckdb` for later reporting generation and statistics.
+By clicking on a pipeline, the pipeline editor is opened.
+On the left hand side the input and output options can be defined.
+The input of a pipeline can either be an image channel or an empty image.
+The output cluster and class define which cluster and class objects detected within this pipeline should be assigned to by default.
+However this option can be overridden within a pipeline step if necessary.
 
-By clicking on a channel, the channel editor is opened.
-The channel editor allows to specify channel meta data, preprocessing steps, detection settings as well as filters for objects and images.
+The {guilabel}`Pipeline steps` box contains all commands which are applied on the input image.
+All steps are performed from top to bottom.
+Each step can take either an image or a set of objects as input and either an image or a new set of objects as output.
+Based on the used command either the image is processed, objects are extracted or objects are processed.
+The colour bar next to the command indicates the type of command.
 
-```{figure} images/screenshot_channel_editor.png
+Gray commands manipulate images, white command work on binary images and green commands work on objects.
+Translation commands translate the output from one input type to an other output type.
+For example, a threshold command translates an image (grey) into a binary image (white) and an object classification command translates a binary image (white) into objects (green).
+
+```{figure} images/screenshot_pipeline_editor.png
 :class: full-image
 
 Channel editor
 ```
 
 
-Defined template settings are stored as JSON template files and stored in the {file}`./templates` directory beside the ImageC binary.
 
-At the right hand side a live preview is displayed.
-It shows the resulting object detection after all applied preprocessing steps and filters.
-Changing a parameter will directly change the preview, enabling a fast and easy adjustment and fine-tuning of the settings. A live object count is displayed at the bottom of the image.
+A live preview is displayed on the right.
+It shows the resulting object detection after all applied pipelines steps.
+Changing a parameter will directly change the preview, enabling a fast and easy adjustment and fine-tuning of the settings. 
+A live object count is displayed at the bottom of the image.
 Based on image size and the complexity of the selected preprocessing algorithms it could take a couple of seconds for refreshing the preview.
 The preview can additionally be zoomed in and out and a second window with the original image and the processed image side by side further enables smooth detection setting. 
 
 :::{hint}
-See the section [Channels](channels-and-slots) for detailed information about the channel settings parameter.
+See the section [Pipeline steps](pipeline-steps) for detailed information about the available pipeline steps and their behavior.
 :::
 
 ## Starting the analysis
 
-With the back button on the top left the overview panel is displayed again.
-After all channels are added and all needed channel settings are done, the analysis can be started by pressing the {{icon_play}} button on the top.
+After all pipelines are created, the analysis can be started by pressing the {{icon_play}} button on the top.
 
-```{figure} images/screenshot_running.png
-:class: small-image
-
-Analysis running
-```
 
 A dialogue box informs you about the progress of the analysis.
-At the bottom right of the dialog a {guilabel}`Open results folder` button is placed.
+At the bottom left of the dialog a {guilabel}`Open results folder` button is placed.
 Press this button to open the file explorer showing the folder with results of the actual analysis run.
 
 With {guilabel}`Stop` button a running analysis can be interrupted.
 It may take a couple of minutes to stop a running analysis since all still in progress tasks have to be finished.
 
 Press the {guilabel}`Close` button to close the dialog after a successful finished analysis run.
-
