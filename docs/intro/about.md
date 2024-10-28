@@ -3,10 +3,9 @@
 
 **ImageC is open source software for high throughput bioimage analysis.**
 
-```{figure} images/screenshot_channels.png
+```{figure} images/screenshot_open_pipeline.png
 :class: full-image
 ```
-
 
 ImageC is often used for **single vesicle quantification** applications because it offers a powerful set of templates optimized for working the **EV field** - but it can be applied to lots of other kinds of image and applications as well.
 
@@ -16,14 +15,13 @@ ImageC is often used for **single vesicle quantification** applications because 
 - [OME-XML support](https://docs.openmicroscopy.org/) {{icon_ome}} 
 - Support of cross channel measurements
 - Database based result processing
-- XLSX report generation                
-- Unlimited image size (e.g. histological)                                    
-- Support for big tiff                                     
-- AI based object detection                                
-- Heatmap generation              
+- XLSX data export
+- R data export
+- Support for histological images (big tiff support)                                   
+- AI based object detection
+- Heatmap generation
 - Image density map generation
-- In image object marker                       
-- Built-in reporting tool
+- Built-in report generation and analyze tool
 - Side by side image comparison
 :::
 

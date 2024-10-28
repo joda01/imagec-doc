@@ -3,14 +3,11 @@
 
 ## Image files
 
-ImageC can be used with a wide range of image formats, thanks to two essential open source libraries:
-
-- **Bio-formats**: <https://docs.openmicroscopy.org/bio-formats>
-- **libTIFF**: <https://gitlab.com/libtiff/libtiff>
+ImageC can be used with a wide range of image formats, thanks to the open source library **Bio-formats**: <https://docs.openmicroscopy.org/bio-formats> which is shipped together with application.
 
 
-:::{important}
-ImageC is actually designed to read only greyscale images in either 8-bit or 16-bit format.
+:::{note}
+ImageC is actually designed to read greyscale images in either 8-bit or 16-bit format or RGB colored images.
 :::
 
 :::{sidebar} BigTIFF
@@ -18,8 +15,8 @@ In the event that exceptionally large images are to be processed in the manner t
 </br>
 The big tiff file format breaks the the 4 gigabyte size limit in comparison to the normal tiff format.
 </br>
-BigTIFF images are usually split into tiles whereby a typical tile size is `256x256 px`.
-When analyzing, ImageC opens `36` tiles at once and analyses one such composite tile after another.
+BigTIFF images are usually split into tiles whereby a typical tile size is `512x512 px`.
+When analyzing, ImageC opens in this example `64` tiles at once and analyses one such composite tile after another.
 This is necessary because when working with such large images, the entire image cannot be loaded into RAM at once.
 
 ```{figure} images/tiles.drawio.svg
@@ -28,23 +25,20 @@ This is necessary because when working with such large images, the entire image 
 
 :::
 
-Based on the file extension, ImageC decides whether to use BioFormats or the built-in tiff loader to open the image.
-Images using the extension `.tif, .tiff, .btif, .btiff, .btf` are loaded using the built-in tiff loader.
-For all other image file extensions (`.vsi, .ics, .czi`) the BioFormats plugin is used.
-
 Pictures with a resolution greater than `8466x8466 px` will not be loaded all at once, but will be attempted to be loaded tile by tile.
+ImageC loads more than one image tile at a time and builds composite tiles.
+This is done to reduce the number of edges in a large image when it is sliced into tiles.
 
-Tile based image loading is only supported for bigTIFF images with file extension `.btif, .btiff, .btf`.
+ImageC allows you to immediately see the pipeline settings that have been made by providing a live preview of the images.
+However, it is not possible to preview a hole image that is larger than the available RAM, and it would also take a long time to generate the preview.
+For this reason, ImageC only shows the preview of one composite tile at a time to reduce the amount of RAM required and to increase the preview generation time.
+To allow navigation within such a large image, jumping from tile to tile, ImageC generates a map of the entire image showing the currently selected composite tile.
 
-BioFormats [command line tools](https://www.openmicroscopy.org/bio-formats/downloads/) can be used to convert your imaged to tiled bigTiff if necessary.
+Using the pyramid image function, the navigation map is generated using an image with a lower resolution than the original image.
+This means that the prerequisite for the preview generation of large images is that they are saved as a pyramid image.
 
-- Download bftools from <https://www.openmicroscopy.org/bio-formats/downloads/>
-- Execute `bfconvert -pyramid-scale 4 -tilex 512 -tiley 512 <input_image> <output_image>.btf`
-
-In addition many microscopy malefactors support big tiff export out of the box using the microscopy software itself.
-
-:::{caution}
-It should be noted that support for pyramid-scaled images is not yet available in ImageC, although this is currently being developed. To ensure compatibility with future versions, it is recommended that all images with pyramid scaling be converted.
+:::{note}
+When working with large images, be sure to save them as a pyramid image to take advantage of ImageC's full preview functionality.
 :::
 
 (formats-ome)=
