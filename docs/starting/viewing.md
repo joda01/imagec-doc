@@ -1,37 +1,56 @@
 (viewing-results)=
 # Viewing results
 
-To view the results go back to the start screen using the {guilabel}`House` button at the top left in the toolbar.
-On the start screen use {guilabel}`Open Results` and navigate to the {file}`imagec` results folder selecting the {file}`results.duckdb` file.
+To view the results, switch to the {guilabel}`Results` tab, the results of the most recent analyses will be displayed at the top of the list.
+Results from a previous run can be opened by clicking the {guilabel}`Open` button on the toolbar.
 
 ## Plate view
 
-ImageC opens the `Plate` view panel per default showing the results as heatmap.
-Plate size can be selected in the {guilabel}`Heatmap` sidebar to the left.
+ImageC opens the `Plate` view panel per default showing an empty table.
+To add a column click the add column button {{icon_addcolumn}}.
 
-```{figure} images/screenshot_plate_view.png
-:class: full-image
 
-Plate view
+```{figure} images/screenshot_add_column.png
+:class: small-image
+
+Add a new column
 ```
 
-The plate view displays the Mean values and standard deviation as determined from all individual images taken in the respective well/ group. Image grouping is predefined in {guilabel}`Group by` settings.
-If {guilabel}`Ungrouped` was selected as {guilabel}`Group by` method, all data are summarized to the well `A1`.
+The add column dialog allows to specify which data should be shown within this column.
+Repeat the process for each data you are interested in.
+Finally the statistics of the selected data grouped by well is displayed.
 
-The left sidebar enables to select "Channel, measurement and statistics" that should be displayed in the well plate.
+```{figure} images/screenshot_plate_view_table.png
+:class: full-image
 
-The right-hand sidebar shows information about the selected well.
+Plate view as table
+```
+
+The plate view displays the Mean values as determined from all individual images taken in the respective well/ group. 
+Image grouping is predefined in {guilabel}`Group by` settings.
+If {guilabel}`Ungrouped` was selected as {guilabel}`Group by` method, the plate view is not shown and ImageC directly jumps to the image list view.
+
+Using the heatmap button {{icon_heatmap}} the view can be switched from a table view to a heatmap view.
+
+```{figure} images/screenshot_plate_view_heatmap.png
+:class: full-image
+
+Plate view as heatmap
+```
+
+
 
 Wells are coloured using a  heatmap calculated from all data displayed, with the mean value of all wells as the centre of the spectrum and the minimum and maximum as the outer left and outer right limits of the spectrum.
+In heatmap view a dropdown in the toolbar allows to select which column of the table should be displayed as heatmap.
 
-## Well view
+## Image view
 
-A double click on a well will prompt the opening of a detailed view of the selected well.
+A double click on a well in the heatmap view or a column in the table view will prompt the opening of a detailed view of the selected well.
 
 ```{figure} images/screenshot_well_view.png
 :class: full-image
 
-Well view
+Image view
 ```
 
 :::{sidebar} Well order matrix
@@ -46,38 +65,32 @@ This results in the following screen sequence for the example above.
 
 :::
 
-The {guilabel}`Well view` displays each image of the well ordered by the image index specified in the {guilabel}`Well order` matrix.
+The {guilabel}`Image view` displays each image of the well ordered by the image index specified in the {guilabel}`Well order` matrix.
 The image index was extracted from the filename during the analysis using the specified regex.
 To reorder the image position displayed in the well view matrix use the {guilabel}`Well order` settings field.
 
-If images are to be excluded from the statistics, this can be done via the menu item {guilabel}`Mark as invalid`.
+If images are to be excluded from the statistics, this can be done via the exclude menu item {{icon_unavailable}}.
 As invalid marked images are crossed out and are not taken into account in all subsequent calculations.
 
-## Image view
+## Density map view
 
-To go one step deeper, looking into detail information about a single image, double click on an image in the {guilabel}`Well view`.
+To go one step deeper, looking into detail information about a single image, double click on an image in the {guilabel}`Image view`.
 
-The image view presents a density map of the image.
-By default a are size of `200px 200px` is used to calculate the density map.
-ImageC calculates the average value of the selected measurement of all valid objects within this `200px 200px` squares.
+The density view presents a density map of the image.
+In the bottom left sidebar the are size to b used for calculate the density map can be chosen.
+ImageC calculates the average value of the selected measurement of all valid objects within this squares.
 
 The square size can be changed using the left hand side panel.
 Be careful though, if the square size is too small for large images, you may run out of RAM.
 
-```{figure} images/screenshot_image_view.png
+```{figure} images/screenshot_density_view.png
 :class: full-image
 
 Image view
 ```
 
-ImageC allows you to inspect a selected density map square in the original image by double-clicking on these squares.
-You are asked to enter a filename for the exported image, which is shown afterwards.
-This exported image shows the selected area, making it easy to analyze the image in detail.
+(data-export)=
+## Data export
 
-```{figure} images/screenshot_image_zoom.png
-:class: small-image
-
-Image details
-```
-
-
+The Download button {{icon_download}} allows the current settings to be exported as either XLSX or R.
+ImageC saves the actual table settings with the database file so that they are restored the next time the results are opened.

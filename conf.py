@@ -113,9 +113,9 @@ myst_substitutions = {
     "icon_info": '<img src="../images/icons/icons8-info-50-circle.png" class="inline-icon" />',
     "tool_info": '<img src="../images/icons/icons8-info-50-circle.png" class="tool-icon" />',
 
-    "play": '<img src="../images/icons/icons8-play-50.png" />',
-    "icon_play": '<img src="../images/icons/icons8-play-50.png" class="inline-icon" />',
-    "tool_play": '<img src="../images/icons/icons8-play-50.png" class="tool-icon" />',
+    "play": '<img src="../images/icons/icons8-play-96.png" />',
+    "icon_play": '<img src="../images/icons/icons8-play-96.png" class="inline-icon" />',
+    "tool_play": '<img src="../images/icons/icons8-play-96.png" class="tool-icon" />',
 
 
     "bioformats": '<img src="../images/icons/omero-features-icons_bio-formats.svg" />',
@@ -131,6 +131,21 @@ myst_substitutions = {
     "icon_externallink": '<img src="../images/icons/icons8-external-link-50.png" class="inline-icon" />',
     "tool_externallink": '<img src="../images/icons/icons8-external-link-50.png" class="tool-icon" />',
 
+    "addcolumn": '<img src="../images/icons/icons8-add-column-96.png" />',
+    "icon_addcolumn": '<img src="../images/icons/icons8-add-column-96.png" class="inline-icon" />',
+    "tool_addcolumn": '<img src="../images/icons/icons8-add-column-96.png" class="tool-icon" />',
+
+    "heatmap": '<img src="../images/icons/icons8-heat-map-96.png" />',
+    "icon_heatmap": '<img src="../images/icons/icons8-heat-map-96.png" class="inline-icon" />',
+    "tool_heatmap": '<img src="../images/icons/icons8-heat-map-96.png" class="tool-icon" />',
+
+    "unavailable": '<img src="../images/icons/icons8-unavailable-96.png" />',
+    "icon_unavailable": '<img src="../images/icons/icons8-unavailable-96.png" class="inline-icon" />',
+    "tool_unavailable": '<img src="../images/icons/icons8-unavailable-96.png" class="tool-icon" />',
+
+    "download": '<img src="../images/icons/icons8-download-96.png" />',
+    "icon_download": '<img src="../images/icons/icons8-download-96.png" class="inline-icon" />',
+    "tool_download": '<img src="../images/icons/icons8-download-96.png" class="tool-icon" />',
 
 
     "max_channels": "10",

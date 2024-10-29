@@ -5,7 +5,6 @@
 
 first_steps
 viewing
-export
 help
 
 :::
