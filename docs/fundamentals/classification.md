@@ -5,8 +5,8 @@ The concept behind ImageC is to run pipelines containing image pre-processing an
 For each extracted object the origin information: image, image channel, z-stack and t-stack are stored.
 In Advanced, objects need to be classified for object statistics calculation and later quantification.
 
-For classification ImageC provides the labels {guilabel}`Clusters` and  {guilabel}`Classes`.
-Every object is assigned to exact one cluster and class.
+For classification ImageC provides the annotations {guilabel}`Cluster` and {guilabel}`Class`.
+Every object is annotated with exact one cluster and one class.
 
 
 (clusters-and-classes)=
@@ -32,27 +32,8 @@ However ImageC also allows to create own presets which can be shared with others
 It is recommended to use pre-defined classification presets to allow later comparison of results from different runs by different people.
 :::
 
-(image-channels)=
-## Image channels
+## Class hierarchy
 
-:::{sidebar} Image plane
-
-An image may comprise one or more C (channels), with each channel in turn consisting of a series of T (time) stacks, and these in turn consisting of a series of Z stacks.
-
-The combination channel, Z stack (z) and time stack (t) is called image plane.
-ImageC is able to process each image plane of an image, based on the taken project and pipeline settings.
-
-
-```{image} images/image_channels.drawio.svg
-:class: full-image
-```
-
-:::
-
-
-ImageC is able to process every channel of an image based on the settings taken in the {guilabel}`Project` tab and the pipeline.
-However it is possible to either process each Z stack image individually or using a projection algorithm to combine all images of a Z stack to a single stack image.
-For the time stack it is either possible to analyze exact one image of a T stack or to analyze the whole time series.
-
-The image plane information is stored with each object extracted from that plane.
-If a Z-projection is used, the Z-stack index is always assumed to be 0.
+For the future it is planned to allow class hierarchies.
+Class hierarchies should address the need of a more fine granular classification of objects without loosing the scope.
+Statistical questions like: Give me the number of found cells! or Give me the number of found hec cells! are possible then.
