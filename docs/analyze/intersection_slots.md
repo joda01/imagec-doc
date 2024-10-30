@@ -31,7 +31,7 @@ If 100% of the area is intersecting the factor is 1.
 (intersection-meta)=
 ## Meta
 
-Similar to the [image channels](image-channels) a user defined name can be set for the channel.
+Similar to the [image channels](pipelines) a user defined name can be set for the channel.
 
 Using the {guilabel}`Channel index` the slot index `[A-F]` which should be associated with this channel can be selected.
 Each slot channel index can only be used once and is needed for a unique identification of the channel.

@@ -1,5 +1,5 @@
-(image-channels)=
-# Image channels
+(pipelines)=
+# Pipelines
 
 Clicking on an image channel in the {guilabel}`Overview panel` opens the Image Channel Settings panel.
 

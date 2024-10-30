@@ -147,7 +147,11 @@ myst_substitutions = {
     "icon_download": '<img src="../images/icons/icons8-download-96.png" class="inline-icon" />',
     "tool_download": '<img src="../images/icons/icons8-download-96.png" class="tool-icon" />',
 
+    "bookmark": '<img src="../images/icons/icons8-bookmark-96.png" />',
+    "icon_bookmark": '<img src="../images/icons/icons8-bookmark-96.png" class="inline-icon" />',
+    "tool_bookmark": '<img src="../images/icons/icons8-bookmark-96.png" class="tool-icon" />',
 
-    "max_channels": "10",
-    "max_slots": "6"
+
+
+    "max_classes": "65535",
 }

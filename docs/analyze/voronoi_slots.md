@@ -21,7 +21,7 @@ Voronoi diagrams can be useful for approximating cell surfaces based on known ce
 (voronoi-meta)=
 ## Meta
 
-Similar to the [image channels](image-channels) a user defined name can be set for the channel.
+Similar to the [image channels](pipelines) a user defined name can be set for the channel.
 
 Using the {guilabel}`Channel index` the slot index `[A-F]` which should be associated with this channel can be selected.
 Each slot channel index can only be used once and is needed for a unique identification of the channel.
@@ -60,7 +60,7 @@ The intersection of the calculated Voronoi grid with the cell area channel resul
 
 ## Object filter
 
-Similarly, the application of object filters to the [image channels](image-channels) it is also a possibility for voronoi slots.
+Similarly, the application of object filters to the [image channels](pipelines) it is also a possibility for voronoi slots.
 Object filter in voronoi slots are applied to the calculated Voronoi diagram areas.
 Beside the option to exclude voronoi diagram areas based on its size two more advanced options, {guilabel}`Exclude areas at the edges` and {guilabel}`Exclude areas without center` are available.
 

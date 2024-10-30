@@ -23,7 +23,7 @@ Use the [decision aid](decision-aid) to get a feeling if ImageC meets your requi
 
 docs/intro/index
 docs/starting/index
-docs/pipelines/index
+docs/analyze/index
 docs/advanced/index
 :::
 

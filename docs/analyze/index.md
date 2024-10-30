@@ -1,10 +1,10 @@
-# Pipelines
+# Analyze
 
 :::{toctree}
 :maxdepth: 3
 
-channels_and_slots
-image_channels
+classification
+pipelines
 voronoi_slots
 intersection_slots
 :::
