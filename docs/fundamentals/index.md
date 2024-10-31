@@ -4,8 +4,10 @@
 :maxdepth: 3
 
 classification
-pipelines
 images
-voronoi_slots
-intersection_slots
+pipelines
+commands_image_processing
+commands_object_classification
+commands_object_detection
+commands_object_postprocessing
 :::
