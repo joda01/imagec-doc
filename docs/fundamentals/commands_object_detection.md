@@ -1,6 +1,7 @@
 (commands-object-detection)=
 # Object detection
 
+The aim of object detection is to convert a grey-scale image into a binary image in such a way that all background areas are converted to black and all areas of interest are converted to a value other than black.
 
 
 ## Threshold
@@ -45,34 +46,6 @@ In the event that an auto threshold algorithm is employed, it is strongly recomm
 This is to prevent the occurrence of false positive detection in images that lack objects, given that such images would otherwise be included in the analysis.
 :::
 
-(artificial-intelligence)=
-## Artificial intelligence
-
-In some cases, it may not be feasible to differentiate between the background and the signal based solely on intensity values.
-Images of unlabeled brightfield cells may be such an example for difficult to detect objects using just thresholds.
-
-:::{sidebar} AI models
-
-ImageC supports AI models in ONNX format.
-Compatible models can be downloaded from [imagec.org](https://imagec.org).
-A manual how to train your own model can be found in the advanced chapter, section [AI training](ai-training).
-
-:::
-
-In such use cases, ImageC permits the utilization of artificial intelligence models for object segmentation as an alternative to thresholding techniques.
-
-ImageC compatible models for object segmentation can be downloaded from [imagec.org](https://imagec.org) below the Download section.
-Copy the downloaded model to the {file}`./path/to/ImageC/models` folder.
-ImageC will load all models from this folder automatically on startup and provides them in the {guilabel}`AI model` dropdown for selection.
-
-In contrast to the threshold, a minimum probability is now specified.
-All detected object with a minimum probability higher than this value will be used.
-
-:::{note}
-AI based object segmentation is still in alpha phase.
-It is safe to use but not feature complete yet.
-:::
-
 
 ## Fine tuning
 
@@ -105,10 +78,30 @@ When using AI as detection method, watershed algorithm is not usually required.
 It is recommended that the watershed be activated only when necessary, as it is a highly complex algorithm that significantly reduces analysis time when activated.
 :::
 
-### Snap area
+### Overexposed threshold
 
-This can be the case when calculating the colocalization between objects in different channels if the channels are not 100% exactly on top of each other.
-For such use cases a snap area can be activated.
+:::{sidebar} Allowed threshold area
+The intensity value at the maximum of the histogram of the image multiplied by the {guilabel}`Threshold filter` defines the area of allowed threshold values for the image.
+If the min. threshold value is lower than the lowe bound of this area, the image id filtered out.
 
-A snap area is defined as a circle painted around an object, with the centre of mass of the object positioned at the centre of the circle.
-It extends the object area with this circle in case of colocalization calculation. 
+```{figure} images/threshold_histogram_filter.drawio.svg
+:class: full-image
+```
+
+:::
+
+To get comparable results in one experiment, it is common to use the same manual threshold value for all images.
+Nevertheless, given the considerable range of exposure times for images, it is possible that the selected threshold value may prove insufficient for some images.
+This leads to a kind of overexposed image after the threshold, in which the background is erroneously recognized as a signal.
+
+To filter out images that are affected by this problem, ImageC offers a  {guilabel}`Threshold filter` filter.
+In the event that the selected threshold value is less than the value observed at the maximum of the image histogram, multiplied by the aforementioned factor, the filter is applied.
+
+
+%### Snap area
+
+%This can be the case when calculating the colocalization between objects in different channels if the channels are not 100% exactly on top of each other.
+%For such use cases a snap area can be activated.
+
+%A snap area is defined as a circle painted around an object, with the centre of mass of the object positioned at the centre of the circle.
+%It extends the object area with this circle in case of colocalization calculation. 
