@@ -26,14 +26,19 @@ Predefined sets of commonly used classification settings can be loaded instead o
 Each pre-defined classification set supplied with ImageC contains a unique ID stored with the set.
 Any run performed with a classification set using the same ID can be compared.
 
-However ImageC also allows to create own presets which can be shared with others using the {{icon_bookmark}} menu.
+(classification-presets)=
+## Presets
+
+ImageC also allows to create classification presets by selecting a preset from the drop down in the {guilabel}`Classification` tab.
+A classification preset is a set of predefined clusters and classes which can be loaded and shared with others.
+The idea behind a preset is making results easier comparable by using the same nomenclator for each analysis.
+For that reason the editing of class and cluster name is locked when a preset is selected.
+
+Using the {{icon_bookmark}} menu allows to create a new preset from an existing (removing the lock) and saving new presets based on the actual taken settings.  
+
+Each preset provided by ImageC is identified by an unique identifier which is stored together with the preset.
+This UID allows to reload the correct preset when settings are loaded.
 
 :::{note}
 It is recommended to use pre-defined classification presets to allow later comparison of results from different runs by different people.
 :::
-
-## Class hierarchy
-
-For the future it is planned to allow class hierarchies.
-Class hierarchies should address the need of a more fine granular classification of objects without loosing the scope.
-Statistical questions like: Give me the number of found cells! or Give me the number of found hec cells! are possible then.
