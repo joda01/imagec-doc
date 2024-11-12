@@ -16,4 +16,6 @@ Image processing commands get an image as input and have a manipulated image as 
 :maxdepth: 3
 
 command_color_filter
+command_rolling_ball
+command_blur
 :::
