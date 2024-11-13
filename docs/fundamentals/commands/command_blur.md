@@ -10,12 +10,16 @@ Or more simply, when each pixel in the output image is a function of the nearby 
 
 
 
-```{figure} images/blur_kernerl.drawio.svg
+```{figure} images/blur_kernel.drawio.svg
 :class: full-image
 ```
 
 https://en.wikipedia.org/wiki/Kernel_(image_processing)
 :::
+
+```{figure} images/blur_screenshot.png
+:class: tiny-image
+```
 
 Blur algorithms are used to reduce image noise and details.
 

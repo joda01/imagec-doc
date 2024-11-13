@@ -13,6 +13,9 @@ The rolling-ball algorithm was inspired by Stanley Sternberg’s article, “Bio
 
 :::
 
+```{figure} images/rolling_ball_screenshot.png
+:class: tiny-image
+```
 
 The rolling ball algorithm is a background subtraction algorithm, with the goal to remove most of the background noise.
 

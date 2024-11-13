@@ -23,11 +23,9 @@ Wikipedia: https://de.wikipedia.org/wiki/HSV-Farbraum#/media/Datei:HSV_cone.png
 
 :::
 
-
 ```{figure} images/screenshot_command_color_filter.png
 :class: small-image
 ```
-:::
 
 If the input image is an RGB 8-bit color image, the color image must first be converted to a grey scale image.
 This conversion is done by the color filter command.
