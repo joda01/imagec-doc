@@ -14,3 +14,7 @@ You're free to reuse it, but we'd ask that you attribute the source -- and prefe
 
 Additionally, the icons used in ImageC are exported as PNG for use in the docs.
 Most are original, but some are free icons from [icons8](https://icons8.de/).
+
+---
+
+Thanks to the team of the AG Meisner-Kober at the University of Salzburg who initiated the project from their own users and actively supported the realization and testing.
