@@ -33,6 +33,10 @@ The histogram of the image is displayed in the left image pane.
 Set the minimum threshold value to the smallest intensity value of the signal (most left value after the signal in the histogram) as a good starting point.
 :::
 
+:::{hint}
+See also section [threshold filter](command-threshold-filter).
+:::
+
 ## Maximum threshold
 
 Using a minimum thresholds sets the minimum signal intensity to segment an object.
@@ -64,10 +68,11 @@ Multiple thresholds are assigned to threshold classes, allowing different object
 Using a manual threshold applies the same threshold for all images of your set.
 
 If the exposure ratios of the images are very different, it is possible that no uniform threshold value can be found for all images.
-You can choose one of ImageC's auto-threshold algorithms for this.
-The selected algorithm attempts to identify a minimum threshold value through the analysis of statistical properties inherent to the image in question. The precise methodology employed is contingent upon the specific algorithm utilized.  
+You can choose one of ImageC's provided auto-threshold algorithms for this.
+The selected algorithm attempts to identify a minimum threshold value through the analysis of statistical properties inherent to the image in question. 
+The precise methodology employed is contingent upon the specific algorithm utilized.  
 
-### Handling control images without objects
+### Minimum threshold in combination with auto threshold
 
 Auto thresholds can be effective if the preprocessing steps are sufficiently robust in removing background noise.
 However it is a common practice in research to include control images devoid of any objects as samples.

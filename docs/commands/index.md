@@ -29,4 +29,6 @@ The aim of object segmentation is to convert a grey-scale image into a binary im
 :maxdepth: 3
 
 command_threshold
+command_watershed
+command_threshold_filter
 :::
