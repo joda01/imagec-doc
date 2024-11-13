@@ -13,7 +13,7 @@ Image processing commands get an image as input and have a manipulated image as 
 :::
 
 :::{toctree}
-:maxdepth: 3
+:maxdepth: 2
 
 command_color_filter
 command_rolling_ball
@@ -26,7 +26,7 @@ command_blur
 The aim of object segmentation is to convert a grey-scale image into a binary image in such a way that all background areas are converted to black and all areas of interest are converted to a value other than black.
 
 :::{toctree}
-:maxdepth: 3
+:maxdepth: 2
 
 command_threshold
 command_watershed
@@ -47,7 +47,7 @@ See chapter [classification](classification) for understanding the fundamentals.
 :::
 
 :::{toctree}
-:maxdepth: 3
+:maxdepth: 2
 
 command_classifier
 command_classifier_ai
