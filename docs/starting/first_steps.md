@@ -141,10 +141,10 @@ Pipeline dependencies are automatically resolved by ImageC.
 
 By clicking {guilabel}`Add pipeline ...` a drop down with predefined analyzing pipelines is opened.
 All past EVAnalyzer pipelines are included in this version, marked with the small EV icon to the left. 
-Select {guilabel}`EV channel` for loading a pipeline (preprocessing, object filtering, detection) optimized for EV quantification from single vesicle imaging images with low background. 
-Select {guilabel}`Cell brightfield` for loading a pipeline (preprocessing, object filtering, detection) optimized for cell detection on brightfields images.
-Select {guilabel}`Nucleus` for loading a pipeline (preprocessing, object filtering, detection) optimized for nucleus detection after fluorescent labelling of the nuclei (e.g. Hoechst, DAPI).
-Select {guilabel}`EV in cell` for loading a pipeline (preprocessing, object filtering, detection) optimized for EV quantification in complex material like cells.
+Select {guilabel}`EV channel` for loading a pipeline (preprocessing, object filtering, segmentation) optimized for EV quantification from single vesicle imaging images with low background. 
+Select {guilabel}`Cell brightfield` for loading a pipeline (preprocessing, object filtering, segmentation) optimized for cell segmentation on brightfields images.
+Select {guilabel}`Nucleus` for loading a pipeline (preprocessing, object filtering, segmentation) optimized for nucleus segmentation after fluorescent labelling of the nuclei (e.g. Hoechst, DAPI).
+Select {guilabel}`EV in cell` for loading a pipeline (preprocessing, object filtering, segmentation) optimized for EV quantification in complex material like cells.
 Use the {guilabel}`Empty pipeline` option to start with an empty pipeline.
 
 ```{figure} images/screenshot_pipelines.png
@@ -178,11 +178,11 @@ Channel editor
 
 
 A live preview is displayed on the right.
-It shows the resulting object detection after all applied pipelines steps.
+It shows the resulting object segmentation after all applied pipelines steps.
 Changing a parameter will directly change the preview, enabling a fast and easy adjustment and fine-tuning of the settings. 
 A live object count is displayed at the bottom of the image.
 Based on image size and the complexity of the selected preprocessing algorithms it could take a couple of seconds for refreshing the preview.
-The preview can additionally be zoomed in and out and a second window with the original image and the processed image side by side further enables smooth detection setting. 
+The preview can additionally be zoomed in and out and a second window with the original image and the processed image side by side further enables smooth segmentation setting. 
 
 :::{hint}
 See the section [Pipeline steps](pipeline-steps) for detailed information about the available pipeline steps and their behavior.

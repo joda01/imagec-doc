@@ -2,7 +2,7 @@
 (command-rolling-ball)=
 # Rolling ball
 
-:::{sidebar} Thresholding
+:::{sidebar} Algorithm
 
 
 The rolling-ball algorithm was inspired by Stanley Sternberg’s article, “Biomedical Image Processing”, IEEE Computer, January 1983.

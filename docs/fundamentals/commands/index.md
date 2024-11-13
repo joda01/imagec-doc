@@ -6,7 +6,7 @@ Image processing commands work on [image planes](image-planes) manipulating the 
 ImageC provides a set of image processing algorithm for different use cases.
 
 In general, image preprocessing serves to minimize the image noise as far as possible (maximizing the signal-to-noise ratio) in order to enable separation between the background and the signal.
-An [object detection command](commands-object-detection) is issued after the image preprocessing.
+An [object segmentation command](commands-object-segmentation) is issued after the image preprocessing.
 
 :::{hint}
 Image processing commands get an image as input and have a manipulated image as output.
@@ -18,4 +18,15 @@ Image processing commands get an image as input and have a manipulated image as 
 command_color_filter
 command_rolling_ball
 command_blur
+:::
+
+(commands-object-segmentation)=
+## Object segmentation
+
+The aim of object segmentation is to convert a grey-scale image into a binary image in such a way that all background areas are converted to black and all areas of interest are converted to a value other than black.
+
+:::{toctree}
+:maxdepth: 3
+
+command_threshold
 :::

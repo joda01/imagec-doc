@@ -54,7 +54,7 @@ A command takes either an image plane or objects as input and returns a manipula
 In other words, based on the command category, the command either works on images or objects, or transforms an image into an object or vice versa.
 
 
-This brings us to four principal categories of commands: image processing commands (gray), object detection commands (white), object classification commands and object post-processing commands (green).
+This brings us to four principal categories of commands: image processing commands (gray), object segmentation commands (white), object classification commands and object post-processing commands (green).
 
 As not every sequence of commands is possible in a meaningful way, ImageC indicates which command can be connected to the previous one.
 
@@ -68,7 +68,7 @@ The goal of each pipeline is to extract regions of interest from an image input 
 ImageC provides a wide range of commands that can be used for this purpose.
 
 By clicking on the **--- + ---** button within the pipeline step section, the command selection dialog is opened.
-Commands are classified into four principal categories: image processing commands (gray), object detection commands (white), object classification commands and object post-processing commands (green).
+Commands are classified into four principal categories: image processing commands (gray), object segmentation commands (white), object classification commands and object post-processing commands (green).
 
 When opening the command selection dialogue, this dialogue shows all the available commands that can be used at this pipeline position.
 Double-click to insert the command.
@@ -81,7 +81,7 @@ Double-click to insert the command.
 A typical pipeline flow might look like this:
 
 1. First of all image processing commands are used to reduce the image noise as much as possible.
-2. Object detection commands are used to separate foreground from background by using threshold algorithms and convert the grey scale image to a binary image.
+2. Object segmentation commands are used to separate foreground from background by using threshold algorithms and convert the grey scale image to a binary image.
 3. In the next step an object classification command is used to extract region of interests from the grey scale image and classify them to objects.
 4. Object postprocessing and filter commands can be used to do further processing or filtering on the detected objects.
 

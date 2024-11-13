@@ -18,7 +18,7 @@ ImageC is often used for **single vesicle quantification** applications because 
 - XLSX data export
 - R data export
 - Support for histological images (big tiff support)                                   
-- AI based object detection
+- AI based object classification
 - Heatmap generation
 - Image density map generation
 - Built-in report generation and analyze tool

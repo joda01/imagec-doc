@@ -151,6 +151,16 @@ myst_substitutions = {
     "icon_bookmark": '<img src="../images/icons/icons8-bookmark-96.png" class="inline-icon" />',
     "tool_bookmark": '<img src="../images/icons/icons8-bookmark-96.png" class="tool-icon" />',
 
+    "external_link": '<img src="../../images/icons/icons8-external-link-96.png />',
+    "icon_external_link": '<img src="../../images/icons/icons8-external-link-96.png" class="inline-icon" />',
+    "tool_external_link": '<img src="../../images/icons/icons8-external-link-96.png" class="tool-icon" />',
+
+
+    "add": '<img src="../../images/icons/icons8-add-96.png />',
+    "icon_add": '<img src="../../images/icons/icons8-add-96.png" class="inline-icon" />',
+    "tool_add": '<img src="../../images/icons/icons8-add-96.png" class="tool-icon" />',
+
+
 
 
     "max_classes": "65535",

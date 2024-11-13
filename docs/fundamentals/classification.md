@@ -1,7 +1,7 @@
 (classification)=
 # Classification
 
-The concept behind ImageC is to run pipelines containing image pre-processing and object detection steps with the goal of extracting regions of interest from the input images.
+The concept behind ImageC is to run pipelines containing image pre-processing and object segmentation steps with the goal of extracting regions of interest from the input images.
 For each extracted object the origin information: image, image channel, z-stack and t-stack are stored.
 In Advanced, objects need to be classified for object statistics calculation and later quantification.
 
