@@ -49,6 +49,7 @@ Together with the minimum threshold, the maximum threshold can be used either fo
 A object is only segmented if the signal value is between minimum threshold value and maximum threshold value.
 :::
 
+(command-threshold-threshold-classes)=
 ## Threshold classes
 
 In addition to only separating background and foreground using a minimum and maximum threshold, ImageC also allows more than one threshold to be applied to an image.

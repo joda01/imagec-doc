@@ -4,14 +4,7 @@
 
 ## Object filtering
 
-:::{sidebar} Circularity
-Circularity describes the roundness of an object, with a perfect circle having a circularity of `1`. 
-The circularity of an object is calculated as follows:
 
-```{math}
-c = \frac{4 \cdot pi \cdot AreaSize}{perimeter^2}
-```
-:::
 
 Despite all efforts in pre-processing and detection scribing, unwanted objects or noise artifacts can still remain.
 With the help of object filtering these objects can be removed.
