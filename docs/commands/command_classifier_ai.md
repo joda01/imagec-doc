@@ -1,13 +1,5 @@
-(commands-object-classification)=
-# Object classification
-
-(classifier)=
-## Classifier
-
-Used to extract and classify objects from a binary image containing regions of interest.
-
-(artificial-intelligence)=
-## Artificial intelligence
+(command-classifier-ai)=
+## AI classifier
 
 In some cases, it may not be feasible to differentiate between the background and the signal based solely on intensity values.
 Images of unlabeled brightfield cells may be such an example for difficult to detect objects using just thresholds.
