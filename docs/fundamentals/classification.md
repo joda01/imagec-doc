@@ -2,8 +2,8 @@
 # Classification
 
 The concept behind ImageC is to run pipelines containing image pre-processing and object segmentation steps with the goal of extracting regions of interest from the input images.
-For each extracted object the origin information: image, image channel, z-stack and t-stack are stored.
-In Advanced, objects need to be classified for object statistics calculation and later quantification.
+For each extracted [object](objects) the origin information: image, image channel, z-stack and t-stack are stored.
+In Advanced, [objects](objects) need to be classified for object statistics calculation and later quantification.
 
 For classification ImageC provides the annotations {guilabel}`Cluster` and {guilabel}`Class`.
 Every object is annotated with exact one cluster and one class.

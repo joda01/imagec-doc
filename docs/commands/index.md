@@ -18,6 +18,8 @@ Image processing commands get an image as input and have a manipulated image as 
 command_color_filter
 command_rolling_ball
 command_blur
+command_intensity
+
 :::
 
 (commands-object-segmentation)=
@@ -31,6 +33,7 @@ The aim of object segmentation is to convert a grey-scale image into a binary im
 command_threshold
 command_watershed
 command_threshold_filter
+
 :::
 
 

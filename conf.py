@@ -102,7 +102,7 @@ html_logo = 'docs/images/imagec_128.png'
 
 html_favicon = 'docs/images/imagec.ico'
 
-release = '2.0.0-alpha.37'
+release = '2.0.0-alpha'
 version = '2.0.0-alpha'
 
 # myst_heading_anchors = 2

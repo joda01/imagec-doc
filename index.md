@@ -1,20 +1,24 @@
 :::{image} docs/images/imagec-banner.png
 :align: center
-:width: 75%
+:width: 30%
 :::
 
-:::{sidebar} New release online!
+:::{sidebar} Download
 **ImageC {{ env.config.release }}** is available at [https://joda01.github.io/imagec](https://joda01.github.io/imagec).
 
-See what's new in the [changelog](https://github.com/joda01/imagec/releases).
+For download and changelog follow the link [https://github.com/joda01/imagec/releases](https://github.com/joda01/imagec/releases)
 :::
 
 # Welcome to ImageC!
 
 This page hosts the documentation for **ImageC {{ env.config.version }}.x**.
 
-Start with [About ImageC](about-imagec) to get in touch.
+```{figure} images/screenshot_open_pipeline.png
+:class: small-image
+```
 
+ImageC is a feature rich high throughput image processing application designed for use in biological research.
+Start with [About ImageC](about-imagec) to get in touch.
 Use the [decision aid](decision-aid) to get a feeling if ImageC meets your requirements.
 
 :::{toctree}
