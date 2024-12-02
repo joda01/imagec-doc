@@ -19,7 +19,8 @@ command_color_filter
 command_rolling_ball
 command_blur
 command_intensity
-
+command_median_subtract
+command_edge_detection
 :::
 
 (commands-object-segmentation)=
