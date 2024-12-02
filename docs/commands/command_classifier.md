@@ -4,7 +4,7 @@
 :::{sidebar} Objects
 
 Objects are extracted from a binary image representing thee regions of interest of the image.
-For each extracted object a class and cluster is assigned and metrics are measured.
+For each extracted object a class is assigned and metrics are measured.
 Objects are stored to the resulting database and can be used in further pipeline steps.
 
 ```{figure} images/classifier.drawio.svg
@@ -18,7 +18,7 @@ Objects are stored to the resulting database and can be used in further pipeline
 :class: small-image
 ```
 
-The Classifier command is used to convert regions of interest, formally extracted from the image using a segmentation algorithm such as [Threshold](command-threshold), into objects, where each object is assigned to an object cluster and object class, and metrics are calculated for each object.
+The Classifier command is used to convert regions of interest, formally extracted from the image using a segmentation algorithm such as [Threshold](command-threshold), into objects, where each object is assigned to an object class, and metrics are calculated for each object.
 [Classified](classification) objects are stored to the resulting database and can be used in further object-processing steps.
 
 

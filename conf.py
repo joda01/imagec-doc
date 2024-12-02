@@ -160,7 +160,9 @@ myst_substitutions = {
     "icon_add": '<img src="../images/icons/icons8-add-96.png" class="inline-icon" />',
     "tool_add": '<img src="../images/icons/icons8-add-96.png" class="tool-icon" />',
 
-
+    "menu": '<img src="../images/icons/icons8-menu-96.png />',
+    "icon_menu": '<img src="../images/icons/icons8-menu-96.png" class="inline-icon" />',
+    "tool_menu": '<img src="../images/icons/icons8-menu-96.png" class="tool-icon" />',
 
 
     "max_classes": "65535",

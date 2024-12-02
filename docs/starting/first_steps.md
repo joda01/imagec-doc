@@ -5,7 +5,7 @@ The following tutorial will provide an overview of the fundamental concepts and 
 The tutorial will demonstrate the following:
 
 - Creating a new project
-- Defining clusters and classes
+- Defining classes
 - Adding pipelines
 - Starting an analyzes
 - Open analyzes results
@@ -116,7 +116,7 @@ ImageC images tab
 (classification-tab)=
 ## Classification tab
 
-First before creating pipelines and starting the analysis the object clusters and classes must be defined.
+First before creating pipelines and starting the analysis the object classes must be defined.
 
 ```{figure} images/screenshot_classification.png
 :class: full-image
@@ -124,10 +124,9 @@ First before creating pipelines and starting the analysis the object clusters an
 ImageC classification tab
 ```
 
-Clusters and classes are used to scope the detected objects needed for a later on statists generation.
-ImageC allows to either define own clusters and classes or to load a preset of clusters and classes from a template.
+Classes are used to scope the detected objects needed for a later on statists generation.
+ImageC allows to either define own classes or to load a preset of classes from a template.
 
-As a best practice clusters represents the image channel the object was extracted from and classes the different object types.
 For a quick start the {guilabel}`Fluorescence microscopy` template can be selected.
 To edit a loaded preset the option {guilabel}`New from template` can be used.
 
@@ -156,8 +155,6 @@ Setting with one added channel
 By clicking on a pipeline, the pipeline editor is opened.
 On the left hand side the input and output options can be defined.
 The input of a pipeline can either be an image channel or an empty image.
-The output cluster and class define which cluster and class objects detected within this pipeline should be assigned to by default.
-However this option can be overridden within a pipeline step if necessary.
 
 The {guilabel}`Pipeline steps` box contains all commands which are applied on the input image.
 All steps are performed from top to bottom.

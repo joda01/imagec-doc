@@ -5,36 +5,37 @@ The concept behind ImageC is to run pipelines containing image pre-processing an
 For each extracted [object](objects) the origin information: image, image channel, z-stack and t-stack are stored.
 In Advanced, [objects](objects) need to be classified for object statistics calculation and later quantification.
 
-For classification ImageC provides the annotations {guilabel}`Cluster` and {guilabel}`Class`.
-Every object is annotated with exact one cluster and one class.
+For classification ImageC provides the annotations {guilabel}`Class`.
+Every object is annotated with exact one class.
 
 
-(clusters-and-classes)=
-## Clusters and Classes
+(classes)=
+## Classes
 
-The first step before creating pipelines or starting the analysis is to define which clusters and classes are needed for object classification in your application.
-Both can be done at the {guilabel}`Classification` tab in the left sidebar.
+The first step before creating pipelines or starting the analysis is to define which classes are needed for object classification in your application.
+Use the {guilabel}`Classification` tab to make the classification settings.
 
 ```{figure} images/screenshot_classification.png
 :class: full-image
 Classification tab
 ```
 
-As a best practice, clusters should represent the image channels plus the necessary object pre-processing pipelines such as coloc.
-ImageC provides a preset functionality.
-Predefined sets of commonly used classification settings can be loaded instead of defining the clusters and groups yourself.
-Each pre-defined classification set supplied with ImageC contains a unique ID stored with the set.
-Any run performed with a classification set using the same ID can be compared.
+Double-clicking on a {guilabel}`Class` cell opens a dialog. 
+In addition to the color, the name for the class can be specified.
+Using the `@` symbol allows to group classes for a better reading in the selection tab.
+
+Instead of manually specifying all required classes, ImageC provides the ability to populate the classification settings from the image channel information.
+Open the menu {{icon_menu}} and use the {guilabel}`Populate classes from image channel` option to let ImageC try to extract the classification settings from an image. 
 
 (classification-presets)=
 ## Presets
 
 ImageC also allows to create classification presets by selecting a preset from the drop down in the {guilabel}`Classification` tab.
-A classification preset is a set of predefined clusters and classes which can be loaded and shared with others.
+A classification preset is a set of predefined classes which can be loaded and shared with others.
 The idea behind a preset is making results easier comparable by using the same nomenclator for each analysis.
-For that reason the editing of class and cluster name is locked when a preset is selected.
+For that reason the editing of class names is locked when a preset is selected.
 
-Using the {{icon_bookmark}} menu allows to create a new preset from an existing (removing the lock) and saving new presets based on the actual taken settings.  
+Using the {guilabel}`Save as template` option within the menu {{icon_menu}} allows to create a new preset from an existing (removing the lock) and saving new presets based on the actual taken settings.  
 
 Each preset provided by ImageC is identified by an unique identifier which is stored together with the preset.
 This UID allows to reload the correct preset when settings are loaded.

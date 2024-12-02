@@ -5,7 +5,7 @@
 Objects are the result of an image [classification step](commands-object-classification) and represents the quantified data of an formally extracted region of interest.
 Objects are the final part of an ImageC pipeline and are those elements which are finally stored to the results database.
 
-Each object is assigned to exact one object class and one object cluster (See [classification](Classification) section) to scope it.
+Each object is assigned to exact one object class (See [classification](Classification) section) to scope it.
 Together with the classification labels some object metrics are calculated.
 ImageC distinguishes between [image plane](image-planes) independent and [image plane](image-planes) dependent metrics.
 Image plane independent metrics are globally valid for the object whereby image plane dependent metrics are calculated based on the image pixel data.

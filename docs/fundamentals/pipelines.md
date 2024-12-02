@@ -41,8 +41,8 @@ Using a blank image is useful for use cases where you are working with objects f
 ## Pipeline output
 
 Some of the processing steps are used to extract objects from the input images.
-Each detected object is [classified](classification) by assigning to exact on cluster and class.
-The settings in this section allow you to specify the default cluster and class that will be used for each detected object, unless specified otherwise within a pipeline step.
+Each detected object is [classified](classification) by assigning to exact on class.
+The settings in this section allow you to specify the default class that will be used for each detected object, unless specified otherwise within a pipeline step.
 
 
 ## Pipeline steps
