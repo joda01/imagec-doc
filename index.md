@@ -1,41 +1,36 @@
 :::{image} docs/images/imagec-banner.png
 :align: center
-:width: 75%
+:width: 30%
 :::
 
-:::{sidebar} New release online!
-**imagec {{ env.config.release }}** is available at [https://joda01.github.io/imagec](https://joda01.github.io/imagec).
+:::{sidebar} Download
+**ImageC {{ env.config.release }}** is available at [https://joda01.github.io/imagec](https://joda01.github.io/imagec).
 
-See what's new in the [changelog](https://github.com/joda01/imagec/releases).
+For download and changelog follow the link [https://github.com/joda01/imagec/releases](https://github.com/joda01/imagec/releases)
 :::
 
-# Welcome to imagec!
+# Welcome to ImageC!
 
-This page hosts the documentation for **imagec {{ env.config.version }}.x**.
+This page hosts the documentation for **ImageC {{ env.config.version }}.x**.
 
-The latest release is [**imagec {{ env.config.release }}**](https://github.com/joda01/imagec/releases).
+```{figure} images/screenshot_open_pipeline.png
+:class: small-image
+```
 
-## Quick links
+ImageC is a feature rich high throughput image processing application designed for use in biological research.
+Start with [About ImageC](about-imagec) to get in touch.
+Use the [decision aid](decision-aid) to get a feeling if ImageC meets your requirements.
 
-Can't install imagec?
-: Check out {ref}`installation` for instructions & solutions to common problems
-
-Images won't open?
-: See {ref}`supported-image-formats` to find out which formats *should* work - and ways to increase this.
-
-Not sure where to begin?
-: See {ref}`first-steps` for a quick guide, before heading to {ref}`tutorials` for more details & videos
-
-Got more questions?
-: The [Scientific Community Image Forum](https://forum.image.sc/tag/imagec) is the best place to discuss imageC with users & developers
-
-
-```{toctree}
-:caption: 'Full contents:'
+:::{toctree}
+:caption: 'Contents:'
 :maxdepth: 2
 
 docs/intro/index
-```
+docs/starting/index
+docs/fundamentals/index
+docs/commands/index
+docs/advanced/index
+:::
 
 % Indices and tables
 

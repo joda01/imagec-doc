@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'EVAnalyzer2'
+project = 'ImageC'
 copyright = '2023-2024, Joachim Danmayr'
-author = 'imageC authors'
+author = 'ImageC authors'
 
 
 # -- General configuration ---------------------------------------------------
@@ -31,7 +31,7 @@ extensions = [
     'myst_parser',
     'sphinx_rtd_theme',
     'sphinx_design',
-    'sphinx.ext.autosectionlabel',
+    #'sphinx.ext.autosectionlabel',
     'sphinx_search.extension'
 ]
 
@@ -41,7 +41,7 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'old', 'README.md']
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -102,104 +102,68 @@ html_logo = 'docs/images/imagec_128.png'
 
 html_favicon = 'docs/images/imagec.ico'
 
-release = '1.0.0-alpha.103'
-version = '1.0.0-alpha.103'
+release = '2.0.0-alpha'
+version = '2.0.0-alpha'
 
 # myst_heading_anchors = 2
 
 myst_substitutions = {
 
-    "rectangle": '<img src="../images/icons/RECTANGLE_TOOL.png" />',
-    "icon_rectangle": '<img src="../images/icons/RECTANGLE_TOOL.png" class="inline-icon" />',
-    "tool_rectangle": '<img src="../images/icons/RECTANGLE_TOOL.png" class="tool-icon" />',
+    "info": '<img src="../images/icons/icons8-info-50-circle.png" />',
+    "icon_info": '<img src="../images/icons/icons8-info-50-circle.png" class="inline-icon" />',
+    "tool_info": '<img src="../images/icons/icons8-info-50-circle.png" class="tool-icon" />',
 
-    "ellipse": '<img src="../images/icons/ELLIPSE_TOOL.png" />',
-    "icon_ellipse": '<img src="../images/icons/ELLIPSE_TOOL.png" class="inline-icon" />',
-    "tool_ellipse": '<img src="../images/icons/ELLIPSE_TOOL.png" class="tool-icon" />',
+    "play": '<img src="../images/icons/icons8-play-96.png" />',
+    "icon_play": '<img src="../images/icons/icons8-play-96.png" class="inline-icon" />',
+    "tool_play": '<img src="../images/icons/icons8-play-96.png" class="tool-icon" />',
 
-    "line": '<img src="../images/icons/LINE_TOOL.png" />',
-    "icon_line": '<img src="../images/icons/LINE_TOOL.png" class="inline-icon" />',
-    "tool_line": '<img src="../images/icons/LINE_TOOL.png" class="tool-icon" />',
 
-    "polygon": '<img src="../images/icons/POLYGON_TOOL.png" />',
-    "icon_polygon": '<img src="../images/icons/POLYGON_TOOL.png" class="inline-icon" />',
-    "tool_polygon": '<img src="../images/icons/POLYGON_TOOL.png" class="tool-icon" />',
+    "bioformats": '<img src="../images/icons/omero-features-icons_bio-formats.svg" />',
+    "icon_bioformats": '<img src="../images/icons/omero-features-icons_bio-formats.svg" class="inline-icon" />',
+    "tool_bioformats": '<img src="../images/icons/omero-features-icons_bio-formats.svg" class="tool-icon" />',
 
-    "polyline": '<img src="../images/icons/POLYLINE_TOOL.png" />',
-    "icon_polyline": '<img src="../images/icons/POLYLINE_TOOL.png" class="inline-icon" />',
-    "tool_polyline": '<img src="../images/icons/POLYLINE_TOOL.png" class="tool-icon" />',
+    "ome": '<img src="../images/icons/ome.png" />',
+    "icon_ome": '<img src="../images/icons/ome.png" class="inline-icon" />',
+    "tool_ome": '<img src="../images/icons/ome.png" class="tool-icon" />',
 
-    "brush": '<img src="../images/icons/BRUSH_TOOL.png" />',
-    "icon_brush": '<img src="../images/icons/BRUSH_TOOL.png" class="inline-icon" />',
-    "tool_brush": '<img src="../images/icons/BRUSH_TOOL.png" class="tool-icon" />',
 
-    "wand": '<img src="../images/icons/WAND_TOOL.png" />',
-    "icon_wand": '<img src="../images/icons/WAND_TOOL.png" class="inline-icon" />',
-    "tool_wand": '<img src="../images/icons/WAND_TOOL.png" class="tool-icon" />',
+    "externallink": '<img src="../images/icons/icons8-external-link-50.png" />',
+    "icon_externallink": '<img src="../images/icons/icons8-external-link-50.png" class="inline-icon" />',
+    "tool_externallink": '<img src="../images/icons/icons8-external-link-50.png" class="tool-icon" />',
 
-    "points": '<img src="../images/icons/POINTS_TOOL.png" />',
-    "icon_points": '<img src="../images/icons/POINTS_TOOL.png" class="inline-icon" />',
-    "tool_points": '<img src="../images/icons/POINTS_TOOL.png" class="tool-icon" />',
+    "addcolumn": '<img src="../images/icons/icons8-add-column-96.png" />',
+    "icon_addcolumn": '<img src="../images/icons/icons8-add-column-96.png" class="inline-icon" />',
+    "tool_addcolumn": '<img src="../images/icons/icons8-add-column-96.png" class="tool-icon" />',
 
-    "move": '<img src="../images/icons/MOVE_TOOL.png" />',
-    "icon_move": '<img src="../images/icons/MOVE_TOOL.png" class="inline-icon" />',
-    "tool_move": '<img src="../images/icons/MOVE_TOOL.png" class="tool-icon" />',
+    "heatmap": '<img src="../images/icons/icons8-heat-map-96.png" />',
+    "icon_heatmap": '<img src="../images/icons/icons8-heat-map-96.png" class="inline-icon" />',
+    "tool_heatmap": '<img src="../images/icons/icons8-heat-map-96.png" class="tool-icon" />',
 
-    "selection_mode": '<img src="../images/icons/SELECTION_MODE.png" />',
-    "icon_selection_mode": '<img src="../images/icons/SELECTION_MODE.png" class="inline-icon" />',
-    "tool_selection_mode": '<img src="../images/icons/SELECTION_MODE.png" class="tool-icon" />',
+    "unavailable": '<img src="../images/icons/icons8-unavailable-96.png" />',
+    "icon_unavailable": '<img src="../images/icons/icons8-unavailable-96.png" class="inline-icon" />',
+    "tool_unavailable": '<img src="../images/icons/icons8-unavailable-96.png" class="tool-icon" />',
 
-    "help": '<img src="../images/icons/HELP.png" />',
-    "icon_help": '<img src="../images/icons/HELP.png" class="inline-icon" />',
-    "tool_help": '<img src="../images/icons/HELP.png" class="tool-icon" />',
+    "download": '<img src="../images/icons/icons8-download-96.png" />',
+    "icon_download": '<img src="../images/icons/icons8-download-96.png" class="inline-icon" />',
+    "tool_download": '<img src="../images/icons/icons8-download-96.png" class="tool-icon" />',
 
-    "log": '<img src="../images/icons/LOG_VIEWER.png" />',
-    "icon_log": '<img src="../images/icons/LOG_VIEWER.png" class="inline-icon" />',
-    "tool_log": '<img src="../images/icons/LOG_VIEWER.png" class="tool-icon" />',
+    "bookmark": '<img src="../images/icons/icons8-bookmark-96.png" />',
+    "icon_bookmark": '<img src="../images/icons/icons8-bookmark-96.png" class="inline-icon" />',
+    "tool_bookmark": '<img src="../images/icons/icons8-bookmark-96.png" class="tool-icon" />',
 
-    "grid": '<img src="../images/icons/GRID.png" />',
-    "icon_grid": '<img src="../images/icons/GRID.png" class="inline-icon" />',
+    "external_link": '<img src="../images/icons/icons8-external-link-96.png />',
+    "icon_external_link": '<img src="../images/icons/icons8-external-link-96.png" class="inline-icon" />',
+    "tool_external_link": '<img src="../images/icons/icons8-external-link-96.png" class="tool-icon" />',
 
-    "measure": '<img src="../images/icons/MEASURE.png" />',
-    "icon_measure": '<img src="../images/icons/MEASURE.png" class="inline-icon" />',
 
-    "table": '<img src="../images/icons/TABLE.png" />',
-    "icon_table": '<img src="../images/icons/TABLE.png" class="inline-icon" />',
+    "add": '<img src="../images/icons/icons8-add-96.png />',
+    "icon_add": '<img src="../images/icons/icons8-add-96.png" class="inline-icon" />',
+    "tool_add": '<img src="../images/icons/icons8-add-96.png" class="tool-icon" />',
 
-    "cog": '<img src="../images/icons/COG.png" />',
-    "icon_cog": '<img src="../images/icons/COG.png" class="inline-icon" />',
+    "menu": '<img src="../images/icons/icons8-menu-96.png />',
+    "icon_menu": '<img src="../images/icons/icons8-menu-96.png" class="inline-icon" />',
+    "tool_menu": '<img src="../images/icons/icons8-menu-96.png" class="tool-icon" />',
 
-    "annotations": '<img src="../images/icons/ANNOTATIONS.png" />',
-    "icon_annotations": '<img src="../images/icons/ANNOTATIONS.png" class="inline-icon" />',
 
-    "detections": '<img src="../images/icons/DETECTIONS.png" />',
-    "icon_detections": '<img src="../images/icons/DETECTIONS.png" class="inline-icon" />',
-
-    "annotations_fill": '<img src="../images/icons/ANNOTATIONS_FILL.png" />',
-    "icon_annotations_fill": '<img src="../images/icons/ANNOTATIONS_FILL.png" class="inline-icon" />',
-
-    "detections_fill": '<img src="../images/icons/DETECTIONS_FILL.png" />',
-    "icon_detections_fill": '<img src="../images/icons/DETECTIONS_FILL.png" class="inline-icon" />',
-
-    "tma_grid": '<img src="../images/icons/TMA_GRID.png" />',
-    "icon_tma_grid": '<img src="../images/icons/TMA_GRID.png" class="inline-icon" />',
-
-    "screenshot": '<img src="../images/icons/SCREENSHOT.png" />',
-    "icon_screenshot": '<img src="../images/icons/SCREENSHOT.png" class="inline-icon" />',
-
-    "extract_image": '<img src="../images/icons/EXTRACT_REGION.png" />',
-    "icon_extract_image": '<img src="../images/icons/EXTRACT_REGION.png" class="inline-icon" />',
-
-    "contrast": '<img src="../images/icons/CONTRAST.png" />',
-    "icon_contrast": '<img src="../images/icons/CONTRAST.png" class="inline-icon" />',
-
-    "play": '<img src="../images/icons/PLAYBACK_PLAY.png" />',
-    "icon_play": '<img src="../images/icons/PLAYBACK_PLAY.png" class="inline-icon" />',
-
-    "stop": '<img src="../images/icons/TRACKING_STOP.png" />',
-    "icon_stop": '<img src="../images/icons/TRACKING_STOP.png" class="inline-icon" />',
-
-    "record": '<img src="../images/icons/TRACKING_RECORD.png" />',
-    "icon_record": '<img src="../images/icons/TRACKING_RECORD.png" class="inline-icon" />',
-
+    "max_classes": "65535",
 }

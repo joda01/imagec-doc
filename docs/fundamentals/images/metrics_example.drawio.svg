@@ -1,0 +1,15 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="239px" height="198px" viewBox="-0.5 -0.5 239 198" content="&lt;mxfile&gt;&lt;diagram id=&quot;N9a4vOC8iUMlzsIX3KuC&quot; name=&quot;Page-1&quot;&gt;3ZdLb+MgEMc/TY61eBuOfe9hV4qUw7anFY1pjNYxESZNup9+Ica1cdKmz0vjKIJhzDDz/5ngCT5fbq+tXJW/TKGqCQLFdoIvJghxKvxvMDy2BgKjYWF10Zpgb5jpfyoaQbSudaGaxNEZUzm9So1zU9dq7hKbtNZsUrd7U6VRV3Kh9gyzuaz2rb914cqYBeODgR9KL8oYGmMQV76UnXc0NKUszGZgwpcTfG6NcW1ruT1XVSheV5j2vqtnRp8WYFXtXnMDam94kNU6JhfX5R67bK1Z14UK/mCCzzaldmq2kvMwuvHyelvplpXvQd+811V1bipjfb82tXc6K2RT7m4P442z5q/qPCYI89NwRbepdE7ZeueLAHry76ocLPsZxqQflHVqOzDFjK+VWSpnH71LHCWdHJE/RHnb3/RqIpy3tnIgJMQRVBkJWjzN3dfYN2KZD5c8P17ykIr2vP2Ud6qamkY7bUJV7oxzZumL0DmcVnoRBpwZ6eC5WoXJlttFeASzO9noeWbu3LpRf5zVsl5UO3FCSUAGiW9b42QMdALpSEwv1SULV7TP4mrn1jTNSSndvPwkcdBIHAz2xekETMSh4OPi4OPiqLo4DZtIT/ig7mqr3U18VEL7dtC+CBkinoHkQ7rRkG/Ioe1OldV+9cp2E9Q+k5th53bY2c0NQd8Ps+W0645ne/mZFCIs7CU5VZHskPtiDsSiB7TqbFZVHrmHdF89pF+MMDXar6RnhYmMM5IzzrngOYM4QQcLloFcEMARFIBBhtMAjVnbuYpzDjfJURg6QhIDmk7kpF0otzfRDranoryKP/JR/jpM4BATmGCSQgKeY+QoypCMUEZDlFv4DpD8XdjDLBMY4JwLLCABJEUE5Zn/WyF+OOccMk7ehx7zUfweASD0XypYGoTCjDJEsX8QIEEcfhWV9LOofGnz2v0H9VzGrfBdZIIhiM/tqN+FQ4AzIagIOyD3GKLx0SbzEBKWU8xpjsA7OaQUedoJ5j4UyDFLo+AcZxwBkQNMACJEfBWI7BUgVpV/D1DHj6qyWbUvB/d6GzgYH3ekP2Wg3THI1G5gv999DjHDro4x84ZjkBBpiQ8cg+ChU9DbD0G+279wtKL0r2348j8=&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs>
+        <pattern patternUnits="userSpaceOnUse" width="15.75" height="15.75" x="0" y="0" patternTransform="rotate(45)" id="mx-pattern-cross-hatch-1-e6e6e6-0">
+            <rect x="0" y="0" width="15.75" height="15.75" stroke="#e6e6e6" stroke-width="0.5" fill="none"/>
+        </pattern>
+    </defs>
+    <g>
+        <rect x="1" y="51" width="237" height="139" fill="none" stroke="#8a8a8a" stroke-width="2" stroke-dasharray="2 4" pointer-events="all"/>
+        <path d="M 49 173 L 21 23 L 221 173 Z" fill="url(#mx-pattern-cross-hatch-1-e6e6e6-0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" transform="rotate(-15,121,98)" pointer-events="all"/>
+        <path d="M 70.86 189.08 L 121 98" fill="none" stroke="#990000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"/>
+        <path d="M 37.93 120.26 L 237 144.56" fill="none" stroke="#990000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"/>
+        <path d="M 5 51.44 L 153.93 166.82" fill="none" stroke="#990000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"/>
+        <ellipse cx="105" cy="128" rx="5" ry="5" fill="#a20025" stroke="#6f0000" pointer-events="all"/>
+    </g>
+</svg>
