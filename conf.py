@@ -164,6 +164,9 @@ myst_substitutions = {
     "icon_menu": '<img src="../images/icons/icons8-menu-96.png" class="inline-icon" />',
     "tool_menu": '<img src="../images/icons/icons8-menu-96.png" class="tool-icon" />',
 
+    "eva": '<img src="../images/icon_eva.png />',
+    "icon_eva": '<img src="../images/icon_eva.png" class="inline-icon" />',
+    "tool_eva": '<img src="../images/icon_eva.png" class="tool-icon" />',
 
     "max_classes": "65535",
 }
