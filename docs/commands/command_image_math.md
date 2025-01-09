@@ -2,12 +2,13 @@
 (command-image-math)=
 # Image math
 
-:::{sidebar} Edge detection
+:::{sidebar} Pixel operations
 
-Edge detection is the process of finding edges in an image and converting them to a gradient representation.
-Sharper changes in the intensity values lead to a higher gradient.
+An image is represented as a matrix of pixel intensity values.
+When calculating with images a matrix operation is performed which uses the pixel value at `(n,m)` from both matrixes and applying the operator on that.
+The resulting matrix after applying the operator on all elements of the matrix is the resulting image.
 
-```{figure} images/edge_detection.drawio.svg
+```{figure} images/image_math.drawio.svg
 :class: full-image
 ```
 
@@ -16,3 +17,8 @@ Sharper changes in the intensity values lead to a higher gradient.
 ```{figure} images/image_math_screenshot.png
 :class: tiny-image
 ```
+
+The image math command can be used to combine two images using one of the provided mathematical operations.
+Input image one is the image from the last pipeline step, the second image is the image configured in the {guilabel}`Input image channel` settings.
+For the second image either an image channel can be used or an image stored in the cache from a previous pipeline.
+If {guilabel}`From cache` is not {guilabel}`None` the channel settings are ignored and the image from the selected cache slot is loaded.

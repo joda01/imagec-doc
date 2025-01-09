@@ -21,6 +21,8 @@ command_blur
 command_intensity
 command_median_subtract
 command_edge_detection
+command_image_math
+command_store_to_cache
 :::
 
 (commands-object-segmentation)=
