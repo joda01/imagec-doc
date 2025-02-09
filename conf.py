@@ -164,6 +164,14 @@ myst_substitutions = {
     "icon_menu": '<img src="../images/icons/icons8-menu-96.png" class="inline-icon" />',
     "tool_menu": '<img src="../images/icons/icons8-menu-96.png" class="tool-icon" />',
 
+    "refresh": '<img src="../images/icons/icons8-refresh-96.png />',
+    "icon_refresh": '<img src="../images/icons/icons8-refresh-96.png" class="inline-icon" />',
+    "tool_refresh": '<img src="../images/icons/icons8-refresh-96.png" class="tool-icon" />',
+
+    "open": '<img src="../images/icons/icons8-open-96.png />',
+    "icon_open": '<img src="../images/icons/icons8-open-96.png" class="inline-icon" />',
+    "tool_open": '<img src="../images/icons/icons8-open-96.png" class="tool-icon" />',
+
     "eva": '<img src="../images/icon_eva.png />',
     "icon_eva": '<img src="../images/icon_eva.png" class="inline-icon" />',
     "tool_eva": '<img src="../images/icon_eva.png" class="tool-icon" />',
