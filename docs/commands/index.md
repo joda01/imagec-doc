@@ -15,14 +15,14 @@ Image processing commands get an image as input and have a manipulated image as 
 :::{toctree}
 :maxdepth: 2
 
-command_color_filter
-command_rolling_ball
-command_blur
-command_intensity
-command_median_subtract
-command_edge_detection
-command_image_math
-command_store_to_cache
+command-color-filter
+command-rolling-ball
+command-blur
+command-intensity
+command-median-subtract
+command-edge-detection
+command-image-math
+command-store-to-cache
 :::
 
 (commands-object-segmentation)=
@@ -33,9 +33,9 @@ The aim of object segmentation is to convert a grey-scale image into a binary im
 :::{toctree}
 :maxdepth: 2
 
-command_threshold
-command_watershed
-command_threshold_filter
+command-threshold
+command-watershed
+command-threshold-filter
 
 :::
 
@@ -55,6 +55,6 @@ See chapter [classification](classification) for understanding the fundamentals.
 :::{toctree}
 :maxdepth: 2
 
-command_classifier
-command_classifier_ai
+command-classifier
+command-classifier-ai
 :::

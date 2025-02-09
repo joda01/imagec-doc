@@ -8,13 +8,13 @@ ImageC cache is reserved place in the RAM of the computer.
 Storing an image to the cache stores the actual image to this place in RAM.
 Other commands can load these images from the RAM in an efficient way and apply further processing steps on it.
 
-```{figure} images/store_to_cache.drawio.svg
+```{figure} images/store-to-cache.drawio.svg
 :class: full-image
 ```
 
 :::
 
-```{figure} images/image_math_screenshot.png
+```{figure} images/image-math-screenshot.png
 :class: tiny-image
 ```
 

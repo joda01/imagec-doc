@@ -15,7 +15,7 @@ Every object is annotated with exact one class.
 The first step before creating pipelines or starting the analysis is to define which classes are needed for object classification in your application.
 Use the {guilabel}`Classification` tab to make the classification settings.
 
-```{figure} images/screenshot_classification.png
+```{figure} images/screenshot-classification.png
 :class: full-image
 Classification tab
 ```

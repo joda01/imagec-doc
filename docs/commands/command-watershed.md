@@ -12,7 +12,7 @@ Based on peaks extracted from the intensity values the valleys between the peaks
 
 :::
 
-```{figure} images/watershed_screenshot.png
+```{figure} images/watershed-screenshot.png
 :class: tiny-image
 ```
 

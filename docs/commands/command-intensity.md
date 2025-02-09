@@ -23,7 +23,7 @@ Step 4: Map the pixel values from the equalization map
 
 :::
 
-```{figure} images/intensity_screenshot.png
+```{figure} images/intensity-screenshot.png
 :class: tiny-image
 ```
 

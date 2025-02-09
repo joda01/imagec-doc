@@ -4,7 +4,7 @@
 :maxdepth: 2
 
 installation
-first_steps
+first-steps
 viewing
 help
 

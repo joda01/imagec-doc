@@ -7,13 +7,13 @@
 
 The rolling-ball algorithm was inspired by Stanley Sternberg’s article, “Biomedical Image Processing”, IEEE Computer, January 1983.
 
-```{figure} images/rolling_ball_reseacrh_gate.jpeg
+```{figure} images/rolling-ball-reseacrh-gate.jpeg
 :class: full-image
 ```
 
 :::
 
-```{figure} images/rolling_ball_screenshot.png
+```{figure} images/rolling-ball-screenshot.png
 :class: tiny-image
 ```
 

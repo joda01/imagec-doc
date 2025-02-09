@@ -16,14 +16,14 @@ Instead of storing the color information using red, green, blue, in HSV format a
 Using HSV allows more easy to filter e.g. all blue tones from an image.
 ImageC is using HSV color format for that reason when working with colored images.
 
-```{figure} images/wikipedia_hsv_color_tone.png
+```{figure} images/wikipedia-hsv-color-tone.png
 :class: small-image
 Wikipedia: https://de.wikipedia.org/wiki/HSV-Farbraum#/media/Datei:HSV_cone.png
 ```
 
 :::
 
-```{figure} images/screenshot_command_color_filter.png
+```{figure} images/screenshot-command-color-filter.png
 :class: small-image
 ```
 

@@ -18,7 +18,7 @@ The choice of position determines the type of ranking filter. With ascending sor
 
 :::
 
-```{figure} images/median_subtract_screenshot.png
+```{figure} images/median-subtract-screenshot.png
 :class: tiny-image
 ```
 

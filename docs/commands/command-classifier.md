@@ -14,7 +14,7 @@ Objects are stored to the resulting database and can be used in further pipeline
 :::
 
 
-```{figure} images/classifier_screenshot.png
+```{figure} images/classifier-screenshot.png
 :class: small-image
 ```
 

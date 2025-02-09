@@ -1,5 +1,5 @@
 (command-classifier-ai)=
-## AI classifier
+# AI classifier
 
 :::{sidebar} AI prediction
 
@@ -7,13 +7,13 @@ The image plane is forwarded to a pre-trained AI model.
 The output is an prediction whereby each prediction is assigned to a output class and a confidence.
 Using the ImageC AI classifier the predicted output is transformed to classified objects.
 
-```{figure} images/classifier_ai.drawio.svg
+```{figure} images/classifier-ai.drawio.svg
 :class: full-image
 ```
 
 :::
 
-```{figure} images/classifier_ai_screenshot.png
+```{figure} images/classifier-ai-screenshot.png
 :class: tiny-image
 ```
 
@@ -36,7 +36,7 @@ When an image is fed to the AI model, the result is a prediction of objects, wit
 ImageC AI classifier providers a filter tab for each possible output class of the AI model.
 Using these filter tabs, it is now possible to assign the prediction to an ImageC object class, in addition to applying some pre-filtering.
 
-### Class threshold
+## Class threshold
 
 The class threshold is a probability value from in the range of zero to one, with one stands for 100%.
 Once the image was processed by the AI net, a matrix of probabilities is created.
@@ -44,14 +44,14 @@ One of these probabilities is the probability that a detected object can be assi
 
 With the class threshold it is possible to define the minimum probability a detected object must have to be identified as object of a class. 
 
-### Mask threshold
+## Mask threshold
 
 In the addition to the probability of being a specific object the probabilities of the object borders are also part of the resulting probability matrix.
 The mask threshold defines the minimum probability of a pixel value needed to assign this pixel value to a specific object.
 
 Higher mask probability values lead to a more accurate shape of the object.
 
-### Probability handicap
+## Probability handicap
 
 :::{warning}
 This is an experimental feature.

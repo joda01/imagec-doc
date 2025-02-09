@@ -10,7 +10,7 @@ Image preprocessing helps in advanced to reduce the background noise to get a sh
 ```
 :::
 
-```{figure} images/threshold_screenshot.png
+```{figure} images/threshold-screenshot.png
 :class: tiny-image
 ```
 

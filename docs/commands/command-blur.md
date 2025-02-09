@@ -10,14 +10,14 @@ Or more simply, when each pixel in the output image is a function of the nearby 
 
 
 
-```{figure} images/blur_kernel.drawio.svg
+```{figure} images/blur-kernel.drawio.svg
 :class: full-image
 ```
 
 https://en.wikipedia.org/wiki/Kernel_(image_processing)
 :::
 
-```{figure} images/blur_screenshot.png
+```{figure} images/blur-screenshot.png
 :class: tiny-image
 ```
 

@@ -30,7 +30,7 @@ The number range is from zero to one.
 Red the centroid, gray the surrounding bounding box of the object.
 Hatched the are size of the object.
 
-```{image} images/metrics_example.drawio.svg
+```{image} images/metrics-example.drawio.svg
 :class: full-image
 ```
 :::

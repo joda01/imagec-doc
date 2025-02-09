@@ -8,13 +8,13 @@ An image is represented as a matrix of pixel intensity values.
 When calculating with images a matrix operation is performed which uses the pixel value at `(n,m)` from both matrixes and applying the operator on that.
 The resulting matrix after applying the operator on all elements of the matrix is the resulting image.
 
-```{figure} images/image_math.drawio.svg
+```{figure} images/image-math.drawio.svg
 :class: full-image
 ```
 
 :::
 
-```{figure} images/image_math_screenshot.png
+```{figure} images/image-math-screenshot.png
 :class: tiny-image
 ```
 

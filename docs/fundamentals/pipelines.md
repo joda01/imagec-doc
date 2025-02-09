@@ -3,7 +3,7 @@
 
 Clicking on an pipeline in the {guilabel}`Pipelines` tab opens the pipeline settings panel.
 
-```{figure} images/screenshot_open_pipeline.png
+```{figure} images/screenshot-open-pipeline.png
 :class: full-image
 ```
 
@@ -58,7 +58,7 @@ This brings us to four principal categories of commands: image processing comman
 
 As not every sequence of commands is possible in a meaningful way, ImageC indicates which command can be connected to the previous one.
 
-```{image} images/command_description.drawio.svg
+```{image} images/command-description.drawio.svg
 :class: full-image
 ```
 
@@ -74,7 +74,7 @@ When opening the command selection dialogue, this dialogue shows all the availab
 Double-click to insert the command.
 
 
-```{figure} images/screenshot_command_selection.png
+```{figure} images/screenshot-command-selection.png
 :class: small-image
 ```
 

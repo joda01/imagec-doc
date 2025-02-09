@@ -5,13 +5,13 @@
 The intensity value at the maximum of the histogram of the image multiplied by the {guilabel}`Threshold filter` defines the area of allowed threshold values for the image.
 If the min. threshold value is lower than the lowe bound of this area, the image id filtered out.
 
-```{figure} images/threshold_filter.drawio.svg
+```{figure} images/threshold-filter.drawio.svg
 :class: full-image
 ```
 
 :::
 
-```{figure} images/threshold_filter_screenshot.png
+```{figure} images/threshold-filter-screenshot.png
 :class: tiny-image
 ```
 

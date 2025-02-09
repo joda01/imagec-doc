@@ -9,7 +9,7 @@ The combination channel, Z stack (z) and time stack (t) is called image plane.
 ImageC is able to process each image plane of an image, based on the taken project and pipeline settings.
 
 
-```{image} images/image_channels.drawio.svg
+```{image} images/image-channels.drawio.svg
 :class: full-image
 ```
 
