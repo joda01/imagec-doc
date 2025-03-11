@@ -184,5 +184,13 @@ myst_substitutions = {
     "icon_save": '<img src="../images/icons/icons8-save-96.png" class="inline-icon" />',
     "tool_save": '<img src="../images/icons/icons8-save-96.png" class="tool-icon" />',
 
+    "history": '<img src="../images/icons/icons8-history-96.png />',
+    "icon_history": '<img src="../images/icons/icons8-history-96.png" class="inline-icon" />',
+    "tool_history": '<img src="../images/icons/icons8-history-96.png" class="tool-icon" />',
+
+    "tag": '<img src="../images/icons/icons8-tag-96.png />',
+    "icon_tag": '<img src="../images/icons/icons8-tag-96.png" class="inline-icon" />',
+    "tool_tag": '<img src="../images/icons/icons8-tag-96.png" class="tool-icon" />',
+
     "max_classes": "65535",
 }

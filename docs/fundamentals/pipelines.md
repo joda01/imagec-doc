@@ -86,5 +86,11 @@ A typical pipeline flow might look like this:
 4. Object postprocessing and filter commands can be used to do further processing or filtering on the detected objects.
 
 
+(pipeline-history)=
+## Pipeline history
 
+Using the {{icon_history}} button to open the pipeline history.
+The history list shows the last 64 changes taken in this pipeline.
+The History tab allows you to go back in time and restore a setting by double-clicking on an entry in the history.
 
+The tag {{icon_tag}} button can be used to mark the actual settings within the history, which allows an easy restore of these settings.
