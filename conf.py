@@ -176,5 +176,13 @@ myst_substitutions = {
     "icon_eva": '<img src="../images/icon_eva.png" class="inline-icon" />',
     "tool_eva": '<img src="../images/icon_eva.png" class="tool-icon" />',
 
+    "openedfolder": '<img src="../images/icons/icons8-opened-folder-96.png />',
+    "icon_openedfolder": '<img src="../images/icons/icons8-opened-folder-96.png" class="inline-icon" />',
+    "tool_openedfolder": '<img src="../images/icons/icons8-opened-folder-96.png" class="tool-icon" />',
+
+    "save": '<img src="../images/icons/icons8-save-96.png />',
+    "icon_save": '<img src="../images/icons/icons8-save-96.png" class="inline-icon" />',
+    "tool_save": '<img src="../images/icons/icons8-save-96.png" class="tool-icon" />',
+
     "max_classes": "65535",
 }
