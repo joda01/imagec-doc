@@ -18,10 +18,12 @@ Image processing commands get an image as input and have a manipulated image as 
 command-color-filter
 command-rolling-ball
 command-blur
+command-rank-filter
 command-intensity
 command-median-subtract
 command-edge-detection
 command-image-math
+command-morphological-transform
 command-store-to-cache
 :::
 

@@ -14,7 +14,7 @@ Other commands can load these images from the RAM in an efficient way and apply 
 
 :::
 
-```{figure} images/image-math-screenshot.png
+```{figure} images/store-image-to-cache-screenshot.png
 :class: tiny-image
 ```
 
@@ -22,9 +22,13 @@ The store image to cache command stores an actual image at any time to the cache
 Image cache allows using a preprocessed image as base for further preprocessing steps in an other pipeline or in the same pipeline in a future step.
 Possible applications might be to preprocess a background for subtraction and use this preprocessed background together with the image math subtract command in other pipelines to remove it.
 
-:::{note}
-Cache scope is the processing step of an image. For each image a separate cache storage is created.
-:::
+
+## Storage scope
+
+The storage scope defines either if the cached image is only available in the pipeline the command is used `Iteration` or if the stored image can also be used across different pipelines `Pipeline`.
+
+The memory slots `M0` to `M10` can be used twice once for `Iteration` and once for `Pipeline` cache.
+
 
 :::{note}
 Once an image is stored to the cache it is not edited any more. Loading from the cache creates a new local copy of the image and the pipeline is working on this local copy but not on the cached image.
