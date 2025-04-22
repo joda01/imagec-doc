@@ -62,7 +62,6 @@ c = \frac{4 \cdot pi \cdot AreaSize}{perimeter^2}
 
 ## Centroid
 
-
 The centroid is the geometrical center of an object.
 This is the average of the x and y coordinates of all of the pixels in an object.
 It's coordinates are calculated by the first order spatial moments.
@@ -72,7 +71,59 @@ c_x = \frac{m_{10}}{m_{00}}
 c_y = \frac{m_{01}}{m_{00}}
 ```
 
-
 ## Bounding box
 
 The bounding box is the smallest square which can be drawn to include all pixels of the object within the box.
+
+## Object ID
+
+During the object detection of a run, ImageC assigns an ID to each detected object, starting with `1` for the first detected object.
+This object ID is unique throughout the entire run, i.e. an object can be uniquely identified by this object ID.
+
+Using the {guilabel}`With object ID` option of the [Image save](command-image-save) allows to plot the ID beside the detected ROI in the image.
+Together with the results table, which also allows the ID to be displayed, each region of interest within the image can be matched to its measurements.
+
+
+(parent-object-id=)
+### Parent Object ID
+
+:::{sidebar} Object hierarchy
+An object hierarchy is built up by storing a parent object ID together with each object.
+This information can be used to draw a hierarchy graph of the objects, showing which objects are part of another.
+Use the intersection filter of the [Reclassify](command-reclassifier) command to build up such a hierarchy.
+
+```{image} images/object-hierarchy.drawio.svg
+:class: full-image
+```
+:::
+
+ImageC allows to build up a hierarchy of objects during a run using the [Reclassify](command-reclassifier) command.
+Once an object has been discovered and assigned to an object class, the command can be used to change this class based on some criteria.
+
+One of these criteria is the intersection of the object with an other one.
+When this option is used, ImageC stores the object ID of the intersecting object (the parent) as the parent object ID together with the object with which the intersection is to be calculated. 
+An object can have exact zero or one parent.
+
+### Origin Object ID
+
+Once an object is duplicated using the {guilabel}`Reclassify copy` option of the [Reclassify](command-reclassifier) command, the ID of the origin object is stored together with the duplicated object.
+The origin object ID keeps the same even if a duplicated object is again duplicated.
+
+## Tracking ID
+
+:::{sidebar} Object tracking
+Object tracking is the process of linking two objects, either from different time frames or channels, using the same tracking ID for all objects.
+This makes it possible to display objects from different sources that physically represent one object.
+
+```{image} images/object-tracking.drawio.svg
+:class: full-image
+```
+:::
+
+The Object ID identifies an object uniquely within a run and the parent object ID gives information about the hierarchy of the objects.
+The tracking ID, on the other hand, is used to link recognized objects that represent the same physical instance.
+
+Example for such "same physical instances" are colocalizing objects from different image channels or moving objects in two different time frames,
+In the actual version of ImageC, the colocalizing tracking is supported by using the [Colocalization](command-colocalization) command.
+
+When using the colocalizing command each object which colocalizes get the same tracking ID which allows later on to match those objects.

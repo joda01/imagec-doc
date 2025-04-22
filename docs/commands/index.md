@@ -59,4 +59,6 @@ See chapter [classification](classification) for understanding the fundamentals.
 
 command-classifier
 command-classifier-ai
+command-reclassify
+command-colocalization
 :::

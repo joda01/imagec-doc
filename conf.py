@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'ImageC'
-copyright = '2023-2024, Joachim Danmayr'
+copyright = '2019-2025, Joachim Danmayr'
 author = 'ImageC authors'
 
 
@@ -102,8 +102,8 @@ html_logo = 'docs/images/imagec_128.png'
 
 html_favicon = 'docs/images/imagec.ico'
 
-release = '2.0.0-alpha'
-version = '2.0.0-alpha'
+release = '1.0.0-beta'
+version = '1.0.0-beta'
 
 # myst_heading_anchors = 2
 
