@@ -3,11 +3,11 @@
 
 **ImageC a open source software for high throughput bioimage analysis**
 
-```{figure} images/screenshot_open_pipeline.png
+```{figure} images/screenshot-open-pipeline.png
 :class: full-image
 ```
 
-ImageC as a direct successor of [EVAnalyzer](https://github.com/joda01/evanalyzer) {{icon_eva}} provides an **easy to use graphical user interphase (GUI)** enabling the compilation of image processing pipelines for **Object detection and Quantification** from various types of microscopic images, particularly Brightfield images, fluorescence images and Histological images. 
+ImageC alias EVAnalyzer 2, the direct successor of [EVAnalyzer 1](https://github.com/joda01/evanalyzer) {{icon_eva}} provides an **easy to use graphical user interphase (GUI)** enabling the compilation of image processing pipelines for **Object detection and Quantification** from various types of microscopic images, particularly Brightfield images, fluorescence images and Histological images. 
 It was optimized within a group focused on nanovesicles and therefore offers a powerful set of templates optimized for **single vesicle quantification** in diverse in vitro and in vivo settings. 
 
 
