@@ -138,21 +138,21 @@ ImageC has no limit in the number of pipelines which can be added to a project.
 During a analyzes run each pipeline is processed.
 Pipeline dependencies are automatically resolved by ImageC.
 
-By clicking {guilabel}`Add pipeline ...` a drop down with predefined analyzing pipelines is opened.
+By clicking on the arrow beside the {guilabel}`New pipeline` button a drop down with predefined analyzing pipelines is opened.
 All past EVAnalyzer pipelines are included in this version, marked with the small EV icon to the left. 
 Select {guilabel}`EV channel` for loading a pipeline (preprocessing, object filtering, segmentation) optimized for EV quantification from single vesicle imaging images with low background. 
 Select {guilabel}`Cell brightfield` for loading a pipeline (preprocessing, object filtering, segmentation) optimized for cell segmentation on brightfields images.
 Select {guilabel}`Nucleus` for loading a pipeline (preprocessing, object filtering, segmentation) optimized for nucleus segmentation after fluorescent labelling of the nuclei (e.g. Hoechst, DAPI).
 Select {guilabel}`EV in cell` for loading a pipeline (preprocessing, object filtering, segmentation) optimized for EV quantification in complex material like cells.
-Use the {guilabel}`Empty pipeline` option to start with an empty pipeline.
+Just press the {guilabel}`New pipeline` button to start with an empty pipeline.
 
 ```{figure} images/screenshot_pipelines.png
 :class: full-image
 
-Setting with one added channel
+Add a new pipeline
 ```
 
-By clicking on a pipeline, the pipeline editor is opened.
+By double click on a pipeline, the pipeline editor is opened.
 On the left hand side the input and output options can be defined.
 The input of a pipeline can either be an image channel or an empty image.
 
@@ -160,7 +160,7 @@ The {guilabel}`Pipeline steps` box contains all commands which are applied on th
 All steps are performed from top to bottom.
 Each step can take either an image or a set of objects as input and either an image or a new set of objects as output.
 Based on the used command either the image is processed, objects are extracted or objects are processed.
-The colour bar next to the command indicates the type of command.
+The color bar next to the command indicates the type of command.
 
 Gray commands manipulate images, white command work on binary images and green commands work on objects.
 Translation commands translate the output from one input type to an other output type.
@@ -169,7 +169,7 @@ For example, a threshold command translates an image (grey) into a binary image 
 ```{figure} images/screenshot_pipeline_editor.png
 :class: full-image
 
-Channel editor
+Pipeline editor
 ```
 
 
@@ -177,7 +177,7 @@ Channel editor
 A live preview is displayed on the right.
 It shows the resulting object segmentation after all applied pipelines steps.
 Changing a parameter will directly change the preview, enabling a fast and easy adjustment and fine-tuning of the settings. 
-A live object count is displayed at the bottom of the image.
+A live object count is displayed in the legend of the preview image.
 Based on image size and the complexity of the selected preprocessing algorithms it could take a couple of seconds for refreshing the preview.
 The preview can additionally be zoomed in and out and a second window with the original image and the processed image side by side further enables smooth segmentation setting. 
 
