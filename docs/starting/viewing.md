@@ -1,12 +1,9 @@
 (viewing-results)=
 # Viewing results
 
-To view the results, switch to the {guilabel}`Results` tab, the results of the most recent analyses will be displayed at the top of the list.
-Results from a previous run can be opened by clicking the {guilabel}`Open` button on the toolbar.
+Results from a previous run can be opened by clicking the arrow beside the {guilabel}`Open` button on the toolbar.
 
-## Plate view
-
-ImageC opens the `Plate` view panel per default showing an empty table.
+ImageC allows to select which metrics/measurements should be shown.
 To add a column click the add column button {{icon_addcolumn}}.
 
 
@@ -16,9 +13,19 @@ To add a column click the add column button {{icon_addcolumn}}.
 Add a new column
 ```
 
-The add column dialog allows to specify which data should be shown within this column.
+The add column dialog allows to specify which data should be shown.
 Repeat the process for each data you are interested in.
-Finally the statistics of the selected data grouped by well is displayed.
+ImageC saves the actual table settings with the database file so that they are restored the next time the results are opened.
+
+:::{note}
+See section [Results](results) for a complete description of the available metrics.
+:::
+
+
+## Plate view
+
+ImageC opens the `Plate` view panel per default showing an empty table.
+
 
 ```{figure} images/screenshot_plate_view_table.png
 :class: full-image
@@ -93,4 +100,3 @@ Image view
 ## Data export
 
 The Download button {{icon_download}} allows the current settings to be exported as either XLSX or R.
-ImageC saves the actual table settings with the database file so that they are restored the next time the results are opened.

@@ -132,21 +132,21 @@ myst_substitutions = {
     "icon_externallink": '<img src="../images/icons/icons8-external-link-50.png" class="inline-icon" />',
     "tool_externallink": '<img src="../images/icons/icons8-external-link-50.png" class="tool-icon" />',
 
-    "addcolumn": '<img src="../images/icons/icons8-add-column-96.png" />',
-    "icon_addcolumn": '<img src="../images/icons/icons8-add-column-96.png" class="inline-icon" />',
-    "tool_addcolumn": '<img src="../images/icons/icons8-add-column-96.png" class="tool-icon" />',
+    "addcolumn": '<img src="../images/icons/edit-table-insert-column-right.svg" />',
+    "icon_addcolumn": '<img src="../images/icons/edit-table-insert-column-right.svg" class="inline-icon" />',
+    "tool_addcolumn": '<img src="../images/icons/edit-table-insert-column-right.svg" class="tool-icon" />',
 
     "heatmap": '<img src="../images/icons/icons8-heat-map-96.png" />',
     "icon_heatmap": '<img src="../images/icons/icons8-heat-map-96.png" class="inline-icon" />',
     "tool_heatmap": '<img src="../images/icons/icons8-heat-map-96.png" class="tool-icon" />',
 
-    "unavailable": '<img src="../images/icons/icons8-unavailable-96.png" />',
-    "icon_unavailable": '<img src="../images/icons/icons8-unavailable-96.png" class="inline-icon" />',
-    "tool_unavailable": '<img src="../images/icons/icons8-unavailable-96.png" class="tool-icon" />',
+    "unavailable": '<img src="../images/icons/gnumeric-autofilter-delete.svg" />',
+    "icon_unavailable": '<img src="../images/icons/gnumeric-autofilter-delete.svg" class="inline-icon" />',
+    "tool_unavailable": '<img src="../images/icons/gnumeric-autofilter-delete.svg" class="tool-icon" />',
 
-    "download": '<img src="../images/icons/icons8-download-96.png" />',
-    "icon_download": '<img src="../images/icons/icons8-download-96.png" class="inline-icon" />',
-    "tool_download": '<img src="../images/icons/icons8-download-96.png" class="tool-icon" />',
+    "download": '<img src="../images/icons/edit-download.svg" />',
+    "icon_download": '<img src="../images/icons/edit-download.svg" class="inline-icon" />',
+    "tool_download": '<img src="../images/icons/edit-download.svg" class="tool-icon" />',
 
     "bookmark": '<img src="../images/icons/icons8-bookmark-96.png" />',
     "icon_bookmark": '<img src="../images/icons/icons8-bookmark-96.png" class="inline-icon" />',
