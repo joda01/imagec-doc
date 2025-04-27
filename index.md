@@ -34,6 +34,7 @@ docs/starting/index
 docs/fundamentals/index
 docs/commands/index
 docs/advanced/index
+docs/tutorials/index
 :::
 
 % Indices and tables

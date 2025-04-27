@@ -13,5 +13,5 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html
 ### Deploy build docker image
 
 docker build --target live -t joda001/imagec-doc:live .
-docker build --target build -t joda001/imagec-doc:v1.0.0 .
-docker push  joda001/imagec-doc:v1.0.0
+docker build --target build -t joda001/imagec-doc:v1.1.0 .
+docker push  joda001/imagec-doc:v1.1.0

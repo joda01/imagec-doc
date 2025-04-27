@@ -15,7 +15,7 @@ jobs:
   build-doc:
     runs-on: ubuntu-22.04
     container: 
-      image: joda001/imagec-doc:v1.0.0
+      image: joda001/imagec-doc:v1.1.0
 
     steps:
       - name: Checkout code

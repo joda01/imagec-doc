@@ -32,7 +32,8 @@ extensions = [
     'sphinx_rtd_theme',
     'sphinx_design',
     #'sphinx.ext.autosectionlabel',
-    'sphinx_search.extension'
+    'sphinx_search.extension',
+    "sphinxcontrib.video"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -92,7 +93,7 @@ myst_enable_extensions = [
     "smartquotes",
     "strikethrough",
     "substitution",
-    "tasklist",
+    "tasklist"
 ]
 
 
