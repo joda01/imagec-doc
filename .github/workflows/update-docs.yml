@@ -64,5 +64,5 @@ jobs:
         run: |
           echo "$SSH_KEY" > ssh_key_for_github
           chmod 400 ssh_key_for_github
-          scp -r -o StrictHostKeyChecking=no -i ssh_key_for_github _build/html/* github@$SERVER_NAME:/var/www/html/doc-new
+          scp -r -o StrictHostKeyChecking=no -i ssh_key_for_github _site/* github@$SERVER_NAME:/var/www/html/doc-new
           rm -rf ssh_key_for_github
