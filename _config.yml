@@ -1,0 +1,74 @@
+title: ImageC
+email: support@imagec.org
+description: ImageC alias EVAnalyzer 2 is a high throughput image processing application
+  for biological science.
+baseurl: ''
+url: https://imagec.org
+current_short_imagec_version: v1.0.0-beta.20
+preview_short_imagec_version: v1.0.0-beta.20
+current_imagec_version: v1.0.0-beta.20
+current_imagec_hash: ''
+current_snapshot_version: stable
+livereload: true
+highlighter: rouge
+incremental: false
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  smart_quotes:
+  - apos
+  - apos
+  - quot
+  - quot
+theme: minima
+plugins:
+- jekyll-regex-replace
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-redirect-from
+- jekyll-sitemap
+- jekyll-git-hash
+- jekyll-toc
+collections:
+  media:
+    output: true
+    permalink: /media/:title/
+  events:
+    output: true
+    permalink: /events/:year/:month/:day/:title/
+excerpt_separator: <!--more-->
+future: true
+last-modified-at:
+  date-format: '%Y-%m-%d'
+twitter:
+  username: ImageC
+  card: summary
+github:
+  source:
+    branch: main
+  repository_url: https://github.com/joda01/imagec
+defaults:
+- scope:
+    path: ''
+  values:
+    image: /images/sharingimagec.jpg
+    toc: true
+repository: imagec/imagec-web
+star_count: '4'
+toc:
+  min_level: 1
+  max_level: 3
+  ordered_list: false
+exclude:
+- Gemfile
+- Gemfile.lock
+- node_modules
+- vendor/bundle
+- vendor/cache
+- vendor/gems
+- vendor/ruby
+- bundle
+include:
+- docs/stable/clients/python/reference/objects.inv
+- docs/preview/clients/python/reference/objects.inv

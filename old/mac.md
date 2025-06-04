@@ -1,2 +1,0 @@
-- On **macOS**, right-click the `.pkg` file, then choose 'Open' (you might need to do this twice)
-  - If you're using an M1/M2/M3 Mac, please check out the [notes on Apple silicon](apple-silicon)

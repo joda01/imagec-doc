@@ -1,0 +1,318 @@
+---
+layout: default
+title: A high throughput image processing application
+subtitle: An image processing application
+description: ImageC is a high throughput image processing application. Especially designed for usage in biological science.
+body_class: landing nowrap
+---
+
+<section class="welcome">
+	<div class="flexwrap wrap">
+		<div class="imagec">
+			<svg width="100%" viewBox="0 -2 360 92.401"
+			xmlns="http://www.w3.org/2000/svg">
+			<g id="animatedTitle" stroke-linecap="round" fill-rule="nonzero" font-size="9pt" stroke-width="1mm" fill="none" style="stroke-width:1mm;fill:none">
+				<path class="line" d="M 16.9 1.001 L 16.9 71.701 L 10.9 71.701 L 10.9 1.001 L 16.9 1.001 Z M 27.7 6.201 L 27.7 1.001 L 0 1.001 L 0 6.201 L 27.7 6.201 Z M 27.7 71.701 L 0 71.701 L 0 66.501 L 27.7 66.501 L 27.7 71.701 Z" id="0" vector-effect="non-scaling-stroke"/>
+				<path class="line" d="M 40.9 71.701 L 40.9 21.601 L 46.4 21.601 L 46.4 29.601 Q 48.8 25.401 52.85 23.001 A 16.653 16.653 0 0 1 58.118 21.028 A 23.352 23.352 0 0 1 62.7 20.601 A 18.332 18.332 0 0 1 68.123 21.379 A 15.896 15.896 0 0 1 72.05 23.201 Q 76.077 25.786 77.583 31.535 A 21.868 21.868 0 0 1 77.6 31.601 L 78.1 31.601 A 28.231 28.231 0 0 1 80.161 27.941 Q 81.439 26.042 82.9 24.679 A 13.972 13.972 0 0 1 84.85 23.151 A 14.909 14.909 0 0 1 89.308 21.259 Q 91.901 20.601 95.1 20.601 A 20.877 20.877 0 0 1 98.991 20.949 A 16.516 16.516 0 0 1 102.1 21.851 Q 105.2 23.101 107.3 25.551 A 14.653 14.653 0 0 1 109.394 28.818 A 19.812 19.812 0 0 1 110.5 31.751 A 25.774 25.774 0 0 1 111.308 35.677 Q 111.561 37.625 111.595 39.822 A 44.3 44.3 0 0 1 111.6 40.501 L 111.6 71.701 L 105.9 71.701 L 106 40.801 A 37.056 37.056 0 0 0 105.8 36.795 Q 105.36 32.766 103.952 30.401 A 7.618 7.618 0 0 0 102.8 28.901 Q 100.264 26.365 95.593 25.839 A 23.188 23.188 0 0 0 93 25.701 Q 86.7 25.701 82.9 29.601 Q 79.242 33.355 79.105 41.743 A 40.395 40.395 0 0 0 79.1 42.401 L 79.1 71.701 L 73.4 71.701 L 73.6 40.801 Q 73.667 36.836 72.989 34.045 A 12.921 12.921 0 0 0 72.15 31.601 A 10.567 10.567 0 0 0 70.602 29.173 A 8.255 8.255 0 0 0 67.7 27.001 Q 65.027 25.803 61.336 25.709 A 24.987 24.987 0 0 0 60.7 25.701 A 18.46 18.46 0 0 0 56.412 26.171 A 12.338 12.338 0 0 0 50.35 29.501 Q 46.745 33.154 46.606 41.52 A 40.86 40.86 0 0 0 46.6 42.201 L 46.6 71.701 L 40.9 71.701 Z" id="1" vector-effect="non-scaling-stroke"/>
+				<path class="line" d="M 171.1 66.501 L 171.1 71.701 L 166.4 71.701 A 7.944 7.944 0 0 1 164.278 71.433 A 5.81 5.81 0 0 1 161.5 69.751 Q 160.042 68.172 159.765 64.133 A 29.764 29.764 0 0 1 159.7 62.101 L 160.4 62.101 A 17.465 17.465 0 0 1 157.038 67.112 A 15.655 15.655 0 0 1 152.9 70.151 A 23.531 23.531 0 0 1 144.076 72.604 A 28.553 28.553 0 0 1 141.7 72.701 Q 137.009 72.701 133.563 71.38 A 15.578 15.578 0 0 1 132.55 70.951 A 12.873 12.873 0 0 1 128.444 67.988 A 12.243 12.243 0 0 1 126.85 65.801 A 14.306 14.306 0 0 1 125.234 61.336 A 19.868 19.868 0 0 1 124.9 57.601 A 16.551 16.551 0 0 1 125.239 54.186 A 13.374 13.374 0 0 1 126.1 51.501 Q 127.3 48.801 129.65 46.951 A 14.541 14.541 0 0 1 132.828 45.072 A 19.288 19.288 0 0 1 135.45 44.151 Q 138.846 43.216 143.163 43.201 A 40.541 40.541 0 0 1 143.3 43.201 L 159.7 43.201 L 159.7 37.701 Q 159.7 31.701 156.4 28.651 Q 153.1 25.601 146.5 25.601 A 22.745 22.745 0 0 0 142.858 25.874 Q 139.404 26.435 137.15 28.151 A 10.086 10.086 0 0 0 134.088 31.835 A 10.262 10.262 0 0 0 133.2 34.801 L 127.3 34.801 Q 127.8 30.401 130.1 27.201 A 13.553 13.553 0 0 1 134.388 23.376 A 17.56 17.56 0 0 1 136.6 22.301 A 21.727 21.727 0 0 1 140.913 21.084 Q 142.929 20.722 145.232 20.631 A 39.885 39.885 0 0 1 146.8 20.601 A 31.227 31.227 0 0 1 150.807 20.845 Q 152.875 21.113 154.663 21.675 A 19.081 19.081 0 0 1 154.9 21.751 A 15.889 15.889 0 0 1 158.28 23.298 A 13.151 13.151 0 0 1 160.7 25.201 A 14.838 14.838 0 0 1 163.883 29.992 A 17.412 17.412 0 0 1 164.2 30.801 A 19.106 19.106 0 0 1 165.118 34.497 Q 165.4 36.37 165.4 38.501 L 165.4 66.501 L 171.1 66.501 Z M 159.7 53.301 L 159.7 48.201 L 143.4 48.201 Q 139.468 48.201 136.76 49.275 A 9.841 9.841 0 0 0 134.25 50.701 Q 131.1 53.201 130.9 57.501 Q 130.862 59.324 131.278 60.836 A 8.212 8.212 0 0 0 133.85 64.951 Q 136.292 67.073 140.498 67.496 A 22.035 22.035 0 0 0 142.7 67.601 A 27.6 27.6 0 0 0 147.573 67.197 Q 150.306 66.707 152.483 65.619 A 14.006 14.006 0 0 0 155.2 63.851 A 12.226 12.226 0 0 0 159.5 56.034 A 17.931 17.931 0 0 0 159.7 53.301 Z" id="2" vector-effect="non-scaling-stroke"/>
+				<path class="line" d="M 193.543 70.321 A 17.557 17.557 0 0 1 184.3 64.501 Q 179.673 58.949 178.939 49.645 A 46.33 46.33 0 0 1 178.8 46.001 A 43.919 43.919 0 0 1 179.204 39.881 Q 179.675 36.538 180.695 33.71 A 25.232 25.232 0 0 1 181.25 32.301 A 20.425 20.425 0 0 1 184.445 27.074 A 17.543 17.543 0 0 1 188.45 23.601 A 18.977 18.977 0 0 1 195.094 21.041 A 26.144 26.144 0 0 1 200 20.601 A 24.172 24.172 0 0 1 205.303 21.155 A 17.853 17.853 0 0 1 211.2 23.601 Q 215.8 26.601 218.15 32.301 A 29.35 29.35 0 0 1 219.875 38.363 Q 220.5 41.876 220.5 46.001 Q 220.5 53.901 218.15 59.551 Q 215.8 65.201 211.2 68.151 Q 206.6 71.101 200 71.101 A 25.229 25.229 0 0 1 193.543 70.321 Z M 201.9 66.001 A 17.818 17.818 0 0 0 206.869 65.346 A 13.001 13.001 0 0 0 213.7 60.701 A 17.963 17.963 0 0 0 216.643 54.832 Q 217.8 50.995 217.8 46.001 A 35.643 35.643 0 0 0 217.359 40.208 Q 216.455 34.729 213.7 31.101 A 13.324 13.324 0 0 0 204.33 25.847 A 19.646 19.646 0 0 0 201.9 25.701 A 20.865 20.865 0 0 0 196.586 26.339 A 14.368 14.368 0 0 0 189 31.101 A 18.155 18.155 0 0 0 185.556 37.76 Q 184.78 40.433 184.574 43.624 A 36.919 36.919 0 0 0 184.5 46.001 Q 184.5 53.06 187.038 57.807 A 16.404 16.404 0 0 0 189 60.701 A 14.596 14.596 0 0 0 197.483 65.582 A 22.075 22.075 0 0 0 201.9 66.001 Z M 217.8 34.201 L 217.8 21.601 L 223.5 21.601 L 223.5 71.701 L 217.8 71.701 L 217.8 34.801 L 217.8 34.201 Z M 217.8 71.101 Q 217.8 74.307 217.377 76.897 A 21.56 21.56 0 0 1 216.6 80.151 A 12.122 12.122 0 0 1 216.359 80.819 A 9.361 9.361 0 0 1 212.35 85.601 Q 209.3 87.401 203.5 87.401 A 53.472 53.472 0 0 1 203.034 87.399 Q 199.68 87.37 197.254 86.916 A 15.68 15.68 0 0 1 194.9 86.301 Q 191.8 85.201 190.45 83.101 A 10.068 10.068 0 0 1 189.359 80.791 A 12.808 12.808 0 0 1 188.8 78.101 L 182.7 78.101 A 19.592 19.592 0 0 0 183.251 80.839 A 15.125 15.125 0 0 0 185.7 85.901 A 13.206 13.206 0 0 0 188.923 88.938 A 17.171 17.171 0 0 0 192.5 90.751 A 21.354 21.354 0 0 0 194.683 91.434 Q 198.447 92.401 203.5 92.401 Q 208.605 92.401 212.42 91.138 A 15.989 15.989 0 0 0 218.45 87.651 Q 222.16 84.162 223.144 76.868 A 43.263 43.263 0 0 0 223.5 71.101 L 217.8 71.101 Z" id="3" vector-effect="non-scaling-stroke"/>
+				<path class="line" d="M 238.8 48.801 L 238.9 44.101 L 275.4 44.101 Q 275.4 35.801 271.55 30.701 Q 267.7 25.601 259.6 25.601 A 22.615 22.615 0 0 0 254.674 26.102 Q 251.552 26.8 249.274 28.466 A 12.445 12.445 0 0 0 246.7 31.001 A 17.827 17.827 0 0 0 243.97 36.412 Q 243.178 38.893 242.844 41.911 A 42.675 42.675 0 0 0 242.6 46.601 Q 242.6 56.801 246.6 62.251 Q 249.941 66.803 257.258 67.553 A 29.86 29.86 0 0 0 260.3 67.701 Q 266.191 67.701 269.24 65.778 A 7.959 7.959 0 0 0 269.65 65.501 Q 272.7 63.301 273.8 59.701 L 280.1 59.701 A 23.241 23.241 0 0 1 277.753 64.898 A 20.932 20.932 0 0 1 276.7 66.451 A 13.488 13.488 0 0 1 272.766 69.957 A 17.352 17.352 0 0 1 270.6 71.051 A 18.087 18.087 0 0 1 267.323 72.057 Q 265.623 72.419 263.613 72.578 A 42.183 42.183 0 0 1 260.3 72.701 Q 248.7 72.701 242.8 65.951 A 21.929 21.929 0 0 1 238.469 58.04 Q 236.9 53.098 236.9 46.601 Q 236.9 37.994 239.63 32.14 A 20.439 20.439 0 0 1 242.75 27.301 A 18.892 18.892 0 0 1 252.936 21.323 A 28.981 28.981 0 0 1 259.6 20.601 A 24.145 24.145 0 0 1 266.892 21.678 A 21.867 21.867 0 0 1 270.35 23.101 A 16.89 16.89 0 0 1 276.121 28.051 A 22.762 22.762 0 0 1 278.15 31.301 Q 280.314 35.482 280.89 41.76 A 53.006 53.006 0 0 1 281.1 46.601 L 281.1 48.801 L 238.8 48.801 Z" id="4" vector-effect="non-scaling-stroke"/>
+				<path class="line" d="M 347.5 21.501 L 341.2 21.501 A 24.412 24.412 0 0 0 339.789 16.261 Q 338.325 12.615 335.7 10.204 A 15.057 15.057 0 0 0 334.75 9.401 A 18.076 18.076 0 0 0 328.119 6.223 Q 325.547 5.555 322.521 5.43 A 34.363 34.363 0 0 0 321.1 5.401 A 26.4 26.4 0 0 0 313.702 6.383 A 19.541 19.541 0 0 0 303.75 13.001 Q 297.614 20.584 297.6 36.129 A 78.767 78.767 0 0 0 297.6 36.201 A 64.357 64.357 0 0 0 298.086 44.396 Q 299.305 53.862 303.576 59.332 A 19.696 19.696 0 0 0 303.75 59.551 A 20.033 20.033 0 0 0 317.319 66.965 A 29.239 29.239 0 0 0 321.1 67.201 Q 328.069 67.201 332.785 64.513 A 16.589 16.589 0 0 0 334.75 63.201 Q 339.84 59.248 341.267 51.388 A 29.892 29.892 0 0 0 341.3 51.201 L 347.6 51.201 Q 345.9 61.701 339.2 67.201 Q 333.122 72.191 323.176 72.654 A 44.633 44.633 0 0 1 321.1 72.701 A 36.313 36.313 0 0 1 312.286 71.697 A 23.459 23.459 0 0 1 298.95 63.151 A 32.039 32.039 0 0 1 293.814 52.936 Q 292.43 48.445 291.911 43.031 A 71.659 71.659 0 0 1 291.6 36.201 A 65.484 65.484 0 0 1 292.354 25.924 Q 293.954 15.874 298.95 9.451 A 23.596 23.596 0 0 1 312.773 0.878 A 37.17 37.17 0 0 1 321.1 0.001 Q 328.2 0.001 333.75 2.401 Q 339.3 4.801 342.85 9.601 A 23.67 23.67 0 0 1 346.202 16.112 A 31.917 31.917 0 0 1 347.5 21.501 Z" id="5" vector-effect="non-scaling-stroke"/>
+			</g>
+		</svg>
+	
+		<svg width="100%" viewBox="-5 -2 560 91.9"
+			xmlns="http://www.w3.org/2000/svg">
+			<g id="animatedTitle" stroke-linecap="round" fill-rule="nonzero" font-size="9pt" stroke-width="1mm" fill="none" style="stroke-width:1mm;fill:none">
+				<path class="line" d="M 0 71.7 L 0 1 L 39.8 1 L 39.8 6.2 L 6 6.2 L 6 33.7 L 37.5 33.7 L 37.5 38.9 L 6 38.9 L 6 66.5 L 40.3 66.5 L 40.3 71.7 L 0 71.7 Z" id="0" vector-effect="non-scaling-stroke"/>
+				<path class="line" d="M 55.4 1 L 78.6 64.8 L 79.2 64.8 L 102.5 1 L 108.8 1 L 83 71.7 L 74.7 71.7 L 49 1 L 55.4 1 Z" id="1" vector-effect="non-scaling-stroke"/>
+				<path class="line" d="M 157 71.7 L 134.8 8.7 L 134.4 8.7 L 112.2 71.7 L 106.1 71.7 L 131.4 1 L 138.2 1 L 163.4 71.7 L 157 71.7 Z M 150.9 45.3 L 118.6 45.3 L 118.6 50.5 L 150.9 50.5 L 150.9 45.3 Z" id="2" vector-effect="non-scaling-stroke"/>
+				<path class="line" d="M 179.9 42.3 L 179.9 71.7 L 174.2 71.7 L 174.2 21.6 L 179.9 21.6 L 179.9 30 Q 182.2 25.7 186.1 23.15 A 14.117 14.117 0 0 1 190.048 21.407 Q 191.85 20.903 193.998 20.714 A 30.836 30.836 0 0 1 196.7 20.6 A 24.406 24.406 0 0 1 201.976 21.136 Q 206.762 22.196 209.85 25.35 Q 213.298 28.873 214.189 35.447 A 36.96 36.96 0 0 1 214.5 40.4 L 214.5 71.7 L 208.8 71.7 L 208.8 40.7 Q 208.8 33.325 206.165 29.864 A 7.898 7.898 0 0 0 205.3 28.9 A 11.34 11.34 0 0 0 200.735 26.325 Q 198.981 25.793 196.872 25.652 A 23.501 23.501 0 0 0 195.3 25.6 A 20.835 20.835 0 0 0 190.879 26.052 A 17.002 17.002 0 0 0 187.4 27.2 A 11.61 11.61 0 0 0 182.29 31.781 A 14.532 14.532 0 0 0 181.9 32.45 A 14.336 14.336 0 0 0 180.614 35.8 Q 180.213 37.372 180.037 39.232 A 32.657 32.657 0 0 0 179.9 42.3 Z" id="3" vector-effect="non-scaling-stroke"/>
+				<path class="line" d="M 274 66.5 L 274 71.7 L 269.3 71.7 A 7.944 7.944 0 0 1 267.178 71.432 A 5.81 5.81 0 0 1 264.4 69.75 Q 262.942 68.171 262.665 64.132 A 29.764 29.764 0 0 1 262.6 62.1 L 263.3 62.1 A 17.465 17.465 0 0 1 259.938 67.112 A 15.655 15.655 0 0 1 255.8 70.15 A 23.531 23.531 0 0 1 246.976 72.603 A 28.553 28.553 0 0 1 244.6 72.7 Q 239.909 72.7 236.463 71.38 A 15.578 15.578 0 0 1 235.45 70.95 A 12.873 12.873 0 0 1 231.344 67.987 A 12.243 12.243 0 0 1 229.75 65.8 A 14.306 14.306 0 0 1 228.134 61.335 A 19.868 19.868 0 0 1 227.8 57.6 A 16.551 16.551 0 0 1 228.139 54.185 A 13.374 13.374 0 0 1 229 51.5 Q 230.2 48.8 232.55 46.95 A 14.541 14.541 0 0 1 235.728 45.071 A 19.288 19.288 0 0 1 238.35 44.15 Q 241.746 43.215 246.063 43.201 A 40.541 40.541 0 0 1 246.2 43.2 L 262.6 43.2 L 262.6 37.7 Q 262.6 31.7 259.3 28.65 Q 256 25.6 249.4 25.6 A 22.745 22.745 0 0 0 245.758 25.873 Q 242.304 26.435 240.05 28.15 A 10.086 10.086 0 0 0 236.988 31.834 A 10.262 10.262 0 0 0 236.1 34.8 L 230.2 34.8 Q 230.7 30.4 233 27.2 A 13.553 13.553 0 0 1 237.288 23.375 A 17.56 17.56 0 0 1 239.5 22.3 A 21.727 21.727 0 0 1 243.813 21.084 Q 245.829 20.721 248.132 20.631 A 39.885 39.885 0 0 1 249.7 20.6 A 31.227 31.227 0 0 1 253.707 20.845 Q 255.775 21.113 257.563 21.674 A 19.081 19.081 0 0 1 257.8 21.75 A 15.889 15.889 0 0 1 261.18 23.297 A 13.151 13.151 0 0 1 263.6 25.2 A 14.838 14.838 0 0 1 266.783 29.991 A 17.412 17.412 0 0 1 267.1 30.8 A 19.106 19.106 0 0 1 268.018 34.496 Q 268.3 36.369 268.3 38.5 L 268.3 66.5 L 274 66.5 Z M 262.6 53.3 L 262.6 48.2 L 246.3 48.2 Q 242.368 48.2 239.66 49.274 A 9.841 9.841 0 0 0 237.15 50.7 Q 234 53.2 233.8 57.5 Q 233.762 59.323 234.178 60.836 A 8.212 8.212 0 0 0 236.75 64.95 Q 239.192 67.072 243.398 67.495 A 22.035 22.035 0 0 0 245.6 67.6 A 27.6 27.6 0 0 0 250.473 67.197 Q 253.206 66.706 255.383 65.618 A 14.006 14.006 0 0 0 258.1 63.85 A 12.226 12.226 0 0 0 262.4 56.033 A 17.931 17.931 0 0 0 262.6 53.3 Z" id="4" vector-effect="non-scaling-stroke"/>
+				<path class="line" d="M 290.6 0 L 290.6 71.7 L 284.9 71.7 L 284.9 0 L 290.6 0 Z" id="5" vector-effect="non-scaling-stroke"/>
+				<path class="line" d="M 323.7 78.5 L 339.9 21.6 L 345.9 21.6 L 328.8 80.1 A 26.595 26.595 0 0 1 327.509 83.713 Q 326.702 85.515 325.693 86.866 A 10.693 10.693 0 0 1 323.15 89.35 A 14.578 14.578 0 0 1 317.186 91.664 A 19.409 19.409 0 0 1 314.1 91.9 L 306.5 91.9 L 306.5 86.9 L 313.6 86.9 A 16.719 16.719 0 0 0 316.019 86.737 Q 318.653 86.351 320.2 85.05 A 7.669 7.669 0 0 0 321.658 83.364 Q 322.764 81.673 323.559 78.994 A 28.044 28.044 0 0 0 323.7 78.5 Z M 301.2 21.6 L 307.3 21.6 L 319 58.4 Q 319.919 61.157 320.574 62.858 A 37.505 37.505 0 0 0 320.95 63.8 A 8.472 8.472 0 0 0 321.388 64.708 Q 321.911 65.633 322.535 66.05 A 2.242 2.242 0 0 0 322.7 66.15 Q 323.439 66.557 324.559 66.663 A 8.927 8.927 0 0 0 325.4 66.7 L 329.4 66.7 L 329.4 71.7 L 324.9 71.7 Q 322.723 71.7 321.137 71.281 A 8.098 8.098 0 0 1 319.9 70.85 A 5.804 5.804 0 0 1 318.244 69.706 Q 317.645 69.128 317.103 68.337 A 12.409 12.409 0 0 1 316.55 67.45 Q 315.1 64.9 313.5 59.9 L 301.2 21.6 Z" id="6" vector-effect="non-scaling-stroke"/>
+				<path class="line" d="M 349.4 71.7 L 349.4 67.4 L 383.9 24 L 386.4 26.6 L 350.4 26.6 L 350.4 21.6 L 388.9 21.6 L 388.9 25.8 L 355.3 68.1 L 354.4 66.7 L 389.9 66.7 L 389.9 71.7 L 349.4 71.7 Z" id="7" vector-effect="non-scaling-stroke"/>
+				<path class="line" d="M 398.8 48.8 L 398.9 44.1 L 435.4 44.1 Q 435.4 35.8 431.55 30.7 Q 427.7 25.6 419.6 25.6 A 22.615 22.615 0 0 0 414.674 26.102 Q 411.552 26.799 409.274 28.465 A 12.445 12.445 0 0 0 406.7 31 A 17.827 17.827 0 0 0 403.97 36.411 Q 403.178 38.893 402.844 41.91 A 42.675 42.675 0 0 0 402.6 46.6 Q 402.6 56.8 406.6 62.25 Q 409.941 66.802 417.258 67.552 A 29.86 29.86 0 0 0 420.3 67.7 Q 426.191 67.7 429.24 65.777 A 7.959 7.959 0 0 0 429.65 65.5 Q 432.7 63.3 433.8 59.7 L 440.1 59.7 A 23.241 23.241 0 0 1 437.753 64.898 A 20.932 20.932 0 0 1 436.7 66.45 A 13.488 13.488 0 0 1 432.766 69.956 A 17.352 17.352 0 0 1 430.6 71.05 A 18.087 18.087 0 0 1 427.323 72.056 Q 425.623 72.418 423.613 72.577 A 42.183 42.183 0 0 1 420.3 72.7 Q 408.7 72.7 402.8 65.95 A 21.929 21.929 0 0 1 398.469 58.039 Q 396.9 53.097 396.9 46.6 Q 396.9 37.993 399.63 32.139 A 20.439 20.439 0 0 1 402.75 27.3 A 18.892 18.892 0 0 1 412.936 21.322 A 28.981 28.981 0 0 1 419.6 20.6 A 24.145 24.145 0 0 1 426.892 21.677 A 21.867 21.867 0 0 1 430.35 23.1 A 16.89 16.89 0 0 1 436.121 28.05 A 22.762 22.762 0 0 1 438.15 31.3 Q 440.314 35.481 440.89 41.759 A 53.006 53.006 0 0 1 441.1 46.6 L 441.1 48.8 L 398.8 48.8 Z" id="8" vector-effect="non-scaling-stroke"/>
+				<path class="line" d="M 460.1 41.9 L 460.1 71.7 L 454.4 71.7 L 454.4 21.6 L 460.1 21.6 L 460.1 30.8 Q 461.6 26.7 464.95 24.15 Q 468.3 21.6 473.2 21.6 L 478 21.6 L 478 26.6 L 473.1 26.6 A 15.571 15.571 0 0 0 469.087 27.089 A 10.882 10.882 0 0 0 463.5 30.55 Q 460.714 33.788 460.211 39.342 A 28.397 28.397 0 0 0 460.1 41.9 Z" id="9" vector-effect="non-scaling-stroke"/>
+				<path class="line" d="M 486.9 71.7 L 486.9 66.8 L 511.1 40.9 Q 515.7 36 518.6 32.25 A 45.179 45.179 0 0 0 520.717 29.286 Q 522.089 27.18 522.95 25.25 Q 524.4 22 524.4 18.6 Q 524.4 12.1 520.2 8.65 A 14.474 14.474 0 0 0 514.589 5.861 Q 512.457 5.304 509.944 5.216 A 27.269 27.269 0 0 0 509 5.2 Q 502 5.2 497.5 9.35 A 13.123 13.123 0 0 0 493.398 17.265 Q 493.15 18.886 493.2 20.7 L 487.4 20.7 Q 487.354 17.731 487.914 15.157 A 17.928 17.928 0 0 1 490.1 9.6 Q 492.9 5 497.9 2.5 A 23.637 23.637 0 0 1 505.623 0.221 A 29.86 29.86 0 0 1 509.3 0 Q 516 0 520.65 2.25 Q 525.3 4.5 527.8 8.65 A 17.089 17.089 0 0 1 529.948 14.482 A 23.114 23.114 0 0 1 530.3 18.6 Q 530.3 22.4 529 25.95 A 21.845 21.845 0 0 1 527.731 28.738 Q 526.99 30.122 525.981 31.63 A 50.396 50.396 0 0 1 524.25 34.05 A 86.191 86.191 0 0 1 521.796 37.124 Q 518.97 40.515 514.887 44.875 A 287.252 287.252 0 0 1 514.3 45.5 L 491.5 69.9 L 491.9 66.5 L 531.2 66.5 L 531.2 71.7 L 486.9 71.7 Z" id="10" vector-effect="non-scaling-stroke"/>
+			</g>
+			</svg>
+		</svg>
+			<h1>a high throughput<br/>image processing application</h1>
+			<p>Quantify thousands of images<br/>using your individual processing pipelines</p>
+			<a class="button transparent arrow-down dark" href="#quickinstall">Installation</a>
+			<a class="button blue" href="/docs/">Documentation</a>
+		</div>
+		<div class="slideshow window">
+			<img src="images/spinner/cell-detection.webp" class="active"/>
+			<img src="images/spinner/landing-page.webp" />
+			<img src="images/spinner/control_0_0.webp" />
+		  </div>
+		</div>
+</section>
+
+<section class="whyimagec">
+	<div class="wrap">
+		<h1>ImageC highlights</h1>
+		<div class="flexwrap">
+			<div class="featurebox">
+				<div class="icon speed"></div>
+				<h3>Fast processing pipelines for big data sets</h3>
+				<p>ImageC is implemented in C++, one of the fastest programming languages and efficiently uses all available CPU resources (multi threading support). With the focus on hight throughput analyzes, ImageC allows processing times down to 0.2 seconds per image, allowing the analysis of thousands of images in a reasonable time.</p>
+				<a href="{% link docs/stable/fundamentals/pipelines.md %}" class="textbutton arrow-right">Read more</a>
+			</div>
+			<div class="featurebox">
+				<div class="icon microscope"></div>
+				<h3>Analysis of fluorescence and brightfield images</h3>
+				<p>ImageC enables object detection and quantification in fluorescence images. Analysis and cross channel quantification can be applied to any number of channels. e.g. Measurement of fluorescence intensity per cell.</p>
+				<a href="{% link docs/stable/fundamentals/image_formats.md %}" class="textbutton arrow-right">Read more</a>
+			</div>
+			<div class="featurebox">
+				<div class="icon liver"></div>
+				<h3>Analysis of histological images</h3>
+				<p>ImageC enables the analysis of huge histological images, taken by fluorescence and light microscopy. e.g.: Color picker enables to distinguish cellular compartments based on color.</p>
+				<a href="{% link docs/stable/fundamentals/image_formats.md %}#big-images" class="textbutton arrow-right">Read more</a>
+			</div>
+			<div class="featurebox">
+				<div class="icon bioformats"></div>
+				<h3>BioFormats support</h3>
+				<p>All common image formats used by different microscope manufacturers are supported thanks to BioFormats integration.</p>
+				<a href="{% link docs/stable/fundamentals/image_formats.md %}" class="textbutton arrow-right">Read more</a>
+			</div>
+			<div class="featurebox">
+				<div class="icon layer"></div>
+				<h3>Multi channel images</h3>
+				<p>ImageC automatically extracts underlying image infos (e.g. channel infos, Z-stack infos, etc. ) using OME-XML which allows to directly use multi channel (c, t and z-stack) images.</p>
+				<a href="{% link docs/stable/fundamentals/image_formats.md %}#image-planes" class="textbutton arrow-right">Read more</a>
+			</div>
+			<div class="featurebox">
+				<div class="icon database"></div>
+				<h3>Big data organization</h3>
+				<p>ImageC stores all the pipeline results into an integrated in-process SQL database (DuckDb) using a predefined data structure. The flexibility of the database matched with an easy to use GUI enables basic data postprocessing and comparison.</p>
+				<a href="{% link docs/stable/first_steps/results.md %}" class="textbutton arrow-right">Read more</a>
+			</div>
+
+			<div class="featurebox">
+				<div class="icon download"></div>
+				<h3>Data export</h3>
+				<p>The data are stored as an compressed database file and can be exported for further processing to R or Excel. Custom export templates can be used for the creation of individual data sets.</p>
+				<a href="{% link docs/stable/first_steps/results.md %}#data-export" class="textbutton arrow-right">Read more</a>
+			</div>
+
+			<div class="featurebox">
+				<div class="icon plus"></div>
+				<h3>Image/Data grouping</h3>
+				<p>Automated image grouping based on well formats, image names using regex or directory structure can help to organize data output. AVG, MEDIAN, MAX, MIN, STDEV, SUM and CNT are automatically calculated from multiple images within a group.</p>
+				<a href="{% link docs/stable/first_steps/operation.md %}#image-grouping-tab" class="textbutton arrow-right">Read more</a>
+			</div>
+
+			<div class="featurebox">
+				<div class="icon filter"></div>
+				<h3>Image/Data Filtering</h3>
+				<p>ImageC allows to define data filters, removing images from the report based on customized criteria. e.g. remove Images without cells.</p>
+				<a href="{% link docs/stable/commands/filtering/threshold_filter.md %}" class="textbutton arrow-right">Read more</a>
+			</div>
+
+			<div class="featurebox">
+				<div class="icon table"></div>
+				<h3>Heatmaps</h3>
+				<p>ImageC can generate heatmaps of images or image groups (e.g. plates. wells), enabling a quick assessment of the data.</p>
+				<a href="{% link docs/stable/first_steps/results.md %}#image-detail-view"class="textbutton arrow-right">Read more</a>
+			</div>
+
+			<div class="featurebox">
+				<div class="icon live"></div>
+				<h3>Interactive results</h3>
+				<p>Browse through your results to see the selected objects in the original image. The interactive mode allows really to observe each individual detected object within the origin image.</p>
+				<a href="{% link docs/stable/first_steps/results.md %}#interactive-mode" class="textbutton arrow-right">Read more</a>
+			</div>
+
+			<div class="featurebox">
+				<div class="icon slider"></div>
+				<h3>Pipeline creation</h3>
+				<p>ImageC enables the creation of individual image processing pipelines for object detection. A set of widely used image processing algorithms ported from ImageJ, including background subtraction algorithms, filtering, edge detection and manual as well as auto-threshold are implemented and can be used for pipeline creation.</p>
+				<a href="{% link docs/stable/fundamentals/pipelines.md %}" class="textbutton arrow-right">Read more</a>
+			</div>
+
+			<div class="featurebox">
+				<div class="icon show"></div>
+				<h3>Live preview</h3>
+				<p>ImageC offers a live preview enabling to monitor the impact of all image processing steps within the pipelines and thereby provides transparent and understandable object detection.</p>
+				<a href="{% link docs/stable/first_steps/operation.md %}#pipelines-tab" class="textbutton arrow-right">Read more</a>
+			</div>
+
+			<div class="featurebox">
+				<div class="icon chip"></div>
+				<h3>AI driven object detection</h3>
+				<p>In addition to classical image processing and thresholding algorithms ImageC supports object detection and classification based on AI. ImageC supports the ONNX container format with net hight and with of 640 x 640 and a stride size of 3.</p>
+				<a href="{% link docs/stable/commands/classification/classifier_ai.md %}" class="textbutton arrow-right">Read more</a>
+			</div>
+
+			<div class="featurebox">
+				<div class="icon send"></div>
+				<h3>Reuseable and sharable pipelines</h3>
+				<p>ImageC is designed for reproducible image analysis.</p>
+				<a href="/about_imagec#free" class="textbutton arrow-right">Read more</a>
+			</div>
+
+			<div class="featurebox">
+				<div class="icon image"></div>
+				<h3>Generation of control images</h3>
+				<p>ImageC generates user defined control images, for documentation and internal control.</p>
+				<a href="{% link docs/stable/commands/object_processing/save_control_image.md %}" class="textbutton arrow-right">Read more</a>
+			</div>
+
+			<div class="featurebox">
+				<div class="icon code"></div>
+				<h3>Pipeline templates</h3>
+				<p>EVAnalyzer and its successor ImageC where created within a research group focused on extracellular vesicles. ImageC provides powerful pipelines especially for single vesicle imaging applications.</p>
+				<a href="#" class="textbutton arrow-right">Read more</a>
+			</div>
+			<div class="featurebox">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="wrap">
+		<img src="images/imagec_screenshot.png" width="100%"/>
+	</div>
+</section>
+
+{% include quick_installation.html %}
+<!--
+<section class="blog">
+	<div class="wrap">
+		<h1>Blog</h1>
+		<div class="newstileswrap">
+			{% for post in site.posts limit:2 %}
+				{% assign random_number = forloop.index | modulo: 3 | plus: 1 %}
+				{% assign tag_classes = post.tags | join: ' ' | downcase | slugify %}
+				<div class="postpreview {{ tag_classes }}" data-title="{{ post.title | escape }}">
+					<a href="{{ post.url }}" class="blocklink" title="{{ post.title }}"></a>
+					<div class="postimg custom">
+						{% if post.thumb %}
+							<img src="{{ post.thumb }}" alt="{{ post.title }}" class="zoom-image"/>
+						{% else %}
+							<img src="/images/blog/thumbs/placeholder-{{ random_number }}.svg" alt="Placeholder" class="zoom-image"/>
+						{% endif %}
+					</div>
+					<div class="postdetails">
+						{% if post.tags %}
+						<div class="tags">
+							{% for tag in post.tags %}
+								<span class="tag">{{ tag }}</span>
+							{% endfor %}
+						</div>
+						{% endif %}
+						<h3>{{ post.title }}</h3>
+						<div class="meta">
+							<div class="date">{{ post.date | date: "%Y-%m-%d" }}</div>
+							<div class="author">{{ post.author | default: "Unknown Author" }}</div>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+		<a href="{{ site.url }}{{ site.baseurl }}/news" class="button transparent arrow-right">
+			All downloads <span></span>
+		</a>
+	</div>
+</section>
+-->
+{% assign future_events = site.events | where_exp: "event", "event.date >= site.time" | sort: 'date' %}
+{% if future_events.size > 0 %}
+<section class="upcoming-events">
+	<div class="wrap">
+		<h1>Upcoming events</h1>
+		<div class="newstileswrap">
+			{% for event in future_events limit:2 %}
+			{% assign random_number = forloop.index | modulo: 3 | plus: 1 %} <!-- Generiert Werte von 1 bis 3 -->
+			{% assign tag_classes = event.tags | join: ' ' %}
+			<div class="eventpreview postpreview {{ tag_classes | downcase | slugify }}"
+				data-title="{{ event.title | escape }}">
+				<a href="{{ event.url }}" class="blocklink" title="{{ event.title }}"></a>
+				<div class="postimg custom">
+					{% if event.thumb %}
+					<img src="{{ event.thumb }}" alt="{{ event.title }}" class="zoom-image">
+					{% else %}
+					<img src="/images/blog/thumbs/placeholder-{{ random_number }}.svg" alt="Placeholder"
+						class="zoom-image">
+					{% endif %}
+				</div>
+				<div class="postdetails">
+					{% if event.tags %}
+					<div class="tags">
+						<span class="eventdate">{{ event.date | date: "%Y-%m-%d" }}</span>
+						{% for tag in event.tags %}
+						<span class="tag">{{ tag }}</span>
+						{% endfor %}
+					</div>
+					{% endif %}
+					<h3>{{ event.title }}</h3>
+					<div class="meta">
+						<div class="venue">{{ event.venue | default: "Venue not specified" }}</div>
+						<div class="author">{{ event.author | default: "ImageC" }}</div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		<a href="/events" class="button transparent arrow-right">
+			All events <span></span>
+		</a>
+</section>
+{% endif %}
+
+<div class="landing_bg_1"></div>
+<div class="landing_bg_2"></div>
+
+
+<section class="hidden">
+
+	<!--LOGO ANIMATIoN-->
+	<script type="module">
+		import { animate, svg, stagger,createTimeline } from '{{ site.baseurl }}/js/anime.esm.min.js';
+		
+		animate(svg.createDrawable('.line'), {
+			// draw: ['0 0', '0 1', '1 1'],
+			draw: ['0 0', '0 1'],
+			ease: 'inOutQuad',
+			duration: 1000,
+			delay: stagger(300),
+			loop: false
+		});
+
+		const images = document.querySelectorAll('.slideshow img');
+		let current = 0;
+
+		async function showNextImage() {
+			const next = (current + 1) % images.length;
+
+			// Fade out current
+			await animate(
+			images[current],
+			{ opacity: 0 },
+			{ duration: 1, easing: 'ease-in-out' }
+			);
+			images[current].classList.remove('active');
+
+			// Fade in next
+			images[next].classList.add('active');
+			await animate(
+			images[next],
+			{ opacity: 1 },
+			{ duration: 1, easing: 'ease-in-out' }
+			);
+
+    current = next;
+  }
+
+  // Start slideshow every 5 seconds
+  setInterval(showNextImage, 5000);
+  showNextImage();
+
+  </script>
+
+</section>

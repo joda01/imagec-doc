@@ -1,0 +1,59 @@
+on:
+  schedule:
+    - cron: "0 5 * * 1"  # run every Monday day at 5AM
+  workflow_dispatch: {}  # allow running manually from the github ui
+
+name: Build docs
+jobs:
+  build-doc:
+    name: Build docs
+    runs-on: ubuntu-24.04
+    container: 
+      image: joda001/imagec-doc:v2.2.0
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Get latest release tag from imagec
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        id: get_release
+        run: |
+          python3 ./scripts/read_version_information.py
+
+      - name: Generate docs
+        run: |
+            ./build.sh
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: imagec-doc-html
+          path: _site
+          if-no-files-found: error
+      
+  release:
+    needs:
+      - build-doc
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: imagec-doc-html
+          path: _site
+
+
+      - name: Upload to imagec.org
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          SSH_KEY: ${{ secrets.SSH_KEY_IMAGEC }}
+          SERVER_NAME : ${{ secrets.SERVER_NAME_IMAGEC }}
+        run: |
+          echo "$SSH_KEY" > ssh_key_for_github
+          chmod 400 ssh_key_for_github
+          scp -r -o StrictHostKeyChecking=no -i ssh_key_for_github _build/html/* github@$SERVER_NAME:/var/www/html/doc-new
+          rm -rf ssh_key_for_github

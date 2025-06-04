@@ -1,0 +1,27 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="240px" height="198px" viewBox="-0.5 -0.5 240 198" content="&lt;mxfile&gt;&lt;diagram id=&quot;N9a4vOC8iUMlzsIX3KuC&quot; name=&quot;Page-1&quot;&gt;3ZdLb+IwEMc/DcdGfsWxjy197GFXQuKw7WlliCHWhhg5pqT76dcmDsSBlj4vJUh4xpOxPf9fjDPC41VzZ8S6+KVzWY4QyJsRvh4hBCkn7sd7nloPTbPWsTQqD0EHx1T9k8EJgnejcllHgVbr0qp17JzrqpJzG/mEMXobhy10GY+6Fkt55JjORXns/a1yW7ReQlmv44dUyyIMjTEIM1+JLjo46kLkettz4ZsRHhutbdtaNWNZ+up1hWnvu32mdz8BIyv7mhtQe8OjKDdhcWFe9qlbrdGbKpc+Hozw1bZQVk7XYu57t05f5yvsqnQWdM2FKsuxLrVxdqUrF3SVi7rY3e77a2v0X9lFjBBml/4KYRNhrTTVLhYBtI/vquw9xysMi36Uxsqm5worvpN6Ja15ciFNzFHAL2WtuT1oiXAgsujJCDEPDAV+lvvMhwq7Rijy6YJn5wvuF6IcbT/FTJYTXSurtK/JTFurV64EXcBlqZa+w+qBCo6qtU+2apb+CUxmolbzRM/sppZ/rFGiWpY7aXxBQAKJaxttRRjoAqYDKZ1QN9RfwT8Ns50bXdcXhbDz4nOkwbE0ndmXpnuWImlS8HFp8HlpZJVf+g3kQHev6rJR9j48Jr790Gtf+/UhloDoQ7pev1y/htacSKPc7KXpElRuJfd946Fv7HJDcLB9tiztzGG2l59Hzv3EXhJT5tHueCxlT6z0hFadz8jSAfcY76mn9AsjTLRyM9mTkvGEUZJRxhhnGYU4AgdymoCME8BcE1BIcZy/1hszlyFlf38cjAIHQEKQxomsMEtpjxLtWNvX5FX4kY/i11EC+5TAiJKYEfAcImdJhmRAMuqT3LJ3AuRvgh6hCccAZ4xjDgnALEYEZYn7TyGuP2MMUkbeh54fxm0RAEL3TTntyOuGSWGSUpRiFwcJYoB9FZjpZ4H50va1+w86oBk2w3fBCfosPrenfhMUIU44T7nfAxkBBGZ8cLRJHIeEZilmaYbAO1GEFDniCWZuLJBhimISM5wwBHgGMAGIEP5VINJXgFiW7i1Anj+oinrdvhosVOM5GB53hDtnoN0xSFe251/sPqeYobfnmHnLCTXWEZ44CMFT56C3H4OceXjdaEU5vLXhm/8=&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs>
+        <pattern patternUnits="userSpaceOnUse" width="15.75" height="15.75" x="0" y="0" patternTransform="rotate(45)" id="mx-pattern-cross-hatch-1-000000-0">
+            <rect x="0" y="0" width="15.75" height="15.75" stroke="#e6e6e6" stroke-width="0.5" fill="none" style="stroke: light-dark(rgb(230, 230, 230), rgb(39, 39, 39));"/>
+        </pattern>
+    </defs>
+    <g>
+        <g>
+            <rect x="1" y="51" width="237" height="139" fill="none" stroke="#8a8a8a" stroke-width="2" stroke-dasharray="2 4" pointer-events="all" style="stroke: light-dark(rgb(138, 138, 138), rgb(118, 118, 118));"/>
+        </g>
+        <g>
+            <path d="M 49 173 L 21 23 L 221 173 Z" fill="url(#mx-pattern-cross-hatch-1-000000-0)" stroke="#000000" stroke-miterlimit="10" transform="rotate(-15,121,98)" pointer-events="all" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+        </g>
+        <g>
+            <path d="M 70.86 189.08 L 121 98" fill="none" stroke="#990000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(153, 0, 0), rgb(255, 181, 181));"/>
+        </g>
+        <g>
+            <path d="M 37.93 120.26 L 237 144.56" fill="none" stroke="#990000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(153, 0, 0), rgb(255, 181, 181));"/>
+        </g>
+        <g>
+            <path d="M 5 51.44 L 153.93 166.82" fill="none" stroke="#990000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(153, 0, 0), rgb(255, 181, 181));"/>
+        </g>
+        <g>
+            <ellipse cx="105" cy="128" rx="5" ry="5" fill="#a20025" stroke="#6f0000" pointer-events="all" style="fill: light-dark(rgb(162, 0, 37), rgb(255, 173, 205)); stroke: light-dark(rgb(111, 0, 0), rgb(255, 197, 197));"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,51 @@
+{
+  "toc2": [
+    {
+      "title": "Main",
+      "mainfolderitems": [
+        {
+          "page": "Documentation",
+          "url": "/docs/stable/index",
+          "subfolderitems": [
+            {
+              "page": "Getting Started",
+              "url": "/docs/stable/first_steps/operation"
+            },
+            {
+              "page": "Installation",
+              "url": "/docs/installation/"
+            },
+            {
+              "page": "Tutorials",
+              "url": "/docs/stable/tutorials/overview"
+            },
+            {
+              "page": "About ImageC",
+              "url": "/about_imagec"
+            },
+            {
+              "page": "FAQ",
+              "url": "/faq"
+            },
+            {
+              "page": "Support",
+              "url": "/support"
+            }
+          ]
+        },
+        {
+          "page": "Downloads",
+          "url": "/downloads/"
+        },
+        {
+          "page": "Citation",
+          "url": "citation"
+        },
+        {
+          "page": "GitHub",
+          "url": "https://github.com/joda01/imagec"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "sidemenu": [
+    {
+      "page": "About ImageC",
+      "url": "/about_imagec"
+    },
+    {
+      "page": "Citation",
+      "url": "/citation"
+    },
+    {
+      "page": "FAQ",
+      "url": "/faq"
+    },
+    {
+      "page": "Support",
+      "url": "/support"
+    },
+    {
+      "page": "Sitemap",
+      "url": "/docs/sitemap"
+    }
+  ]
+}

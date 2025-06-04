@@ -1,0 +1,23 @@
+data-dir: .
+input-file: imagec-doc.md
+output-file: imagec-doc.pdf
+from: markdown_github+header_attributes+tex_math_dollars-smart
+to: pdf
+metadata-file: metadata/metadata.yaml
+template: eisvogel2.tex
+pdf-engine: xelatex
+syntax-definition: sql-imagec.xml
+highlight-style: bluloco-light.theme
+table-of-contents: true
+toc-depth: 3
+top-level-division: part
+variables:
+  book: true
+  numbersections: false
+  fontsize: 9pt
+  titlepage: true
+  titlepage-color: F5F5F5
+  titlepage-logo: ../images/imagec-logo.pdf
+  titlepage-rule-color: FFF100
+  titlepage-rule-height: 20
+  urlcolor: blue

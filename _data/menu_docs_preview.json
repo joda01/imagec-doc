@@ -1,0 +1,293 @@
+{
+  "docsmenu": [
+    {
+      "page": "Installation",
+      "slug": "installation/",
+      "url": "index"
+    },
+    {
+      "page": "Documentation",
+      "slug": "",
+      "mainfolderitems": [
+        {
+          "page": "Overview",
+          "url": "index"
+        },
+        {
+          "page": "First steps",
+          "slug": "first_steps",
+          "subfolderitems": [
+            {
+              "page": "Installation",
+              "url": "../installation/index"
+            },
+            {
+              "page": "Operation",
+              "url": "operation"
+            },
+            {
+              "page": "Results",
+              "url": "results"
+            }
+          ]
+        },
+        {
+          "page": "Fundamentals",
+          "slug": "fundamentals",
+          "subfolderitems": [
+            {
+              "page": "Image formats",
+              "url": "image_formats"
+            },
+            {
+              "page": "Classification",
+              "url": "classification"
+            },
+            {
+              "page": "Objects",
+              "url": "objects"
+            },
+            {
+              "page": "Pipelines",
+              "url": "pipelines"
+            },
+            {
+              "page": "Metrics",
+              "url": "metrics"
+            }
+          ]
+        },
+        {
+          "page": "Commands",
+          "slug": "commands",
+          "subfolderitems": [
+            {
+              "page": "Overview",
+              "url": "overview"
+            },
+            {
+              "page": "Image processing",
+              "slug": "",
+              "subsubfolderitems": [
+                {
+                  "page": "Color filter",
+                  "url": "color_filter"
+                },
+                {
+                  "page": "Blur",
+                  "url": "blur"
+                },
+                {
+                  "page": "Intensity",
+                  "url": "intensity"
+                },
+                {
+                  "page": "Rolling ball",
+                  "url": "rolling_ball"
+                },
+                {
+                  "page": "Median subtract",
+                  "url": "median_subtract"
+                },
+                {
+                  "page": "Edge detection",
+                  "url": "edge_detection"
+                },
+                {
+                  "page": "Image math",
+                  "url": "image_math"
+                },
+                {
+                  "page": "Image cache",
+                  "url": "image_cache"
+                },
+                {
+                  "page": "Enhance contrast",
+                  "url": "enhance_contrast"
+                },
+                {
+                  "page": "Rank filter",
+                  "url": "rank_filter"
+                }
+
+              ]
+            },
+            {
+              "page": "Binary image processing",
+              "slug": "",
+              "subsubfolderitems": [
+                {
+                  "page": "Threshold",
+                  "url": "threshold"
+                },
+                {
+                  "page": "Watershed",
+                  "url": "watershed"
+                },
+                {
+                  "page": "Morphological transform",
+                  "url": "morphological_transform"
+                },
+                {
+                  "page": "Fill holes",
+                  "url": "fill_holes"
+                }
+              ]
+            },
+            {
+              "page": "Classification",
+              "slug": "",
+              "subsubfolderitems": [
+                {
+                  "page": "Classifier",
+                  "url": "classifier"
+                },
+                {
+                  "page": "AI classifier",
+                  "url": "ai_classifier"
+                },
+                {
+                  "page": "Hough transformation",
+                  "url": "hough_transformation"
+                }
+              ]
+            },
+            {
+              "page": "Object processing",
+              "slug": "",
+              "subsubfolderitems": [
+                {
+                  "page": "Voronoi",
+                  "url": "voronoi"
+                },
+                {
+                  "page": "Reclassifier",
+                  "url": "reclassifier"
+                },
+                {
+                  "page": "Objects to binary image",
+                  "url": "objects_to_binary"
+                },
+                {
+                  "page": "Object transform",
+                  "url": "object_transform"
+                },
+                {
+                  "page": "Save control image",
+                  "url": "save_control_image"
+                }
+              ]
+            },
+            {
+              "page": "Measurement",
+              "slug": "",
+              "subsubfolderitems": [
+                {
+                  "page": "Colocalization",
+                  "url": "colocalization"
+                },
+                {
+                  "page": "Measure intensity",
+                  "url": "measure_intensity"
+                },
+                {
+                  "page": "Measure distance",
+                  "url": "measure_distance"
+                }
+              ]
+            },
+            {
+              "page": "Filtering",
+              "slug": "",
+              "subsubfolderitems": [
+                {
+                  "page": "Threshold filter",
+                  "url": "threshold_filter"
+                },
+                {
+                  "page": "Noise filter",
+                  "url": "Noise filter"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "page": "Tutorials",
+          "slug": "tutorials",
+          "subfolderitems": [
+            {
+              "page": "Overview",
+              "url": "overview"
+            },
+            {
+              "page": "EVAnalyzer",
+              "slug": "evanalyzer",
+              "url": "evanalyzer",
+              "subsubfolderitems": [
+                {
+                  "page": "Spot count",
+                  "url": "spot_count"
+                },
+                {
+                  "page": "Spot coloc",
+                  "url": "spot_coloc"
+                },
+                {
+                  "page": "Spot count per cell",
+                  "url": "spot_count_per_cell"
+                }
+              ]
+            },
+            {
+              "page": "Advanced",
+              "slug": "advanced",
+              "subsubfolderitems": [
+                {
+                  "page": "Calc colocalization",
+                  "url": "overview"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "page": "Technical insights",
+          "slug": "technical",
+          "subfolderitems": [
+            {
+              "page": "Overview",
+              "url": "overview"
+            },
+            {
+              "page": "Resources and Limits",
+              "url": "limits"
+            },
+            {
+              "page": "Files created by ImageC",
+              "url": "files_created_by_imagec"
+            }
+          ]
+        },
+        {
+          "page": "Development",
+          "slug": "dev",
+          "subfolderitems": [
+            {
+              "page": "Debugging",
+              "url": "debugging"
+            },
+            {
+              "page": "Building",
+              "url": "building"
+            },
+            {
+              "page": "Testing",
+              "url": "testing"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
