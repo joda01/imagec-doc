@@ -1,7 +1,7 @@
 {
 	"name": "Jekyll",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "joda001/imagec-doc:v2.1.1",
+	"image": "joda001/imagec-doc:v2.2.0",
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
