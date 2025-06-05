@@ -5,7 +5,7 @@ redirect_from:
 title: Threshold
 ---
 
-<a href="/images/commands/threshold-screenshot.png" data-lightbox="image"><img src="/images/commands/threshold-screenshot.png" style="width: 30%" alt="Loading ..."/></a>
+<a href="{{ site.baseurl }}/images/commands/threshold-screenshot.png" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/threshold-screenshot.png" style="width: 30%" alt="Loading ..."/></a>
 
 
 Threshold is an object segmentation method with the goal to separate foreground objects from background objects.
@@ -27,7 +27,7 @@ Set the minimum threshold value to the smallest intensity value of the signal (m
 > Thresholding is a technique that aims to achieve an intensity value that is higher than the highest intensity value of the background noise and low enough to achieve the lowest intensity value of the regions of interest (ROIs).
 > Image preprocessing helps in advanced to reduce the background noise to get a sharp intensity border between background and foreground.
 > 
-> <a href="/images/commands/threshold.drawio.svg" data-lightbox="image"><img src="/images/commands/threshold.drawio.svg" style="width: 30%" alt="Loading ..."/></a>
+> <a href="{{ site.baseurl }}/images/commands/threshold.drawio.svg" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/threshold.drawio.svg" style="width: 30%" alt="Loading ..."/></a>
 >
 > See also section [threshold filter]({% link docs/stable/commands/filtering/threshold_filter.md %})
 

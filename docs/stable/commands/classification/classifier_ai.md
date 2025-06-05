@@ -6,7 +6,7 @@ redirect_from:
 title: AI classifier
 ---
 
-<a href="/images/commands/classifier-ai-screenshot.png" data-lightbox="image"><img src="/images/commands/classifier-ai-screenshot.png" style="width: 40%" alt="Loading ..."/></a>
+<a href="{{ site.baseurl }}/images/commands/classifier-ai-screenshot.png" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/classifier-ai-screenshot.png" style="width: 40%" alt="Loading ..."/></a>
 
 In some cases, it may not be feasible to differentiate between the background and the signal based solely on intensity values.
 This makes the use of threshold as a segmentation technique impractical in such situations.
@@ -16,7 +16,7 @@ To overcome this limitation ImageC allows the use of artificial intelligence mod
 > The output is an prediction whereby each prediction is assigned to a output class and a confidence.
 > Using the ImageC AI classifier the predicted output is transformed to classified objects.
 > 
-> <a href="/images/commands/classifier-ai.drawio.svg" data-lightbox="image"><img src="/images/commands/classifier-ai.drawio.svg" style="width: 40%" alt="Loading ..."/></a>
+> <a href="{{ site.baseurl }}/images/commands/classifier-ai.drawio.svg" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/classifier-ai.drawio.svg" style="width: 40%" alt="Loading ..."/></a>
 
 
 ## Deep learning models

@@ -5,7 +5,7 @@ redirect_from:
 title: Colocalization
 ---
 
-<a href="/images/commands/colocalization-screenshot.png" data-lightbox="image"><img src="/images/commands/colocalization-screenshot.png" style="width: 30%" alt="Loading ..."/></a>
+<a href="{{ site.baseurl }}/images/commands/colocalization-screenshot.png" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/colocalization-screenshot.png" style="width: 30%" alt="Loading ..."/></a>
 
 
 The colocalization command is used to determine objects which intersect with each other.
@@ -18,7 +18,7 @@ The ImageC colocalization command allows to reclassify those objects which coloc
 > Object tracking is the process of linking two objects, either from different time frames or channels, using the same tracking ID for all objects.
 > This makes it possible to display objects from different sources that physically represent one object.
 > 
-> <a href="/images/commands/object-tracking.drawio.svg" data-lightbox="image"><img src="/images/commands/object-tracking.drawio.svg" style="width: 30%" alt="Loading ..."/></a>
+> <a href="{{ site.baseurl }}/images/commands/object-tracking.drawio.svg" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/object-tracking.drawio.svg" style="width: 30%" alt="Loading ..."/></a>
 
 
 
@@ -43,4 +43,4 @@ In the results, objects with the same Tracking ID are placed next to each other,
 > The overlapping area is called the coloc area and a new object for further processing of this area is generated.
 > In addition ech colocalizing object gets the same tracking ID assigned.
 > 
-> <a href="/images/commands/colocalization.drawio.svg" data-lightbox="image"><img src="/images/commands/colocalization.drawio.svg" style="width: 30%" alt="Loading ..."/></a>
+> <a href="{{ site.baseurl }}/images/commands/colocalization.drawio.svg" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/colocalization.drawio.svg" style="width: 30%" alt="Loading ..."/></a>

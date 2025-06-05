@@ -4,6 +4,7 @@ redirect_from:
 - /docs/first-steps
 - /docs/first-steps/
 - /docs/first-steps/operation
+- /doc-new/docs/first-steps/operation
 title: Operation
 ---
 

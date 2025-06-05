@@ -41,7 +41,7 @@ excerpt: The media page contains talks and podcast episodes about ImageC.
 					{% if media.thumb %}
 						<img src="{{ media.thumb }}" alt="{{ media.title }}" class="zoom-image">
 					{% else %}
-						<img src="/images/blog/thumbs/placeholder-{{ random_number }}.svg" alt="Placeholder" class="zoom-image">
+						<img src="{{ site.baseurl }}/images/blog/thumbs/placeholder-{{ random_number }}.svg" alt="Placeholder" class="zoom-image">
 					{% endif %}
 				</div>
 				<div class="postdetails">

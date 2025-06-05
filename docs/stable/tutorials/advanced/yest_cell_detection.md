@@ -8,7 +8,7 @@ title: Yest cell detection
 ImageC is shipped with a predefined pipelines for Yest cell detection in brightfield images.
 In this tutorial we will go step by step through this pipeline template.
 
-<a href="/images/tutorials/yest_cells_screenshot.png" data-lightbox="image"><img src="/images/tutorials/yest_cells_screenshot.png" style="width: 100%" alt="Loading ..."/></a>
+<a href="{{ site.baseurl }}/images/tutorials/yest_cells_screenshot.png" data-lightbox="image"><img src="{{ site.baseurl }}/images/tutorials/yest_cells_screenshot.png" style="width: 100%" alt="Loading ..."/></a>
 
 
 Before you start creating the pipeline, look at your image and identify the metrics that distinguish your objects of interest from the rest of the image.

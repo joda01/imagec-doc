@@ -43,7 +43,7 @@ def generate_docs_llms_files():
             website_path = str(relative_path)
             if website_path.endswith('.md'):
                 website_path = website_path[:-3]
-            website_url = f"https://imagec.org/docs/stable/{website_path}"
+            website_url = f"https://imagec.org{{ site.baseurl }}/docs/stable/{website_path}"
 
             # Add to file groups
             if dir_name not in file_groups:

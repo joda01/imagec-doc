@@ -5,7 +5,7 @@ redirect_from:
 title: Intensity
 ---
 
-<img src="/images/commands/intensity-screenshot.png" alt="Screenshot" style="width: 25%; height: auto;">
+<img src="{{ site.baseurl }}/images/commands/intensity-screenshot.png" alt="Screenshot" style="width: 25%; height: auto;">
 
 
 The intensity command allows to change the image brightness, contrast and gamma.

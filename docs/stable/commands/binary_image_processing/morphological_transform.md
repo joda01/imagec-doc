@@ -5,7 +5,7 @@ redirect_from:
 title: Morphological transform
 ---
 
-<a href="/images/commands/morphological-transform-screenshot.png" data-lightbox="image"><img src="/images/commands/morphological-transform-screenshot.png" style="width: 30%" alt="Loading ..."/></a>
+<a href="{{ site.baseurl }}/images/commands/morphological-transform-screenshot.png" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/morphological-transform-screenshot.png" style="width: 30%" alt="Loading ..."/></a>
 
 
 Morphological transformation is an operation applied to the image shape.

@@ -5,7 +5,7 @@ redirect_from:
 title: Rank filter
 ---
 
-<a href="/images/commands/screenshot-rank-filter.png" data-lightbox="image"><img src="/images/commands/screenshot-rank-filter.png" style="width: 30%" alt="Loading ..."/></a>
+<a href="{{ site.baseurl }}/images/commands/screenshot-rank-filter.png" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/screenshot-rank-filter.png" style="width: 30%" alt="Loading ..."/></a>
 
 
 With ranking filters, the grey values of the pixels in a defined area around a pixel are collected, sorted by size and ranked. 
@@ -28,7 +28,7 @@ The `Radius` setting defines the size of the area to collect the pixels gray val
 > - Median filter, for the gray value in the middle of the list
 > - Maximum filter, for the maximum gray value, last position in the list.
 > 
-> <a href="/images/commands/rank-filter.drawio.svg" data-lightbox="image"><img src="/images/commands/rank-filter.drawio.svg" style="width: 30%" alt="Loading ..."/></a>
+> <a href="{{ site.baseurl }}/images/commands/rank-filter.drawio.svg" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/rank-filter.drawio.svg" style="width: 30%" alt="Loading ..."/></a>
 
 
 

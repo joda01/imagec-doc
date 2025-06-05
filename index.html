@@ -41,7 +41,7 @@ body_class: landing nowrap
 			<h1>a high throughput<br/>image processing application</h1>
 			<p>Quantify thousands of images<br/>using your individual processing pipelines</p>
 			<a class="button transparent arrow-down dark" href="#quickinstall">Installation</a>
-			<a class="button blue" href="/docs/">Documentation</a>
+			<a class="button blue" href="{{ site.baseurl }}/docs/">Documentation</a>
 		</div>
 		<div class="slideshow window">
 			<img src="images/spinner/cell-detection.webp" class="active"/>
@@ -195,7 +195,7 @@ body_class: landing nowrap
 						{% if post.thumb %}
 							<img src="{{ post.thumb }}" alt="{{ post.title }}" class="zoom-image"/>
 						{% else %}
-							<img src="/images/blog/thumbs/placeholder-{{ random_number }}.svg" alt="Placeholder" class="zoom-image"/>
+							<img src="{{ site.baseurl }}/images/blog/thumbs/placeholder-{{ random_number }}.svg" alt="Placeholder" class="zoom-image"/>
 						{% endif %}
 					</div>
 					<div class="postdetails">
@@ -237,7 +237,7 @@ body_class: landing nowrap
 					{% if event.thumb %}
 					<img src="{{ event.thumb }}" alt="{{ event.title }}" class="zoom-image">
 					{% else %}
-					<img src="/images/blog/thumbs/placeholder-{{ random_number }}.svg" alt="Placeholder"
+					<img src="{{ site.baseurl }}/images/blog/thumbs/placeholder-{{ random_number }}.svg" alt="Placeholder"
 						class="zoom-image">
 					{% endif %}
 				</div>

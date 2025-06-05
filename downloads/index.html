@@ -39,12 +39,12 @@ body_class: blog
 						<img src="{{ post.thumb }}" alt="{{ post.title }}" class="zoom-image">
 					{% else %}
 						{% if tag_classes contains "ai-models" %}
-							<img src="/images/blog/thumbs/placeholder-ai.svg" alt="Placeholder" class="zoom-image">
+							<img src="{{ site.baseurl }}/images/blog/thumbs/placeholder-ai.svg" alt="Placeholder" class="zoom-image">
 						{% else %}
 							{% if tag_classes contains "templates" %}
-								<img src="/images/blog/thumbs/placeholder-template.svg" alt="Placeholder" class="zoom-image">
+								<img src="{{ site.baseurl }}/images/blog/thumbs/placeholder-template.svg" alt="Placeholder" class="zoom-image">
 							{% else %}
-								<img src="/images/blog/thumbs/placeholder-{{ random_number }}.svg" alt="Placeholder" class="zoom-image">
+								<img src="{{ site.baseurl }}/images/blog/thumbs/placeholder-{{ random_number }}.svg" alt="Placeholder" class="zoom-image">
 							{% endif %}
 						{% endif %}
 					{% endif %}

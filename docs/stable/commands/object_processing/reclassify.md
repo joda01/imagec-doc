@@ -5,7 +5,7 @@ redirect_from:
 title: Reclassify
 ---
 
-<a href="/images/commands/reclassify-screenshot.png" data-lightbox="image"><img src="/images/commands/reclassify-screenshot.png" style="width: 30%" alt="Loading ..."/></a>
+<a href="{{ site.baseurl }}/images/commands/reclassify-screenshot.png" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/reclassify-screenshot.png" style="width: 30%" alt="Loading ..."/></a>
 
 
 The reclassify command can be used to change the class of an object that has been formally classified using the [classifier]({% link docs/stable/commands/classification/classifier.md %}) or [ai-classifier]({% link docs/stable/commands/classification/classifier_ai.md %}) command, based on some filter criteria.
@@ -21,7 +21,7 @@ For that reason the ImageC reclassifier provides two filter options: `Intersecti
 > This information can be used to draw a hierarchy graph of the objects, showing which objects are part of another.
 > Use the intersection filter of the Reclassify command to build up such a hierarchy.
 > 
-> <a href="/images/commands/object-hierarchy.drawio.svg" data-lightbox="image"><img src="/images/commands/object-hierarchy.drawio.svg" style="width: 30%" alt="Loading ..."/></a>
+> <a href="{{ site.baseurl }}/images/commands/object-hierarchy.drawio.svg" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/object-hierarchy.drawio.svg" style="width: 30%" alt="Loading ..."/></a>
 
 
 ## Filters

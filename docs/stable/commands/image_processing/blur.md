@@ -5,7 +5,7 @@ redirect_from:
 title: Blur
 ---
 
-<img src="/images/commands/blur-screenshot.png" alt="Screenshot" style="width: 30%; height: auto;">
+<img src="{{ site.baseurl }}/images/commands/blur-screenshot.png" alt="Screenshot" style="width: 30%; height: auto;">
 
 
 Blur algorithms are used to reduce image noise and details.
@@ -25,6 +25,6 @@ Compared to the normal blur gaussian blur tends to preserve edges slightly bette
 > This is accomplished by doing a convolution between the kernel and an image. 
 > Or more simply, when each pixel in the output image is a function of the nearby pixels (including itself) in the input image, the kernel is that function.
 > 
-> <img src="/images/commands/blur-kernel.drawio.svg" alt="Screenshot" style="width: 30%; height: auto;">
+> <img src="{{ site.baseurl }}/images/commands/blur-kernel.drawio.svg" alt="Screenshot" style="width: 30%; height: auto;">
 > ```
 > https://en.wikipedia.org/wiki/Kernel_(image_processing)

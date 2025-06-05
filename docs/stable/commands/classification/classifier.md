@@ -5,7 +5,7 @@ redirect_from:
 title: Classifier
 ---
 
-<a href="/images/commands/classifier-screenshot.png" data-lightbox="image"><img src="/images/commands/classifier-screenshot.png" style="width: 30%" alt="Loading ..."/></a>
+<a href="{{ site.baseurl }}/images/commands/classifier-screenshot.png" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/classifier-screenshot.png" style="width: 30%" alt="Loading ..."/></a>
 
 
 The Classifier command is used to convert regions of interest, formally extracted from the image using a segmentation algorithm such as [threshold]({% link docs/stable/commands/binary_image_processing/threshold.md %}), into objects, where each object is assigned to an object class.
@@ -27,5 +27,5 @@ As a rule, one filter for each threshold class is used.
 > For each extracted object a class is assigned and metrics are measured.
 > Objects are stored to the resulting database and can be used in further pipeline steps.
 > 
-> <a href="/images/commands/classifier.drawio.svg" data-lightbox="image"><img src="/images/commands/classifier.drawio.svg" style="width: 40%" alt="Loading ..."/></a>
+> <a href="{{ site.baseurl }}/images/commands/classifier.drawio.svg" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/classifier.drawio.svg" style="width: 40%" alt="Loading ..."/></a>
 

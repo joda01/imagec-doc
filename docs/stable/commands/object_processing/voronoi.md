@@ -5,7 +5,7 @@ redirect_from:
 title: Voronoi
 ---
 
-<a href="/images/commands/voronoi-screenshot.png" data-lightbox="image"><img src="/images/commands/voronoi-screenshot.png" style="width: 30%" alt="Loading ..."/></a>
+<a href="{{ site.baseurl }}/images/commands/voronoi-screenshot.png" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/voronoi-screenshot.png" style="width: 30%" alt="Loading ..."/></a>
 
 
 In order to construct a Voronoi diagram, it is necessary to gather certain fundamental data. 
@@ -17,7 +17,7 @@ This information can be obtained from the `Voronoi` settings tab, which is used 
 > The diagram areas are generated so that the enveloping area of each point is the closest to that point.
 > Voronoi diagrams can be useful for approximating cell surfaces based on known cell nuclei.
 > 
-> <a href="/images/commands/voronoi-example.png" data-lightbox="image"><img src="/images/commands/voronoi-example.png" style="width: 30%" alt="Loading ..."/></a>
+> <a href="{{ site.baseurl }}/images/commands/voronoi-example.png" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/voronoi-example.png" style="width: 30%" alt="Loading ..."/></a>
 
 
 ### Voronoi centers

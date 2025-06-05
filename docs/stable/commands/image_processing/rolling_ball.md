@@ -5,7 +5,7 @@ redirect_from:
 title: Rolling ball
 ---
 
-<a href="/images/commands/rolling-ball-screenshot.png" data-lightbox="image"><img src="/images/commands/rolling-ball-screenshot.png" style="width: 30%" alt="Loading ..."/></a>
+<a href="{{ site.baseurl }}/images/commands/rolling-ball-screenshot.png" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/rolling-ball-screenshot.png" style="width: 30%" alt="Loading ..."/></a>
 
 The rolling ball algorithm is a background subtraction algorithm, with the goal to remove most of the background noise.
 
@@ -30,4 +30,4 @@ This is beneficial in applications such as microscopy, where accurate boundary r
 
 > The rolling-ball algorithm was inspired by Stanley Sternberg’s article, “Biomedical Image Processing”, IEEE Computer, January 1983.
 >
-> <a href="/images/commands/rolling-ball-reseacrh-gate.jpeg" data-lightbox="image"><img src="/images/commands/rolling-ball-reseacrh-gate.jpeg" style="width: 30%" alt="Loading ..."/></a>
+> <a href="{{ site.baseurl }}/images/commands/rolling-ball-reseacrh-gate.jpeg" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/rolling-ball-reseacrh-gate.jpeg" style="width: 30%" alt="Loading ..."/></a>

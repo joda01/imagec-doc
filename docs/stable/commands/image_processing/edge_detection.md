@@ -5,7 +5,7 @@ redirect_from:
 title: Edge detection
 ---
 
-<img src="/images/commands/edge-detection-screenshot.png" alt="Screenshot" style="width: 25%; height: auto;">
+<img src="{{ site.baseurl }}/images/commands/edge-detection-screenshot.png" alt="Screenshot" style="width: 25%; height: auto;">
 
 
 Edge detection is a function used to highlight the edges within an image.
@@ -23,5 +23,5 @@ The disadvantage of the Canny algorithm is that it is more complex and less time
 > Edge detection is the process of finding edges in an image and converting them to a gradient representation.
 > Sharper changes in the intensity values lead to a higher gradient.
 > 
-> <img src="/images/commands/edge-detection.drawio.svg" alt="Screenshot" style="width: 30%; height: auto;">
+> <img src="{{ site.baseurl }}/images/commands/edge-detection.drawio.svg" alt="Screenshot" style="width: 30%; height: auto;">
 >

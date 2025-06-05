@@ -6,7 +6,7 @@ title: Image Cache
 ---
 
 
-<a href="/images/commands/store-image-to-cache-screenshot.png" data-lightbox="image"><img src="/images/commands/store-image-to-cache-screenshot.png" style="width: 30%" alt="Loading ..."/></a>
+<a href="{{ site.baseurl }}/images/commands/store-image-to-cache-screenshot.png" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/store-image-to-cache-screenshot.png" style="width: 30%" alt="Loading ..."/></a>
 
 
 The store image to cache command stores an actual image at any time to the cache.
@@ -29,4 +29,4 @@ The memory slots `M0` to `M10` can be used twice once for `Iteration` and once f
 > Storing an image to the cache stores the actual image to this place in RAM.
 > Other commands can load these images from the RAM in an efficient way and apply further processing steps on it.
 > 
-> <a href="/images/commands/store-to-cache.drawio.svg" data-lightbox="image"><img src="/images/commands/store-to-cache.drawio.svg" style="width: 30%" alt="Loading ..."/></a>
+> <a href="{{ site.baseurl }}/images/commands/store-to-cache.drawio.svg" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/store-to-cache.drawio.svg" style="width: 30%" alt="Loading ..."/></a>

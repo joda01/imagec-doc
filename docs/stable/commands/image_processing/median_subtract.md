@@ -7,7 +7,7 @@ title: Median subtract
 
 > Deprecated Use [Rank filter]({% link docs/stable/commands/image_processing/rank_filter.md %}) in combination with [Image math]({% link docs/stable/commands/image_processing/image_math.md %}) instead for future projects!
 
-<img src="/images/commands/median-subtract-screenshot.png" alt="Screenshot" style="width: 30%; height: auto;">
+<img src="{{ site.baseurl }}/images/commands/median-subtract-screenshot.png" alt="Screenshot" style="width: 30%; height: auto;">
 
 
 Median subtraction is a sort of noise filtering which can be used to reduce background noise similar to the [rolling ball]() algorithm.

@@ -539,92 +539,92 @@ body.landing{
 						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='46' height='46' fill='none'%3E%3Cpath stroke='%23FFA94D' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.5' d='m25.38 26.437 7.137 7.138M31.989 12.69l-6.08 6.08M17.448 22.603h-4.23'/%3E%3Ccircle cx='22.207' cy='22.207' r='4.759' stroke='%23FFA94D' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.5'/%3E%3Ccircle cx='35.954' cy='37.011' r='4.759' stroke='%23FFA94D' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.5'/%3E%3Ccircle cx='35.954' cy='8.988' r='4.759' stroke='%23FFA94D' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.5'/%3E%3Ccircle cx='8.46' cy='22.207' r='4.759' stroke='%23FFA94D' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.5'/%3E%3C/svg%3E");
 					}
 					&.speed{
-						background-image: url("/images/icons/speed.svg");
+						background-image: url("{{ site.baseurl }}/images/icons/speed.svg");
 						height: 64px;
 						width: 64px;
 					}
 					&.plus{
-						background-image: url("/images/icons/plus.svg");
+						background-image: url("{{ site.baseurl }}/images/icons/plus.svg");
 						height: 64px;
 						width: 64px;
 					}
 					&.layer{
-						background-image: url("/images/icons/layer.svg");
+						background-image: url("{{ site.baseurl }}/images/icons/layer.svg");
 						height: 64px;
 						width: 64px;
 					}
 					&.slider{
-						background-image: url("/images/icons/slider.svg");
+						background-image: url("{{ site.baseurl }}/images/icons/slider.svg");
 						height: 64px;
 						width: 64px;
 					}
 					&.show{
-						background-image: url("/images/icons/show.svg");
+						background-image: url("{{ site.baseurl }}/images/icons/show.svg");
 						height: 64px;
 						width: 64px;
 					}
 					&.send{
-						background-image: url("/images/icons/send.svg");
+						background-image: url("{{ site.baseurl }}/images/icons/send.svg");
 						height: 64px;
 						width: 64px;
 					}
 					&.chip{
-						background-image: url("/images/icons/chip.svg");
+						background-image: url("{{ site.baseurl }}/images/icons/chip.svg");
 						height: 64px;
 						width: 64px;
 					}
 					&.download{
-						background-image: url("/images/icons/download.svg");
+						background-image: url("{{ site.baseurl }}/images/icons/download.svg");
 						height: 64px;
 						width: 64px;
 					}
 					&.code{
-						background-image: url("/images/icons/code.svg");
+						background-image: url("{{ site.baseurl }}/images/icons/code.svg");
 						height: 64px;
 						width: 64px;
 					}
 					&.image{
-						background-image: url("/images/icons/image.svg");
+						background-image: url("{{ site.baseurl }}/images/icons/image.svg");
 						height: 64px;
 						width: 64px;
 					}
 					&.table{
-						background-image: url("/images/icons/table.svg");
+						background-image: url("{{ site.baseurl }}/images/icons/table.svg");
 						height: 64px;
 						width: 64px;
 					}
 					&.bioformats{
-						background-image: url("/images/icons/bioformats.svg");
+						background-image: url("{{ site.baseurl }}/images/icons/bioformats.svg");
 						height: 64px;
 						width: 64px;
 					}
 					&.database{
-						background-image: url("/images/icons/database.svg");
+						background-image: url("{{ site.baseurl }}/images/icons/database.svg");
 						height: 64px;
 						width: 64px;
 					}
 					&.xml{
-						background-image: url("/images/icons/xml.svg");
+						background-image: url("{{ site.baseurl }}/images/icons/xml.svg");
 						height: 64px;
 						width: 64px;
 					}
 					&.filter{
-						background-image: url("/images/icons/filter.svg");
+						background-image: url("{{ site.baseurl }}/images/icons/filter.svg");
 						height: 64px;
 						width: 64px;
 					}
 					&.liver{
-						background-image: url("/images/icons/liver.svg");
+						background-image: url("{{ site.baseurl }}/images/icons/liver.svg");
 						height: 64px;
 						width: 64px;
 					}
 					&.live{
-						background-image: url("/images/icons/live.svg");
+						background-image: url("{{ site.baseurl }}/images/icons/live.svg");
 						height: 64px;
 						width: 64px;
 					}
 					&.microscope{
-						background-image: url("/images/icons/microscope.svg");
+						background-image: url("{{ site.baseurl }}/images/icons/microscope.svg");
 						height: 64px;
 						width: 64px;
 					}

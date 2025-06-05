@@ -2,7 +2,7 @@ title: ImageC
 email: support@imagec.org
 description: ImageC alias EVAnalyzer 2 is a high throughput image processing application
   for biological science.
-baseurl: '/doc-new'
+baseurl: /doc-new
 url: https://imagec.org
 current_short_imagec_version: v1.0.0-beta.20
 preview_short_imagec_version: v1.0.0-beta.20
@@ -54,7 +54,7 @@ defaults:
   values:
     image: /images/sharingimagec.jpg
     toc: true
-repository: imagec/imagec-web
+repository: imagec/imagec-doc
 star_count: '4'
 toc:
   min_level: 1

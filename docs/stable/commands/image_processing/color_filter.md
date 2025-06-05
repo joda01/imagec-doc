@@ -5,7 +5,7 @@ redirect_from:
 title: Color filter
 ---
 
-<a href="/images/commands/screenshot-command-color-filter.png" data-lightbox="image"><img src="/images/commands/screenshot-command-color-filter.png" style="width: 30%" alt="Loading ..."/></a>
+<a href="{{ site.baseurl }}/images/commands/screenshot-command-color-filter.png" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/screenshot-command-color-filter.png" style="width: 30%" alt="Loading ..."/></a>
 
 
 If the input image is an RGB 8-bit color image, the color image must first be converted to a grey scale image.
@@ -29,6 +29,6 @@ In a next step further image processing steps can be applied.
 > Using HSV allows more easy to filter e.g. all blue tones from an image.
 > ImageC is using HSV color format for that reason when working with colored images.
 > 
-> <img src="/images/commands/wikipedia-hsv-color-tone.png" alt="Screenshot" style="width: 30%; height: auto;">
+> <img src="{{ site.baseurl }}/images/commands/wikipedia-hsv-color-tone.png" alt="Screenshot" style="width: 30%; height: auto;">
 >
 > Wikipedia: [https://de.wikipedia.org/wiki/HSV-Farbraum#/media/Datei:HSV_cone.png](https://de.wikipedia.org/wiki/HSV-Farbraum#/media/Datei:HSV_cone.png])

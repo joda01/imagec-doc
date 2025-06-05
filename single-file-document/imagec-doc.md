@@ -16,7 +16,7 @@ Code repositories:
 
 This guide takes you through your first steps with ImageC, helping you create your first ImageC project and start analyzing images.
 
-> **Tip.** Please read [Installation](https://imagec.org/docs/installation/index.html) first and run ImageC on your computer before starting with this tutorial.
+> **Tip.** Please read [Installation](https://imagec.org{{ site.baseurl }}/docs/installation/index.html) first and run ImageC on your computer before starting with this tutorial.
 
 
 After download the correct ImageC bundle for your computer, unzip the downloaded data and use the `imagec` for Linux and macOS resp. `imagec.exe` for Windows to start ImageC.
@@ -787,7 +787,7 @@ ImageC provides an object classifier based on segmented images (e.g. after apply
 
 ### Color filter {#docs:stable:commands:image_processing:color_filter}
 
-<a href="/images/commands/screenshot-command-color-filter.png" data-lightbox="image">![](../images/commands/screenshot-command-color-filter.png)
+<a href="{{ site.baseurl }}/images/commands/screenshot-command-color-filter.png" data-lightbox="image">![](../images/commands/screenshot-command-color-filter.png)
 </a>
 
 
@@ -812,13 +812,13 @@ In a next step further image processing steps can be applied.
 > Using HSV allows more easy to filter e.g. all blue tones from an image.
 > ImageC is using HSV color format for that reason when working with colored images.
 > 
-> <img src="/images/commands/wikipedia-hsv-color-tone.png" alt="Screenshot" style="width: 30%; height: auto;">
+> <img src="{{ site.baseurl }}/images/commands/wikipedia-hsv-color-tone.png" alt="Screenshot" style="width: 30%; height: auto;">
 >
 > Wikipedia: [https://de.wikipedia.org/wiki/HSV-Farbraum#/media/Datei:HSV_cone.png](https://de.wikipedia.org/wiki/HSV-Farbraum#/media/Datei:HSV_cone.png])
 
 ### Blur {#docs:stable:commands:image_processing:blur}
 
-<img src="/images/commands/blur-screenshot.png" alt="Screenshot" style="width: 30%; height: auto;">
+<img src="{{ site.baseurl }}/images/commands/blur-screenshot.png" alt="Screenshot" style="width: 30%; height: auto;">
 
 
 Blur algorithms are used to reduce image noise and details.
@@ -838,13 +838,13 @@ Compared to the normal blur gaussian blur tends to preserve edges slightly bette
 > This is accomplished by doing a convolution between the kernel and an image. 
 > Or more simply, when each pixel in the output image is a function of the nearby pixels (including itself) in the input image, the kernel is that function.
 > 
-> <img src="/images/commands/blur-kernel.drawio.svg" alt="Screenshot" style="width: 30%; height: auto;">
+> <img src="{{ site.baseurl }}/images/commands/blur-kernel.drawio.svg" alt="Screenshot" style="width: 30%; height: auto;">
 > ```
 > https://en.wikipedia.org/wiki/Kernel_(image_processing)
 
 ### Intensity {#docs:stable:commands:image_processing:intensity}
 
-<img src="/images/commands/intensity-screenshot.png" alt="Screenshot" style="width: 25%; height: auto;">
+<img src="{{ site.baseurl }}/images/commands/intensity-screenshot.png" alt="Screenshot" style="width: 25%; height: auto;">
 
 
 The intensity command allows to change the image brightness, contrast and gamma.
@@ -882,7 +882,7 @@ Automatic contrast and brightness correction is done by calculating a histogram 
 
 ### Rolling ball {#docs:stable:commands:image_processing:rolling_ball}
 
-<a href="/images/commands/rolling-ball-screenshot.png" data-lightbox="image">![](../images/commands/rolling-ball-screenshot.png)
+<a href="{{ site.baseurl }}/images/commands/rolling-ball-screenshot.png" data-lightbox="image">![](../images/commands/rolling-ball-screenshot.png)
 </a>
 
 The rolling ball algorithm is a background subtraction algorithm, with the goal to remove most of the background noise.
@@ -908,14 +908,14 @@ This is beneficial in applications such as microscopy, where accurate boundary r
 
 > The rolling-ball algorithm was inspired by Stanley Sternberg’s article, “Biomedical Image Processing”, IEEE Computer, January 1983.
 >
-> <a href="/images/commands/rolling-ball-reseacrh-gate.jpeg" data-lightbox="image">![](../images/commands/rolling-ball-reseacrh-gate.jpeg)
+> <a href="{{ site.baseurl }}/images/commands/rolling-ball-reseacrh-gate.jpeg" data-lightbox="image">![](../images/commands/rolling-ball-reseacrh-gate.jpeg)
 </a>
 
 ### Median subtract {#docs:stable:commands:image_processing:median_subtract}
 
 > **Deprecated.** Use [Rank filter](#docs:stable:commands:image_processing:rank_filter) in combination with [Image math](#docs:stable:commands:image_processing:image_math) instead for future projects!
 
-<img src="/images/commands/median-subtract-screenshot.png" alt="Screenshot" style="width: 30%; height: auto;">
+<img src="{{ site.baseurl }}/images/commands/median-subtract-screenshot.png" alt="Screenshot" style="width: 30%; height: auto;">
 
 
 Median subtraction is a sort of noise filtering which can be used to reduce background noise similar to the [rolling ball](#) algorithm.
@@ -926,7 +926,7 @@ Bigger kernels reduces more details from the image than smaller ones.
 
 ### Edge detection {#docs:stable:commands:image_processing:edge_detection}
 
-<img src="/images/commands/edge-detection-screenshot.png" alt="Screenshot" style="width: 25%; height: auto;">
+<img src="{{ site.baseurl }}/images/commands/edge-detection-screenshot.png" alt="Screenshot" style="width: 25%; height: auto;">
 
 
 Edge detection is a function used to highlight the edges within an image.
@@ -944,12 +944,12 @@ The disadvantage of the Canny algorithm is that it is more complex and less time
 > Edge detection is the process of finding edges in an image and converting them to a gradient representation.
 > Sharper changes in the intensity values lead to a higher gradient.
 > 
-> <img src="/images/commands/edge-detection.drawio.svg" alt="Screenshot" style="width: 30%; height: auto;">
+> <img src="{{ site.baseurl }}/images/commands/edge-detection.drawio.svg" alt="Screenshot" style="width: 30%; height: auto;">
 >
 
 ### Image math {#docs:stable:commands:image_processing:image_math}
 
-<a href="/images/commands/image-math-screenshot.png" data-lightbox="image">![](../images/commands/image-math-screenshot.png)
+<a href="{{ site.baseurl }}/images/commands/image-math-screenshot.png" data-lightbox="image">![](../images/commands/image-math-screenshot.png)
 </a>
 
 The image math command can be used to combine two images using one of the provided mathematical operations.
@@ -964,12 +964,12 @@ The `Operating order` setting allows to define if the first operand of the selec
 > When calculating with images a matrix operation is performed which uses the pixel value at `(n,m)` from both matrixes and applying the operator on that.
 > The resulting matrix after applying the operator on all elements of the matrix is the resulting image.
 > 
-> <a href="/images/commands/image-math.drawio.svg" data-lightbox="image">![](../images/commands/image-math.drawio.svg)
+> <a href="{{ site.baseurl }}/images/commands/image-math.drawio.svg" data-lightbox="image">![](../images/commands/image-math.drawio.svg)
 </a>
 
 ### Image Cache {#docs:stable:commands:image_processing:image_cache}
 
-<a href="/images/commands/store-image-to-cache-screenshot.png" data-lightbox="image">![](../images/commands/store-image-to-cache-screenshot.png)
+<a href="{{ site.baseurl }}/images/commands/store-image-to-cache-screenshot.png" data-lightbox="image">![](../images/commands/store-image-to-cache-screenshot.png)
 </a>
 
 
@@ -993,7 +993,7 @@ The memory slots `M0` to `M10` can be used twice once for `Iteration` and once f
 > Storing an image to the cache stores the actual image to this place in RAM.
 > Other commands can load these images from the RAM in an efficient way and apply further processing steps on it.
 > 
-> <a href="/images/commands/store-to-cache.drawio.svg" data-lightbox="image">![](../images/commands/store-to-cache.drawio.svg)
+> <a href="{{ site.baseurl }}/images/commands/store-to-cache.drawio.svg" data-lightbox="image">![](../images/commands/store-to-cache.drawio.svg)
 </a>
 
 ### Enhance contrast {#docs:stable:commands:image_processing:enhance_contrast}
@@ -1002,7 +1002,7 @@ The memory slots `M0` to `M10` can be used twice once for `Iteration` and once f
 
 ### Rank filter {#docs:stable:commands:image_processing:rank_filter}
 
-<a href="/images/commands/screenshot-rank-filter.png" data-lightbox="image">![](../images/commands/screenshot-rank-filter.png)
+<a href="{{ site.baseurl }}/images/commands/screenshot-rank-filter.png" data-lightbox="image">![](../images/commands/screenshot-rank-filter.png)
 </a>
 
 
@@ -1026,14 +1026,14 @@ The `Radius` setting defines the size of the area to collect the pixels gray val
 > - Median filter, for the gray value in the middle of the list
 > - Maximum filter, for the maximum gray value, last position in the list.
 > 
-> <a href="/images/commands/rank-filter.drawio.svg" data-lightbox="image">![](../images/commands/rank-filter.drawio.svg)
+> <a href="{{ site.baseurl }}/images/commands/rank-filter.drawio.svg" data-lightbox="image">![](../images/commands/rank-filter.drawio.svg)
 </a>
 
 ## Binary image processing {#commands:binary_image_processing}
 
 ### Threshold {#docs:stable:commands:binary_image_processing:threshold}
 
-<a href="/images/commands/threshold-screenshot.png" data-lightbox="image">![](../images/commands/threshold-screenshot.png)
+<a href="{{ site.baseurl }}/images/commands/threshold-screenshot.png" data-lightbox="image">![](../images/commands/threshold-screenshot.png)
 </a>
 
 
@@ -1056,7 +1056,7 @@ Set the minimum threshold value to the smallest intensity value of the signal (m
 > Thresholding is a technique that aims to achieve an intensity value that is higher than the highest intensity value of the background noise and low enough to achieve the lowest intensity value of the regions of interest (ROIs).
 > Image preprocessing helps in advanced to reduce the background noise to get a sharp intensity border between background and foreground.
 > 
-> <a href="/images/commands/threshold.drawio.svg" data-lightbox="image">![](../images/commands/threshold.drawio.svg)
+> <a href="{{ site.baseurl }}/images/commands/threshold.drawio.svg" data-lightbox="image">![](../images/commands/threshold.drawio.svg)
 </a>
 >
 > See also section [threshold filter](#docs:stable:commands:filtering:threshold_filter)
@@ -1113,7 +1113,7 @@ By using the live preview and the histogram, it is possible to determine the int
 
 ### Watershed {#docs:stable:commands:binary_image_processing:watershed}
 
-<a href="/images/commands/watershed-screenshot.png" data-lightbox="image">![](../images/commands/watershed-screenshot.png)
+<a href="{{ site.baseurl }}/images/commands/watershed-screenshot.png" data-lightbox="image">![](../images/commands/watershed-screenshot.png)
 </a>
 
 
@@ -1133,12 +1133,12 @@ One of them is the Watershed algorithm which was ported from [ImageJ](https://im
 
 > Based on peaks extracted from the intensity values the valleys between the peaks are the borders for splitting objects.
 > 
-> <a href="/images/commands/watershed.drawio.svg" data-lightbox="image">![](../images/commands/watershed.drawio.svg)
+> <a href="{{ site.baseurl }}/images/commands/watershed.drawio.svg" data-lightbox="image">![](../images/commands/watershed.drawio.svg)
 </a>
 
 ### Morphological transform {#docs:stable:commands:binary_image_processing:morphological_transform}
 
-<a href="/images/commands/morphological-transform-screenshot.png" data-lightbox="image">![](../images/commands/morphological-transform-screenshot.png)
+<a href="{{ site.baseurl }}/images/commands/morphological-transform-screenshot.png" data-lightbox="image">![](../images/commands/morphological-transform-screenshot.png)
 </a>
 
 
@@ -1200,7 +1200,7 @@ Erosion can be used to separate connected objects or remove noise from the image
 
 ### Classifier {#docs:stable:commands:classification:classifier}
 
-<a href="/images/commands/classifier-screenshot.png" data-lightbox="image">![](../images/commands/classifier-screenshot.png)
+<a href="{{ site.baseurl }}/images/commands/classifier-screenshot.png" data-lightbox="image">![](../images/commands/classifier-screenshot.png)
 </a>
 
 
@@ -1223,12 +1223,12 @@ As a rule, one filter for each threshold class is used.
 > For each extracted object a class is assigned and metrics are measured.
 > Objects are stored to the resulting database and can be used in further pipeline steps.
 > 
-> <a href="/images/commands/classifier.drawio.svg" data-lightbox="image">![](../images/commands/classifier.drawio.svg)
+> <a href="{{ site.baseurl }}/images/commands/classifier.drawio.svg" data-lightbox="image">![](../images/commands/classifier.drawio.svg)
 </a>
 
 ### AI classifier {#docs:stable:commands:classification:classifier_ai}
 
-<a href="/images/commands/classifier-ai-screenshot.png" data-lightbox="image">![](../images/commands/classifier-ai-screenshot.png)
+<a href="{{ site.baseurl }}/images/commands/classifier-ai-screenshot.png" data-lightbox="image">![](../images/commands/classifier-ai-screenshot.png)
 </a>
 
 In some cases, it may not be feasible to differentiate between the background and the signal based solely on intensity values.
@@ -1239,7 +1239,7 @@ To overcome this limitation ImageC allows the use of artificial intelligence mod
 > The output is an prediction whereby each prediction is assigned to a output class and a confidence.
 > Using the ImageC AI classifier the predicted output is transformed to classified objects.
 > 
-> <a href="/images/commands/classifier-ai.drawio.svg" data-lightbox="image">![](../images/commands/classifier-ai.drawio.svg)
+> <a href="{{ site.baseurl }}/images/commands/classifier-ai.drawio.svg" data-lightbox="image">![](../images/commands/classifier-ai.drawio.svg)
 </a>
 
 
@@ -1307,7 +1307,7 @@ With the class threshold, it is possible to define the minimum probability that 
 
 ### Voronoi {#docs:stable:commands:object_processing:voronoi}
 
-<a href="/images/commands/voronoi-screenshot.png" data-lightbox="image">![](../images/commands/voronoi-screenshot.png)
+<a href="{{ site.baseurl }}/images/commands/voronoi-screenshot.png" data-lightbox="image">![](../images/commands/voronoi-screenshot.png)
 </a>
 
 
@@ -1320,7 +1320,7 @@ This information can be obtained from the `Voronoi` settings tab, which is used 
 > The diagram areas are generated so that the enveloping area of each point is the closest to that point.
 > Voronoi diagrams can be useful for approximating cell surfaces based on known cell nuclei.
 > 
-> <a href="/images/commands/voronoi-example.png" data-lightbox="image">![](../images/commands/voronoi-example.png)
+> <a href="{{ site.baseurl }}/images/commands/voronoi-example.png" data-lightbox="image">![](../images/commands/voronoi-example.png)
 </a>
 
 
@@ -1365,7 +1365,7 @@ Enabling this filter will invalidate all areas that do not contain a point from 
 
 ### Reclassify {#docs:stable:commands:object_processing:reclassify}
 
-<a href="/images/commands/reclassify-screenshot.png" data-lightbox="image">![](../images/commands/reclassify-screenshot.png)
+<a href="{{ site.baseurl }}/images/commands/reclassify-screenshot.png" data-lightbox="image">![](../images/commands/reclassify-screenshot.png)
 </a>
 
 
@@ -1382,7 +1382,7 @@ For that reason the ImageC reclassifier provides two filter options: `Intersecti
 > This information can be used to draw a hierarchy graph of the objects, showing which objects are part of another.
 > Use the intersection filter of the Reclassify command to build up such a hierarchy.
 > 
-> <a href="/images/commands/object-hierarchy.drawio.svg" data-lightbox="image">![](../images/commands/object-hierarchy.drawio.svg)
+> <a href="{{ site.baseurl }}/images/commands/object-hierarchy.drawio.svg" data-lightbox="image">![](../images/commands/object-hierarchy.drawio.svg)
 </a>
 
 
@@ -1448,7 +1448,7 @@ The origin object keeps untouched.
 
 ### Colocalization {#docs:stable:commands:measurement:colocalization}
 
-<a href="/images/commands/colocalization-screenshot.png" data-lightbox="image">![](../images/commands/colocalization-screenshot.png)
+<a href="{{ site.baseurl }}/images/commands/colocalization-screenshot.png" data-lightbox="image">![](../images/commands/colocalization-screenshot.png)
 </a>
 
 
@@ -1462,7 +1462,7 @@ The ImageC colocalization command allows to reclassify those objects which coloc
 > Object tracking is the process of linking two objects, either from different time frames or channels, using the same tracking ID for all objects.
 > This makes it possible to display objects from different sources that physically represent one object.
 > 
-> <a href="/images/commands/object-tracking.drawio.svg" data-lightbox="image">![](../images/commands/object-tracking.drawio.svg)
+> <a href="{{ site.baseurl }}/images/commands/object-tracking.drawio.svg" data-lightbox="image">![](../images/commands/object-tracking.drawio.svg)
 </a>
 
 
@@ -1488,7 +1488,7 @@ In the results, objects with the same Tracking ID are placed next to each other,
 > The overlapping area is called the coloc area and a new object for further processing of this area is generated.
 > In addition ech colocalizing object gets the same tracking ID assigned.
 > 
-> <a href="/images/commands/colocalization.drawio.svg" data-lightbox="image">![](../images/commands/colocalization.drawio.svg)
+> <a href="{{ site.baseurl }}/images/commands/colocalization.drawio.svg" data-lightbox="image">![](../images/commands/colocalization.drawio.svg)
 </a>
 
 ### Measure intensity {#docs:stable:commands:measurement:measure_intensity}
@@ -1503,7 +1503,7 @@ In the results, objects with the same Tracking ID are placed next to each other,
 
 ### Threshold filter {#docs:stable:commands:filtering:threshold_filter}
 
-<a href="/images/commands/threshold-filter-screenshot.png" data-lightbox="image">![](../images/commands/threshold-filter-screenshot.png)
+<a href="{{ site.baseurl }}/images/commands/threshold-filter-screenshot.png" data-lightbox="image">![](../images/commands/threshold-filter-screenshot.png)
 </a>
 
 
@@ -1519,7 +1519,7 @@ In the event that the selected threshold value is less than the value observed a
 > The intensity value at the maximum of the histogram of the image multiplied by the `Threshold filter` defines the area of allowed threshold values for the image.
 > If the min. threshold value is lower than the lowe bound of this area, the image id filtered out.
 > 
-> <a href="/images/commands/threshold-filter.drawio.svg" data-lightbox="image">![](../images/commands/threshold-filter.drawio.svg)
+> <a href="{{ site.baseurl }}/images/commands/threshold-filter.drawio.svg" data-lightbox="image">![](../images/commands/threshold-filter.drawio.svg)
 </a>
 
 ### Noise filter {#docs:stable:commands:filtering:noise_filter}
@@ -1561,7 +1561,7 @@ These pipelines are also available in ImageC/EVAnalyzer2, as described in this s
 ImageC is shipped with a predefined pipelines for Yest cell detection in brightfield images.
 In this tutorial we will go step by step through this pipeline template.
 
-<a href="/images/tutorials/yest_cells_screenshot.png" data-lightbox="image">![](../images/tutorials/yest_cells_screenshot.png)
+<a href="{{ site.baseurl }}/images/tutorials/yest_cells_screenshot.png" data-lightbox="image">![](../images/tutorials/yest_cells_screenshot.png)
 </a>
 
 

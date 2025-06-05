@@ -6,7 +6,7 @@ title: Watershed
 ---
 
 
-<a href="/images/commands/watershed-screenshot.png" data-lightbox="image"><img src="/images/commands/watershed-screenshot.png" style="width: 30%" alt="Loading ..."/></a>
+<a href="{{ site.baseurl }}/images/commands/watershed-screenshot.png" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/watershed-screenshot.png" style="width: 30%" alt="Loading ..."/></a>
 
 
 The watershed algorithm employs a process of object segmentation/separation based on the intensity values of the objects in question. 
@@ -25,4 +25,4 @@ One of them is the Watershed algorithm which was ported from [ImageJ](https://im
 
 > Based on peaks extracted from the intensity values the valleys between the peaks are the borders for splitting objects.
 > 
-> <a href="/images/commands/watershed.drawio.svg" data-lightbox="image"><img src="/images/commands/watershed.drawio.svg" style="width: 30%" alt="Loading ..."/></a>
+> <a href="{{ site.baseurl }}/images/commands/watershed.drawio.svg" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/watershed.drawio.svg" style="width: 30%" alt="Loading ..."/></a>
