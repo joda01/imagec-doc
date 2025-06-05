@@ -76,11 +76,11 @@ html.darkmode body{
 	}
 	
 	&.documentation #imagec_logo{
-		background-image: url("/images/ImageC_Logo-horizontal-doc-dark-mode.svg");
+		background-image: url("{{ site.baseurl }}/images/ImageC_Logo-horizontal-doc-dark-mode.svg");
 	}
 	@media only screen and (max-width: 900px) {
 		&.documentation #imagec_logo{
-			background-image: url("/images/imagec-logo.svg");
+			background-image: url("{{ site.baseurl }}/images/imagec-logo.svg");
 		}
 	}
 	#main_content_wrap a.externallink::after, .singleentry .content a.externallink::after{

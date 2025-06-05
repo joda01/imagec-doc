@@ -2,7 +2,7 @@
 
 # Overview
 
-Website: https://imagec.org/docs/stable/index
+Website: https://imagec.org{ site.baseurl }/docs/stable/index
 
 ---
 
@@ -63,7 +63,7 @@ Website: https://imagec.org/docs/stable/index
 
 # Search
 
-Website: https://imagec.org/docs/stable/search
+Website: https://imagec.org{ site.baseurl }/docs/stable/search
 
 ---
 
@@ -86,7 +86,7 @@ Website: https://imagec.org/docs/stable/search
 
 # EVAnalyzer
 
-Website: https://imagec.org/docs/stable/tutorials/evanalyzer
+Website: https://imagec.org{ site.baseurl }/docs/stable/tutorials/evanalyzer
 
 ---
 
@@ -100,7 +100,7 @@ These pipelines are also available in ImageC/EVAnalyzer2, as described in this s
 
 # Tutorials
 
-Website: https://imagec.org/docs/stable/tutorials/overview
+Website: https://imagec.org{ site.baseurl }/docs/stable/tutorials/overview
 
 ---
 
@@ -110,7 +110,7 @@ The tutorial section contains compact examples that are centered a single goal w
 
 # Spot count
 
-Website: https://imagec.org/docs/stable/tutorials/evanalyzer/spot_count
+Website: https://imagec.org{ site.baseurl }/docs/stable/tutorials/evanalyzer/spot_count
 
 ---
 
@@ -120,7 +120,7 @@ Website: https://imagec.org/docs/stable/tutorials/evanalyzer/spot_count
 
 # Spot count
 
-Website: https://imagec.org/docs/stable/tutorials/evanalyzer/spot_count_per_cell
+Website: https://imagec.org{ site.baseurl }/docs/stable/tutorials/evanalyzer/spot_count_per_cell
 
 ---
 
@@ -130,7 +130,7 @@ Website: https://imagec.org/docs/stable/tutorials/evanalyzer/spot_count_per_cell
 
 # Spot count
 
-Website: https://imagec.org/docs/stable/tutorials/evanalyzer/spot_coloc
+Website: https://imagec.org{ site.baseurl }/docs/stable/tutorials/evanalyzer/spot_coloc
 
 ---
 
@@ -140,7 +140,7 @@ Website: https://imagec.org/docs/stable/tutorials/evanalyzer/spot_coloc
 
 # Yest cell detection
 
-Website: https://imagec.org/docs/stable/tutorials/advanced/yest_cell_detection
+Website: https://imagec.org{ site.baseurl }/docs/stable/tutorials/advanced/yest_cell_detection
 
 ---
 
@@ -167,7 +167,7 @@ So let's find a pipeline which finds this border:
 
 # Objects
 
-Website: https://imagec.org/docs/stable/fundamentals/objects
+Website: https://imagec.org{ site.baseurl }/docs/stable/fundamentals/objects
 
 ---
 
@@ -284,7 +284,7 @@ When using the colocalizing command each object which colocalizes gets the same 
 
 # Image format
 
-Website: https://imagec.org/docs/stable/fundamentals/image_formats
+Website: https://imagec.org{ site.baseurl }/docs/stable/fundamentals/image_formats
 
 ---
 
@@ -395,7 +395,7 @@ Following image formats support big images including pyramid images:
 
 # Classification
 
-Website: https://imagec.org/docs/stable/fundamentals/classification
+Website: https://imagec.org{ site.baseurl }/docs/stable/fundamentals/classification
 
 ---
 
@@ -436,7 +436,7 @@ Using the `Save as template` option allows to create a new preset from an existi
 
 # Metrics
 
-Website: https://imagec.org/docs/stable/fundamentals/metrics
+Website: https://imagec.org{ site.baseurl }/docs/stable/fundamentals/metrics
 
 ---
 
@@ -553,7 +553,7 @@ The following table gives an overview of the valid combinations of metics and st
 
 # Pipelines
 
-Website: https://imagec.org/docs/stable/fundamentals/pipelines
+Website: https://imagec.org{ site.baseurl }/docs/stable/fundamentals/pipelines
 
 ---
 
@@ -641,7 +641,7 @@ The `Tag` button can be used to mark the actual settings within the history, whi
 
 # Benchmark
 
-Website: https://imagec.org/docs/stable/dev/benchmark
+Website: https://imagec.org{ site.baseurl }/docs/stable/dev/benchmark
 
 ---
 
@@ -652,7 +652,7 @@ The following benchmarks provide an indication of the expected analysis speed.
 
 # Building
 
-Website: https://imagec.org/docs/stable/dev/building
+Website: https://imagec.org{ site.baseurl }/docs/stable/dev/building
 
 ---
 
@@ -689,7 +689,7 @@ The build artifacts are placed into `./build/build/output`
 
 # Testing
 
-Website: https://imagec.org/docs/stable/dev/testing
+Website: https://imagec.org{ site.baseurl }/docs/stable/dev/testing
 
 ---
 
@@ -702,7 +702,7 @@ These testing pipelines are placed in the [https://github.com/joda01/imagec-test
 
 # Debugging
 
-Website: https://imagec.org/docs/stable/dev/debugging
+Website: https://imagec.org{ site.baseurl }/docs/stable/dev/debugging
 
 ---
 
@@ -737,7 +737,7 @@ Once the program crashes please send the `debug.txt` to support@imagec.org.
 
 # Results
 
-Website: https://imagec.org/docs/stable/first_steps/results
+Website: https://imagec.org{ site.baseurl }/docs/stable/first_steps/results
 
 ---
 
@@ -844,7 +844,7 @@ The Download button {{icon_download}} allows the current settings to be exported
 
 # Operation
 
-Website: https://imagec.org/docs/stable/first_steps/operation
+Website: https://imagec.org{ site.baseurl }/docs/stable/first_steps/operation
 
 ---
 
@@ -1026,7 +1026,7 @@ Press the `Close` button to close the dialog after a successful finished analysi
 
 # Resources and Limits
 
-Website: https://imagec.org/docs/stable/technical/limits
+Website: https://imagec.org{ site.baseurl }/docs/stable/technical/limits
 
 ---
 
@@ -1060,7 +1060,7 @@ See section [Image formats]({% link docs/stable/fundamentals/image_formats.md %}
 
 # Overview
 
-Website: https://imagec.org/docs/stable/technical/overview
+Website: https://imagec.org{ site.baseurl }/docs/stable/technical/overview
 
 ---
 
@@ -1074,7 +1074,7 @@ This chapter gives an overview of the ImageC footprint and hardware resources.
 
 # Files Created by ImageC
 
-Website: https://imagec.org/docs/stable/technical/files_created_by_imagec
+Website: https://imagec.org{ site.baseurl }/docs/stable/technical/files_created_by_imagec
 
 ---
 
@@ -1137,7 +1137,7 @@ If no job name was given in the project settings, a unique job name is generated
 
 # Overview
 
-Website: https://imagec.org/docs/stable/commands/overview
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/overview
 
 ---
 
@@ -1165,7 +1165,7 @@ ImageC provides an object classifier based on segmented images (e.g. after apply
 
 # Voronoi
 
-Website: https://imagec.org/docs/stable/commands/object_processing/voronoi
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/object_processing/voronoi
 
 ---
 
@@ -1227,7 +1227,7 @@ Enabling this filter will invalidate all areas that do not contain a point from 
 
 # Object transform
 
-Website: https://imagec.org/docs/stable/commands/object_processing/object_transform
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/object_processing/object_transform
 
 ---
 
@@ -1237,7 +1237,7 @@ Website: https://imagec.org/docs/stable/commands/object_processing/object_transf
 
 # Reclassify
 
-Website: https://imagec.org/docs/stable/commands/object_processing/reclassify
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/object_processing/reclassify
 
 ---
 
@@ -1310,7 +1310,7 @@ The origin object keeps untouched.
 
 # Save control image
 
-Website: https://imagec.org/docs/stable/commands/object_processing/save_control_image
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/object_processing/save_control_image
 
 ---
 
@@ -1320,7 +1320,7 @@ Website: https://imagec.org/docs/stable/commands/object_processing/save_control_
 
 # Objects to binary
 
-Website: https://imagec.org/docs/stable/commands/object_processing/objects_to_binary
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/object_processing/objects_to_binary
 
 ---
 
@@ -1330,7 +1330,7 @@ Website: https://imagec.org/docs/stable/commands/object_processing/objects_to_bi
 
 # AI classifier
 
-Website: https://imagec.org/docs/stable/commands/classification/classifier_ai
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/classification/classifier_ai
 
 ---
 
@@ -1407,7 +1407,7 @@ With the class threshold, it is possible to define the minimum probability that 
 
 # Hough transformation
 
-Website: https://imagec.org/docs/stable/commands/classification/hough_transformation
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/classification/hough_transformation
 
 ---
 
@@ -1417,7 +1417,7 @@ Website: https://imagec.org/docs/stable/commands/classification/hough_transforma
 
 # Classifier
 
-Website: https://imagec.org/docs/stable/commands/classification/classifier
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/classification/classifier
 
 ---
 
@@ -1449,7 +1449,7 @@ As a rule, one filter for each threshold class is used.
 
 # Edge detection
 
-Website: https://imagec.org/docs/stable/commands/image_processing/edge_detection
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/image_processing/edge_detection
 
 ---
 
@@ -1478,7 +1478,7 @@ The disadvantage of the Canny algorithm is that it is more complex and less time
 
 # Intensity
 
-Website: https://imagec.org/docs/stable/commands/image_processing/intensity
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/image_processing/intensity
 
 ---
 
@@ -1522,7 +1522,7 @@ Automatic contrast and brightness correction is done by calculating a histogram 
 
 # Enhance contrast
 
-Website: https://imagec.org/docs/stable/commands/image_processing/enhance_contrast
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/image_processing/enhance_contrast
 
 ---
 
@@ -1532,7 +1532,7 @@ Website: https://imagec.org/docs/stable/commands/image_processing/enhance_contra
 
 # Median subtract
 
-Website: https://imagec.org/docs/stable/commands/image_processing/median_subtract
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/image_processing/median_subtract
 
 ---
 
@@ -1551,7 +1551,7 @@ Bigger kernels reduces more details from the image than smaller ones.
 
 # Rank filter
 
-Website: https://imagec.org/docs/stable/commands/image_processing/rank_filter
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/image_processing/rank_filter
 
 ---
 
@@ -1584,7 +1584,7 @@ The `Radius` setting defines the size of the area to collect the pixels gray val
 
 # Image Cache
 
-Website: https://imagec.org/docs/stable/commands/image_processing/image_cache
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/image_processing/image_cache
 
 ---
 
@@ -1617,7 +1617,7 @@ The memory slots `M0` to `M10` can be used twice once for `Iteration` and once f
 
 # Color filter
 
-Website: https://imagec.org/docs/stable/commands/image_processing/color_filter
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/image_processing/color_filter
 
 ---
 
@@ -1653,7 +1653,7 @@ In a next step further image processing steps can be applied.
 
 # Rolling ball
 
-Website: https://imagec.org/docs/stable/commands/image_processing/rolling_ball
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/image_processing/rolling_ball
 
 ---
 
@@ -1688,7 +1688,7 @@ This is beneficial in applications such as microscopy, where accurate boundary r
 
 # Image math
 
-Website: https://imagec.org/docs/stable/commands/image_processing/image_math
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/image_processing/image_math
 
 ---
 
@@ -1712,7 +1712,7 @@ The `Operating order` setting allows to define if the first operand of the selec
 
 # Blur
 
-Website: https://imagec.org/docs/stable/commands/image_processing/blur
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/image_processing/blur
 
 ---
 
@@ -1744,7 +1744,7 @@ Compared to the normal blur gaussian blur tends to preserve edges slightly bette
 
 # Colocalization
 
-Website: https://imagec.org/docs/stable/commands/measurement/colocalization
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/measurement/colocalization
 
 ---
 
@@ -1792,7 +1792,7 @@ In the results, objects with the same Tracking ID are placed next to each other,
 
 # Measure distance
 
-Website: https://imagec.org/docs/stable/commands/measurement/measure_distance
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/measurement/measure_distance
 
 ---
 
@@ -1802,7 +1802,7 @@ Website: https://imagec.org/docs/stable/commands/measurement/measure_distance
 
 # Measure intensity
 
-Website: https://imagec.org/docs/stable/commands/measurement/measure_intensity
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/measurement/measure_intensity
 
 ---
 
@@ -1812,7 +1812,7 @@ Website: https://imagec.org/docs/stable/commands/measurement/measure_intensity
 
 # Noise filter
 
-Website: https://imagec.org/docs/stable/commands/filtering/noise_filter
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/filtering/noise_filter
 
 ---
 
@@ -1822,7 +1822,7 @@ Website: https://imagec.org/docs/stable/commands/filtering/noise_filter
 
 # Threshold filter
 
-Website: https://imagec.org/docs/stable/commands/filtering/threshold_filter
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/filtering/threshold_filter
 
 ---
 
@@ -1847,7 +1847,7 @@ In the event that the selected threshold value is less than the value observed a
 
 # Watershed
 
-Website: https://imagec.org/docs/stable/commands/binary_image_processing/watershed
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/binary_image_processing/watershed
 
 ---
 
@@ -1876,7 +1876,7 @@ One of them is the Watershed algorithm which was ported from [ImageJ](https://im
 
 # Threshold
 
-Website: https://imagec.org/docs/stable/commands/binary_image_processing/threshold
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/binary_image_processing/threshold
 
 ---
 
@@ -1960,7 +1960,7 @@ By using the live preview and the histogram, it is possible to determine the int
 
 # Morphological transform
 
-Website: https://imagec.org/docs/stable/commands/binary_image_processing/morphological_transform
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/binary_image_processing/morphological_transform
 
 ---
 
@@ -2021,7 +2021,7 @@ Erosion can be used to separate connected objects or remove noise from the image
 
 # Fill holes
 
-Website: https://imagec.org/docs/stable/commands/binary_image_processing/fill_holes
+Website: https://imagec.org{ site.baseurl }/docs/stable/commands/binary_image_processing/fill_holes
 
 ---
 

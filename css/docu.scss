@@ -14,7 +14,7 @@ body{
 body.documentation{
 	
 	#imagec_logo{
-		background-image: url("/images/ImageC_Logo-horizontal-doc.svg");
+		background-image: url("{{ site.baseurl }}/images/ImageC_Logo-horizontal-doc.svg");
 		width: 298.72px;
 	}
 	

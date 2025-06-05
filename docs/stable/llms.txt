@@ -4,95 +4,95 @@
 
 ## Commands
 
-- [Overview](https://imagec.org/docs/stable/commands/overview)
+- [Overview](https://imagec.org{ site.baseurl }/docs/stable/commands/overview)
 
 ## Commands Binary_Image_Processing
 
-- [Fill holes](https://imagec.org/docs/stable/commands/binary_image_processing/fill_holes)
-- [Morphological transform](https://imagec.org/docs/stable/commands/binary_image_processing/morphological_transform)
-- [Threshold](https://imagec.org/docs/stable/commands/binary_image_processing/threshold)
-- [Watershed](https://imagec.org/docs/stable/commands/binary_image_processing/watershed)
+- [Fill holes](https://imagec.org{ site.baseurl }/docs/stable/commands/binary_image_processing/fill_holes)
+- [Morphological transform](https://imagec.org{ site.baseurl }/docs/stable/commands/binary_image_processing/morphological_transform)
+- [Threshold](https://imagec.org{ site.baseurl }/docs/stable/commands/binary_image_processing/threshold)
+- [Watershed](https://imagec.org{ site.baseurl }/docs/stable/commands/binary_image_processing/watershed)
 
 ## Commands Classification
 
-- [AI classifier](https://imagec.org/docs/stable/commands/classification/classifier_ai)
-- [Classifier](https://imagec.org/docs/stable/commands/classification/classifier)
-- [Hough transformation](https://imagec.org/docs/stable/commands/classification/hough_transformation)
+- [AI classifier](https://imagec.org{ site.baseurl }/docs/stable/commands/classification/classifier_ai)
+- [Classifier](https://imagec.org{ site.baseurl }/docs/stable/commands/classification/classifier)
+- [Hough transformation](https://imagec.org{ site.baseurl }/docs/stable/commands/classification/hough_transformation)
 
 ## Commands Filtering
 
-- [Noise filter](https://imagec.org/docs/stable/commands/filtering/noise_filter)
-- [Threshold filter](https://imagec.org/docs/stable/commands/filtering/threshold_filter)
+- [Noise filter](https://imagec.org{ site.baseurl }/docs/stable/commands/filtering/noise_filter)
+- [Threshold filter](https://imagec.org{ site.baseurl }/docs/stable/commands/filtering/threshold_filter)
 
 ## Commands Image_Processing
 
-- [Blur](https://imagec.org/docs/stable/commands/image_processing/blur)
-- [Color filter](https://imagec.org/docs/stable/commands/image_processing/color_filter)
-- [Edge detection](https://imagec.org/docs/stable/commands/image_processing/edge_detection)
-- [Enhance contrast](https://imagec.org/docs/stable/commands/image_processing/enhance_contrast)
-- [Image Cache](https://imagec.org/docs/stable/commands/image_processing/image_cache)
-- [Image math](https://imagec.org/docs/stable/commands/image_processing/image_math)
-- [Intensity](https://imagec.org/docs/stable/commands/image_processing/intensity)
-- [Median subtract](https://imagec.org/docs/stable/commands/image_processing/median_subtract)
-- [Rank filter](https://imagec.org/docs/stable/commands/image_processing/rank_filter)
-- [Rolling ball](https://imagec.org/docs/stable/commands/image_processing/rolling_ball)
+- [Blur](https://imagec.org{ site.baseurl }/docs/stable/commands/image_processing/blur)
+- [Color filter](https://imagec.org{ site.baseurl }/docs/stable/commands/image_processing/color_filter)
+- [Edge detection](https://imagec.org{ site.baseurl }/docs/stable/commands/image_processing/edge_detection)
+- [Enhance contrast](https://imagec.org{ site.baseurl }/docs/stable/commands/image_processing/enhance_contrast)
+- [Image Cache](https://imagec.org{ site.baseurl }/docs/stable/commands/image_processing/image_cache)
+- [Image math](https://imagec.org{ site.baseurl }/docs/stable/commands/image_processing/image_math)
+- [Intensity](https://imagec.org{ site.baseurl }/docs/stable/commands/image_processing/intensity)
+- [Median subtract](https://imagec.org{ site.baseurl }/docs/stable/commands/image_processing/median_subtract)
+- [Rank filter](https://imagec.org{ site.baseurl }/docs/stable/commands/image_processing/rank_filter)
+- [Rolling ball](https://imagec.org{ site.baseurl }/docs/stable/commands/image_processing/rolling_ball)
 
 ## Commands Measurement
 
-- [Colocalization](https://imagec.org/docs/stable/commands/measurement/colocalization)
-- [Measure distance](https://imagec.org/docs/stable/commands/measurement/measure_distance)
-- [Measure intensity](https://imagec.org/docs/stable/commands/measurement/measure_intensity)
+- [Colocalization](https://imagec.org{ site.baseurl }/docs/stable/commands/measurement/colocalization)
+- [Measure distance](https://imagec.org{ site.baseurl }/docs/stable/commands/measurement/measure_distance)
+- [Measure intensity](https://imagec.org{ site.baseurl }/docs/stable/commands/measurement/measure_intensity)
 
 ## Commands Object_Processing
 
-- [Object transform](https://imagec.org/docs/stable/commands/object_processing/object_transform)
-- [Objects to binary](https://imagec.org/docs/stable/commands/object_processing/objects_to_binary)
-- [Reclassify](https://imagec.org/docs/stable/commands/object_processing/reclassify)
-- [Save control image](https://imagec.org/docs/stable/commands/object_processing/save_control_image)
-- [Voronoi](https://imagec.org/docs/stable/commands/object_processing/voronoi)
+- [Object transform](https://imagec.org{ site.baseurl }/docs/stable/commands/object_processing/object_transform)
+- [Objects to binary](https://imagec.org{ site.baseurl }/docs/stable/commands/object_processing/objects_to_binary)
+- [Reclassify](https://imagec.org{ site.baseurl }/docs/stable/commands/object_processing/reclassify)
+- [Save control image](https://imagec.org{ site.baseurl }/docs/stable/commands/object_processing/save_control_image)
+- [Voronoi](https://imagec.org{ site.baseurl }/docs/stable/commands/object_processing/voronoi)
 
 ## Dev
 
-- [Benchmark](https://imagec.org/docs/stable/dev/benchmark)
-- [Building](https://imagec.org/docs/stable/dev/building)
-- [Debugging](https://imagec.org/docs/stable/dev/debugging)
-- [Testing](https://imagec.org/docs/stable/dev/testing)
+- [Benchmark](https://imagec.org{ site.baseurl }/docs/stable/dev/benchmark)
+- [Building](https://imagec.org{ site.baseurl }/docs/stable/dev/building)
+- [Debugging](https://imagec.org{ site.baseurl }/docs/stable/dev/debugging)
+- [Testing](https://imagec.org{ site.baseurl }/docs/stable/dev/testing)
 
 ## First_Steps
 
-- [Operation](https://imagec.org/docs/stable/first_steps/operation)
-- [Results](https://imagec.org/docs/stable/first_steps/results)
+- [Operation](https://imagec.org{ site.baseurl }/docs/stable/first_steps/operation)
+- [Results](https://imagec.org{ site.baseurl }/docs/stable/first_steps/results)
 
 ## Fundamentals
 
-- [Classification](https://imagec.org/docs/stable/fundamentals/classification)
-- [Image format](https://imagec.org/docs/stable/fundamentals/image_formats)
-- [Metrics](https://imagec.org/docs/stable/fundamentals/metrics)
-- [Objects](https://imagec.org/docs/stable/fundamentals/objects)
-- [Pipelines](https://imagec.org/docs/stable/fundamentals/pipelines)
+- [Classification](https://imagec.org{ site.baseurl }/docs/stable/fundamentals/classification)
+- [Image format](https://imagec.org{ site.baseurl }/docs/stable/fundamentals/image_formats)
+- [Metrics](https://imagec.org{ site.baseurl }/docs/stable/fundamentals/metrics)
+- [Objects](https://imagec.org{ site.baseurl }/docs/stable/fundamentals/objects)
+- [Pipelines](https://imagec.org{ site.baseurl }/docs/stable/fundamentals/pipelines)
 
 ## Documentation
 
-- [Overview](https://imagec.org/docs/stable/index)
-- [Search](https://imagec.org/docs/stable/search)
+- [Overview](https://imagec.org{ site.baseurl }/docs/stable/index)
+- [Search](https://imagec.org{ site.baseurl }/docs/stable/search)
 
 ## Technical
 
-- [Files Created by ImageC](https://imagec.org/docs/stable/technical/files_created_by_imagec)
-- [Overview](https://imagec.org/docs/stable/technical/overview)
-- [Resources and Limits](https://imagec.org/docs/stable/technical/limits)
+- [Files Created by ImageC](https://imagec.org{ site.baseurl }/docs/stable/technical/files_created_by_imagec)
+- [Overview](https://imagec.org{ site.baseurl }/docs/stable/technical/overview)
+- [Resources and Limits](https://imagec.org{ site.baseurl }/docs/stable/technical/limits)
 
 ## Tutorials
 
-- [EVAnalyzer](https://imagec.org/docs/stable/tutorials/evanalyzer)
-- [Tutorials](https://imagec.org/docs/stable/tutorials/overview)
+- [EVAnalyzer](https://imagec.org{ site.baseurl }/docs/stable/tutorials/evanalyzer)
+- [Tutorials](https://imagec.org{ site.baseurl }/docs/stable/tutorials/overview)
 
 ## Tutorials Advanced
 
-- [Yest cell detection](https://imagec.org/docs/stable/tutorials/advanced/yest_cell_detection)
+- [Yest cell detection](https://imagec.org{ site.baseurl }/docs/stable/tutorials/advanced/yest_cell_detection)
 
 ## Tutorials Evanalyzer
 
-- [Spot count](https://imagec.org/docs/stable/tutorials/evanalyzer/spot_count)
-- [Spot count](https://imagec.org/docs/stable/tutorials/evanalyzer/spot_count_per_cell)
-- [Spot count](https://imagec.org/docs/stable/tutorials/evanalyzer/spot_coloc)
+- [Spot count](https://imagec.org{ site.baseurl }/docs/stable/tutorials/evanalyzer/spot_count)
+- [Spot count](https://imagec.org{ site.baseurl }/docs/stable/tutorials/evanalyzer/spot_count_per_cell)
+- [Spot count](https://imagec.org{ site.baseurl }/docs/stable/tutorials/evanalyzer/spot_coloc)

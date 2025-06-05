@@ -873,3 +873,15 @@ body.landing{
 	border-radius: 50%;
 	background: #00f2ff;
   }
+
+
+.imagec_logo,
+#imagec_logo{
+	background-image: url("{{ site.baseurl }}/images/logo-dl/ImageC_Logo-horizontal.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center left;
+	width: 128.36px;
+	height: 70px;
+	pointer-events: none;
+}
