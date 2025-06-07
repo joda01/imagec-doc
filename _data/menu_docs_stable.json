@@ -222,7 +222,7 @@
             {
               "page": "EVAnalyzer",
               "slug": "evanalyzer",
-              "url": "evanalyzer",
+              "url": "evanalyzer/index",
               "subsubfolderitems": [
                 {
                   "page": "Spot count",

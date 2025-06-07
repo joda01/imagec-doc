@@ -84,7 +84,6 @@
 
 ## Tutorials
 
-- [EVAnalyzer](https://imagec.org{ site.baseurl }/docs/stable/tutorials/evanalyzer)
 - [Tutorials](https://imagec.org{ site.baseurl }/docs/stable/tutorials/overview)
 
 ## Tutorials Advanced
@@ -93,6 +92,7 @@
 
 ## Tutorials Evanalyzer
 
+- [EVAnalyzer](https://imagec.org{ site.baseurl }/docs/stable/tutorials/evanalyzer/index)
 - [Spot count](https://imagec.org{ site.baseurl }/docs/stable/tutorials/evanalyzer/spot_count)
 - [Spot count](https://imagec.org{ site.baseurl }/docs/stable/tutorials/evanalyzer/spot_count_per_cell)
 - [Spot count](https://imagec.org{ site.baseurl }/docs/stable/tutorials/evanalyzer/spot_coloc)

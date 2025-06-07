@@ -83,8 +83,8 @@
 		{
 			"title": "EVAnalyzer",
 			"text": "imagec is the direct successor of evanalyzer an imagej fiji plugin designed for some standard use cases in image processing especially for the ev field these pipelines are also available in imagec evanalyzer2 as described in this section evanalyzer citation sch\u00fcrz m danmayr j jaritsch m klinglmayr e benirschke h m matea c - t zimmerebner p rauter j wolf m gomes f g kratochvil z heger z miller a heuser t stanojlovic v kiefer j plank t johnson l himly m meisner-kober n 2022 evanalyzer high content imaging for rigorous characterisation of single extracellular vesicles using standard laboratory equipment and a new open-source imagej fiji plugin journal of extracellular vesicles 11 e12282 https doi org 10 1002 jev2 12282",
-			"category": "Tutorials",
-			"url": "/docs/stable/tutorials/evanalyzer",
+			"category": "Evanalyzer",
+			"url": "/docs/stable/tutorials/evanalyzer/index",
 			"blurb": "ImageC is the direct successor of EVAnalyzer an ImageJ/Fiji plugin designed for some standard use cases in image...",
 			"type": "documentation"
 		},
