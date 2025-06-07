@@ -2,23 +2,23 @@
   "sidemenu": [
     {
       "page": "About ImageC",
-      "url": "{{ site.baseurl }}/about_imagec"
+      "url": "/about_imagec"
     },
     {
       "page": "Citation",
-      "url": "{{ site.baseurl }}/citation"
+      "url": "/citation"
     },
     {
       "page": "FAQ",
-      "url": "{{ site.baseurl }}/faq"
+      "url": "/faq"
     },
     {
       "page": "Support",
-      "url": "{{ site.baseurl }}/support"
+      "url": "/support"
     },
     {
       "page": "Sitemap",
-      "url": "{{ site.baseurl }}/docs/sitemap"
+      "url": "/docs/sitemap"
     }
   ]
 }

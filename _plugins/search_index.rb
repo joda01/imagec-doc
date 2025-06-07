@@ -13,6 +13,5 @@ Jekyll::Hooks.register :site, :after_init do |page|
   else
     Jekyll.logger.error(tag, "Failed to generate index")
   end
-
 end
 

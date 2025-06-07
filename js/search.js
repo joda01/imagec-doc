@@ -1,10 +1,13 @@
 let searchDataLoaded = false; // Flag to prevent multiple loads
 
+// This is replced by the post_build.py script
+const baseUrl = "{{ site.baseurl }}";
+
 function loadSearchData() {
 	if (searchDataLoaded) return; // Skip if already loaded
 
 	const xhr = new XMLHttpRequest();
-	xhr.open('GET', '/data/search_data.json');
+	xhr.open('GET', `${baseUrl}/data/search_data.json`);
 	xhr.setRequestHeader('Accept-Encoding', 'gzip, deflate');
 	xhr.onreadystatechange = function(event) {
 		if (this.readyState === 4) {
@@ -115,7 +118,7 @@ function perform_search(query) {
 			search_html += "search_result_uneven";
 		}
 		search_html += "'>";
-		search_html += "<a href='" + results[i].url + "'>";
+		search_html += "<a href='"+ baseUrl + results[i].url + "'>";
 		search_html += "</a> ";
 		search_html += "<h2 class='search_title'>";
 		search_html += bold_blurb(results[i].title, query);
