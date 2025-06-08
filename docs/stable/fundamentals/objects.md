@@ -54,7 +54,7 @@ c = \frac{4 \cdot pi \cdot AreaSize}{perimeter^2}
 $$
 
 
-## Centroid
+## Centroid /Position
 
 The centroid is the geometrical center of an object.
 This is the average of the x and y coordinates of all of the pixels in an object.
@@ -111,6 +111,24 @@ When using the colocalizing command each object which colocalizes gets the same 
 <img src="images/object-tracking.drawio.svg" alt="Regex example" style="width: 50%; height: auto;">
 
 
-## Position
+## Distance
+
+The distance is the euclid-distance between two objects in px.
+ImageC calculates following distances:
+
+- Distance between the centroids of two objects
+- Distance between the centroid and the surface of two objects
+- Distance between the surfaces of two objects
+
+<a href="images/distance.drawio.svg" data-lightbox="image"><img src="images/distance.drawio.svg" style="width: 50%" alt="Loading ..."/></a>
+
+The euclid-distance d is calculates with:
+$$
+d = \sqrt{(x_2-x_1)^2 + (y_2-y_2)^2}
+$$
+
+> Tip See command [distance measurement]({% link docs/stable/commands/measurement/measure_distance.md %}) for how to measure the distance.
 
 ## Nr. of intersecting objects
+
+Is the count of objects which are intersecting with an other object.

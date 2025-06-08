@@ -23,7 +23,7 @@ To overcome this limitation ImageC allows the use of artificial intelligence mod
 
 
 On startup ImageC searches the `./models` folder for compatible AI models and presents them in the drop-down menu for selection.
-In the actual implementation of ImageC [YoloyV5](https://github.com/ultralytics/yolov5) and [U-Net](https://www.sciencedirect.com/topics/computer-science/u-net#:~:text=U%2DNet%20is%20a%20fully%20convolutional%20encoder%2Fdecoder%20structure%20aimed,size%20via%20an%20upsampling%20method.) model architecture are supported.
+In the actual implementation of ImageC [YoloV5](https://github.com/ultralytics/yolov5) and [U-Net](https://www.sciencedirect.com/topics/computer-science/u-net#:~:text=U%2DNet%20is%20a%20fully%20convolutional%20encoder%2Fdecoder%20structure%20aimed,size%20via%20an%20upsampling%20method.) model architecture are supported.
 
 ImageC expects a `rdf.yaml` file beside the weight file (`.pt`, `.onnx`).
 This resource definition file according to the bio image zoo schema [rdf definition](https://bioimage-io.github.io/spec-bioimage-io/bioimageio_schema_latest/index.html) describes the model input and output parameters required by ImageC for correct interpretation of the prediction output.
