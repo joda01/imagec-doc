@@ -34,7 +34,7 @@ html.darkmode body{
 
 	#imagec_logo,
 	.imagec_logo{
-		background-image: url("/images/logo-dl/ImageC_Logo-horizontal-dark-mode.svg");
+		background-image: url("{{ site.baseurl }}/images/logo-dl/ImageC_Logo-horizontal-dark-mode.svg");
 	}
 	
 	header .headerline .headercontent .options button.mode[data-mode=light]:hover{
@@ -91,7 +91,7 @@ html.darkmode body{
 	
 	/** BLOG **/
 	.newswrap .postwrap .infoline .icon{
-		background-image: url("/images/imagec-logo.svg");
+		background-image: url("{{ site.baseurl }}/images/imagec-logo.svg");
 	}
 	.newswrap .postwrap .postcontent .supporterboard ul li img{
 		filter: invert(1);
