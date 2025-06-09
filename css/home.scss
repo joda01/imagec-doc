@@ -618,6 +618,11 @@ body.landing{
 						height: 64px;
 						width: 64px;
 					}
+					&.distance{
+						background-image: url("{{ site.baseurl }}/images/icons/distance.svg");
+						height: 64px;
+						width: 64px;
+					}
 					&.live{
 						background-image: url("{{ site.baseurl }}/images/icons/live.svg");
 						height: 64px;
