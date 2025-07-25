@@ -30,19 +30,10 @@ Starting with the project settings, basic information about the experiment and t
 
 |Title                   |Description                                                      | Mandatory
 |-------------           |-----------------------                                          |---------- |
-|Working directory       |Storage Directory of the images to be analyzed.                  |x          |
-|Experiment name         |Title of the experiment stored together with the results.        |           |
-|Scientist               |Name of the person who is responsible for this analysis.         |           |
-|Organization            |Organization responsible for the analysis.                       |           |
+|Image directory         |Storage Directory of the images to be analyzed.                  |x          |
 |Job name                |Name of the job to identify the run (auto generated if empty).   |x          |
-|Group by                |Images may be left ungrouped, or can be grouped by Filename regex or Directory.|x |
-|Filename regex          |If Images are grouped by filename, the regex should indicate the order of the images.|x|
-|Regex test              |Used to test the regex settings. Enter your Image Name and see if the wells are recognized. in the regex test result|   |
-|Z-Stack                 |Define how to handle Z-stacks in the images                      |x  |
-|T-Stack                 |Define how to handle T-stacks in the images                      |x  |
-|Well order              |If images are taken from in a (6, 12, 24, 96, 384) well format, the order of the images position in the well can be determined here.|x |
-|Plate size              |Size of the uses microscopy plate.                               |x|
-|Notes                   |Some free text notes on the experiment.                          ||
+|Grouping                |Images may be left ungrouped, or can be grouped by Filename regex or Directory.|x |
+|Plate size              |Size of the uses microscopy plate. Open the plate settings dialog to define the well order.                               |x|
 
 
 
@@ -78,17 +69,17 @@ A typical series of file names for the regex {regexp}`_((.)([0-9]+))_([0-9]+)` m
 
 
 
-### Working directory
+### Image directory
 
-The `Working Directory` should be set to the folder where the images to be analyzed are stored.
-ImageC will perform a recursive folder search using the selected `Working Directory` as the base folder to find all supported image files.
+The `Image Directory` should be set to the folder where the images to be analyzed are stored.
+ImageC will perform a recursive folder search using the selected `Image Directory` as the base folder to find all supported image files.
 All found files are listed in the `Images` panel.
 
 > Tip See section [Images](#images) for a full list of all supported image formats.
 
 ## Images {#images-tab}
 
-Once a working directory has been selected and the folder scan is complete, all the images found will be listed in the table located in the `Images` tab.
+Once a image directory has been selected and the folder scan is complete, all the images found will be listed in the table located in the `Images` tab.
 
 By clicking on an image the image meta information of the selected image is loaded and displayed in the properties table below.
 The image selected in this tab is also the image used in the pipeline preview.

@@ -219,7 +219,7 @@ c = \frac{4 \cdot pi \cdot AreaSize}{perimeter^2}
 $$
 
 
-## Centroid
+## Centroid /Position
 
 The centroid is the geometrical center of an object.
 This is the average of the x and y coordinates of all of the pixels in an object.
@@ -276,9 +276,27 @@ When using the colocalizing command each object which colocalizes gets the same 
 <img src="images/object-tracking.drawio.svg" alt="Regex example" style="width: 50%; height: auto;">
 
 
-## Position
+## Distance
+
+The distance is the euclid-distance between two objects in px.
+ImageC calculates following distances:
+
+- Distance between the centroids of two objects
+- Distance between the centroid and the surface of two objects
+- Distance between the surfaces of two objects
+
+<a href="images/distance.drawio.svg" data-lightbox="image"><img src="images/distance.drawio.svg" style="width: 50%" alt="Loading ..."/></a>
+
+The euclid-distance d is calculates with:
+$$
+d = \sqrt{(x_2-x_1)^2 + (y_2-y_2)^2}
+$$
+
+> Tip See command [distance measurement]({% link docs/stable/commands/measurement/measure_distance.md %}) for how to measure the distance.
 
 ## Nr. of intersecting objects
+
+Is the count of objects which are intersecting with an other object.
 
 
 
@@ -454,100 +472,52 @@ When the result file is opened after a run, ImageC displays the result columns a
 Even if a column is not specified, the metric is still measured and can be added at any time, even after the analysis has been completed.
 
 
-## Metrics and Statistics {#metrics-and-statistics}
+## Metrics {#metrics-and-statistics}
 
 A measurement in the context of ImageC is a metrics calculated during the analysis for an object.
 The statistics is applied to the selected measurement.
-The following table gives an overview of the valid combinations of metics and statistics which are available.
-
-### Plate view
-
-|Measurement             |Statistics           |Description                                                                     |
-|-------------           |---------------------|-----------------------                                                         | 
-|Count                   |CNT                  |The average of the object number per image in the well.                         |
-|Intersection            |CNT                  |The average of the number of objects A intersecting with object class B per image in the well.                 |
-|Area size               |AVG                  |The average of the average object area sizes per image in the well.             |
-|Area size               |MEDIAN               |The average of the median of the object area sizes per image in the well.       |
-|Area size               |MIN                  |The average of the minimum of the object area sizes per image in the well.      |
-|Area size               |MAX                  |The average of the maximum of the object area sizes per image in the well.      |
-|Area size               |STDEV                |The average of the standard deviations of the object area sizes per image in the well.  |
-|Area size               |SUM                  |The average of the sum of the object area sizes per image in the well.          |
-|Area size               |CNT                  |The average number of objects per image in the well used to calculate the statistics.|
-|Perimeter               |AVG                  |The average of the average object perimeters per image in the well.             |
-|Perimeter               |MEDIAN               |The average of the median of the object perimeters per image in the well.       |
-|Perimeter               |MIN                  |The average of the minimum of the object perimeters per image in the well.      |
-|Perimeter               |MAX                  |The average of the maximum of the object perimeters per image in the well.      |
-|Perimeter               |STDEV                |The average of the standard deviations of the object perimeters per image in the well.  |
-|Perimeter               |SUM                  |The average of the sum of the object perimeters per image in the well.          |
-|Perimeter               |CNT                  |The average number of objects per image in the well used to calculate the statistics.|
-|Circularity             |AVG                  |The average of the average object circularities per image in the well.          |
-|Circularity             |MEDIAN               |The average of the median of the object circularities per image in the well.    |
-|Circularity             |MIN                  |The average of the minimum of the object circularities per image in the well.   |
-|Circularity             |MAX                  |The average of the maximum of the object circularities per image in the well.   |
-|Circularity             |STDEV                |The average of the standard deviations of the object circularities per image in the well.  |
-|Circularity             |SUM                  |The average of the sum of the object circularities per image in the well.        |
-|Circularity             |CNT                  |The average number of objects per image in the well used to calculate the statistics.|
-|Intensity (min/max/avg) |AVG                  |The average of the average object intensities per image in the well.             |
-|Intensity (min/max/avg) |MEDIAN               |The average of the median of the object intensities per image in the well.       |
-|Intensity (min/max/avg) |MIN                  |The average of the minimum of the object intensities per image in the well.      |
-|Intensity (min/max/avg) |MAX                  |The average of the maximum of the object intensities per image in the well.      |
-|Intensity (min/max/avg) |STDEV                |The average of the standard deviations of the object intensities per image in the well.  |
-|Intensity (min/max/avg) |SUM                  |The average of the sum of the object intensities per image in the well.          |
-|Intensity (min/max/avg) |CNT                  |The average number of objects per image in the well used to calculate the statistics.|
+The following table gives an overview of the available metics and statistics:
 
 
-### Well view
+|Metric                          |Description                                           |
+|-------------                   |-----------------------                               | 
+|Count                           |The number of detected objects in the image.          |
+|Intersection                    |The number of objects intersecting with this object.  |
+|Area size                       |The object area size.                                 |
+|Perimeter                       |The object perimeters.                                |
+|Circularity                     |The object circularity.                               |
+|Intensity min                   |The object min intensity.                             |
+|Intensity max                   |The object max intensity.                             |
+|Intensity avg                   |The object avg intensity.                             |
+|Center of mass X                |X coordinates of the center of mass of the object in the image. |
+|Center of mass Y                |Y coordinates of the center of mass of the object in the image. |
+|Object ID                       |Unique object ID.                                     |
+|Origin object ID                |If it was copied by reclassify this is the Object ID of the object this object was copied from. If not copied the value is 0.|
+|Parent object ID                |If the object was reclassified using intersection, this is the Object ID of the object this object was intersecting with. If not reclassified the value is 0. |
+|Tracking ID                     |If the object has been tracked e.g. by coloc or timeframe, all related objects will have the same tracking ID. The table is sorted by Tracking ID.                         |
+|Distance from object id         |The object ID of the object the distance was calculated from |
+|Distance to object id           |The object ID of the object the distance was calculated to |
+|Distance center to center       |The distance from the "From" object to the "To" object measured from centroid to centroid. |
+|Distance center to surface min  |The smallest distance from the "From" object to the "To" object measured from centroid to surface. |
+|Distance center to surface max  |The highest distance from the "From" object to the "To" object measured from centroid to surface. |
+|Distance surface to surface min |The smallest distance from the "From" object to the "To" object measured from surface to surface. |
+|Distance surface to surface max |The highest distance from the "From" object to the "To" object measured from surface to surface. |
 
-|Measurement             |Statistics           |Description                                                                     |
-|-------------           |---------------------|-----------------------                                                         | 
-|Count                   |CNT                  |The number of detected objects in the image.                       |
-|Intersection            |CNT                  |The number of objects A intersecting with object class B in the image.               |
-|Area size               |AVG                  |The average object area sizes in the image.           |
-|Area size               |MEDIAN               |The median of the object area sizes in the image.     |
-|Area size               |MIN                  |The minimum of the object area sizes in the image.    |
-|Area size               |MAX                  |The maximum of the object area sizes in the image.    |
-|Area size               |STDEV                |The standard deviations of the object area sizes in the image.|
-|Area size               |SUM                  |The sum of the object area sizes in the image.        |
-|Area size               |CNT                  |The number of objects in the image used to calculate the statistics.|
-|Perimeter               |AVG                  |The average object perimeters in the image.           |
-|Perimeter               |MEDIAN               |The median of the object perimeters in the image.     |
-|Perimeter               |MIN                  |The minimum of the object perimeters in the image.    |
-|Perimeter               |MAX                  |The maximum of the object perimeters in the image.    |
-|Perimeter               |STDEV                |The standard deviations of the object perimeters in the image.|
-|Perimeter               |SUM                  |The sum of the object perimeters in the image.        |
-|Perimeter               |CNT                  |The number of objects in the image used to calculate the statistics.|
-|Circularity             |AVG                  |The average object circularities in the image.        |
-|Circularity             |MEDIAN               |The median of the object circularities in the image.  |
-|Circularity             |MIN                  |The minimum of the object circularities in the image. |
-|Circularity             |MAX                  |The maximum of the object circularities in the image. |
-|Circularity             |STDEV                |The standard deviations of the object circularities in the image.|
-|Circularity             |SUM                  |The sum of the object circularities in the image.      |
-|Circularity             |CNT                  |The number of objects in the image used to calculate the statistics.|
-|Intensity (min/max/avg) |AVG                  |The average object intensities in the image.           |
-|Intensity (min/max/avg) |MEDIAN               |The median of the object intensities in the image.     |
-|Intensity (min/max/avg) |MIN                  |The minimum of the object intensities in the image.    |
-|Intensity (min/max/avg) |MAX                  |The maximum of the object intensities in the image.    |
-|Intensity (min/max/avg) |STDEV                |The standard deviations of the object intensities in the image.|
-|Intensity (min/max/avg) |SUM                  |The sum of the object intensities in the image.        |
-|Intensity (min/max/avg) |CNT                  |The number of objects in the image used to calculate the statistics.|
 
-### Image view
+## Statistics
 
-|Measurement             |Statistics           |Description                                           |
-|-------------           |---------------------|-----------------------                               | 
-|Intersection            |-                    |The number of objects intersecting with this object.  |
-|Area size               |-                    |The object area size.                                 |
-|Perimeter               |-                    |The object perimeters.                                |
-|Circularity             |-                    |The object circularity.                               |
-|Intensity min           |-                    |The object min intensity.                             |
-|Intensity max           |-                    |The object max intensity.                             |
-|Intensity avg           |-                    |The object avg intensity.                             |
-|Center of mass X        |-                    |X coordinates of the center of mass of the object in the image. |
-|Center of mass Y        |-                    |Y coordinates of the center of mass of the object in the image. |
-|Object ID               |-                    |Unique object ID.                                     |
-|Origin object ID        |-                    |If it was copied by reclassify this is the Object ID of the object this object was copied from. If not copied the value is 0.|
-|Parent object ID        |-                    |If the object was reclassified using intersection, this is the Object ID of the object this object was intersecting with. If not reclassified the value is 0. |
-|Tracking ID             |-                    |If the object has been tracked e.g. by coloc or timeframe, all related objects will have the same tracking ID. The table is sorted by Tracking ID.                         |
+Following statistics are calculates for each of the metrics.
+Statistics are only calculates for Plate and Well view
+
+|Statistics | Description     |
+|-----------|-----------------|
+|CNT        |Nr. of elements used to calculate the statistics|
+|AVG        |For image view: Average value of the image. For plate view: Average of the average values of the images of the selected well.|
+|MEDIA      |For image view: Median value of the image. For plate view: Average of the median values of the images of the selected well.|
+|MIN        |For image view: Min value of the image. For plate view: Average of the min values of the images of the selected well.|
+|MAX        |For image view: Max value of the image. For plate view: Average of the max values of the images of the selected well.|
+|STDEV      |For image view: Standard deviation of the image. For plate view: Average of the standard deviations of the images of the selected well.|
+|SUM        |For image view: Sum of all values of the chosen metric of the image. For plate view: Average of the sum values of the images of the selected well.|
 
 
 
@@ -870,19 +840,10 @@ Starting with the project settings, basic information about the experiment and t
 
 |Title                   |Description                                                      | Mandatory
 |-------------           |-----------------------                                          |---------- |
-|Working directory       |Storage Directory of the images to be analyzed.                  |x          |
-|Experiment name         |Title of the experiment stored together with the results.        |           |
-|Scientist               |Name of the person who is responsible for this analysis.         |           |
-|Organization            |Organization responsible for the analysis.                       |           |
+|Image directory         |Storage Directory of the images to be analyzed.                  |x          |
 |Job name                |Name of the job to identify the run (auto generated if empty).   |x          |
-|Group by                |Images may be left ungrouped, or can be grouped by Filename regex or Directory.|x |
-|Filename regex          |If Images are grouped by filename, the regex should indicate the order of the images.|x|
-|Regex test              |Used to test the regex settings. Enter your Image Name and see if the wells are recognized. in the regex test result|   |
-|Z-Stack                 |Define how to handle Z-stacks in the images                      |x  |
-|T-Stack                 |Define how to handle T-stacks in the images                      |x  |
-|Well order              |If images are taken from in a (6, 12, 24, 96, 384) well format, the order of the images position in the well can be determined here.|x |
-|Plate size              |Size of the uses microscopy plate.                               |x|
-|Notes                   |Some free text notes on the experiment.                          ||
+|Grouping                |Images may be left ungrouped, or can be grouped by Filename regex or Directory.|x |
+|Plate size              |Size of the uses microscopy plate. Open the plate settings dialog to define the well order.                               |x|
 
 
 
@@ -918,17 +879,17 @@ A typical series of file names for the regex {regexp}`_((.)([0-9]+))_([0-9]+)` m
 
 
 
-### Working directory
+### Image directory
 
-The `Working Directory` should be set to the folder where the images to be analyzed are stored.
-ImageC will perform a recursive folder search using the selected `Working Directory` as the base folder to find all supported image files.
+The `Image Directory` should be set to the folder where the images to be analyzed are stored.
+ImageC will perform a recursive folder search using the selected `Image Directory` as the base folder to find all supported image files.
 All found files are listed in the `Images` panel.
 
 > Tip See section [Images](#images) for a full list of all supported image formats.
 
 ## Images {#images-tab}
 
-Once a working directory has been selected and the folder scan is complete, all the images found will be listed in the table located in the `Images` tab.
+Once a image directory has been selected and the folder scan is complete, all the images found will be listed in the table located in the `Images` tab.
 
 By clicking on an image the image meta information of the selected image is loaded and displayed in the properties table below.
 The image selected in this tab is also the image used in the pipeline preview.
@@ -1244,33 +1205,28 @@ Website: https://imagec.org{ site.baseurl }/docs/stable/commands/object_processi
 <a href="{{ site.baseurl }}/images/commands/reclassify-screenshot.png" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/reclassify-screenshot.png" style="width: 30%" alt="Loading ..."/></a>
 
 
-The reclassify command can be used to change the class of an object that has been formally classified using the [classifier]({% link docs/stable/commands/classification/classifier.md %}) or [ai-classifier]({% link docs/stable/commands/classification/classifier_ai.md %}) command, based on some filter criteria.
+The reclassify command can be used to change the class of an object that has been formally classified using the [classifier]({% link docs/stable/commands/classification/classifier.md %}) or [ai-classifier]({% link docs/stable/commands/classification/classifier_ai.md %}) command and build up an object hierarchy tree based on some filter criteria.
 This allows to create further fine granular object populations.
 
 Typical use case for instance are the separation of spots in cell and outside a cell, which can be managed using the intersection filter.
 Or the separation of bright and less bright spots.
 
-For that reason the ImageC reclassifier provides two filter options: `Intersection` and `Intensity`.
-
-
-> An object hierarchy is built up by storing a parent object ID together with each object.
-> This information can be used to draw a hierarchy graph of the objects, showing which objects are part of another.
-> Use the intersection filter of the Reclassify command to build up such a hierarchy.
-> 
-> <a href="{{ site.baseurl }}/images/commands/object-hierarchy.drawio.svg" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/object-hierarchy.drawio.svg" style="width: 30%" alt="Loading ..."/></a>
-
+The reclassify command provides a couple of filter functions which are described below.
 
 ## Filters
 
 ### Intersection filter
 
-The intersection filter takes an intersection object class as input and is applied to those objects of the input input class that intersect with any of these objects.
-ImageC can create a object hierarchy (see section [parent object id]({% link docs/stable/fundamentals/objects.md %}#parent-object-id)) when using the intersection filter.
-The object hierarchy allows to answer the questions: Which objects are contained within another object and how many objects intersect another object!?
+The intersecting filter checks each object from the input class to see if it overlaps with an object from the intersecting class.
+ImageC creates an object hierarchy by setting the parent object ID of the input object to the object ID of the intersecting object (see section [parent object id]({% link docs/stable/fundamentals/objects.md %}#parent-object-id)).
 
-The parent information is stored in the intersecting object from the input object input class whereby the parent object is the intersecting object from the intersecting object input class.
+<a href="{{ site.baseurl }}/images/commands/object-hierarchy.drawio.svg" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/object-hierarchy.drawio.svg" style="width: 80%" alt="Loading ..."/></a>
+
+
+> Tip The object hierarchy allows to answer the questions: Which objects are contained within another object and how many objects intersect another object!
 
 ImageC allows you to specify whether or not to create a hierarchy for intersecting objects by specifying the hierarchy mode.
+
 
 #### Create hierarchy
 
@@ -1351,9 +1307,9 @@ To overcome this limitation ImageC allows the use of artificial intelligence mod
 
 
 On startup ImageC searches the `./models` folder for compatible AI models and presents them in the drop-down menu for selection.
-In the actual implementation of ImageC [YoloyV5](https://github.com/ultralytics/yolov5) and [U-Net](https://www.sciencedirect.com/topics/computer-science/u-net#:~:text=U%2DNet%20is%20a%20fully%20convolutional%20encoder%2Fdecoder%20structure%20aimed,size%20via%20an%20upsampling%20method.) model architecture are supported.
+In the actual implementation of ImageC [YoloV5](https://github.com/ultralytics/yolov5) and [U-Net](https://www.sciencedirect.com/topics/computer-science/u-net#:~:text=U%2DNet%20is%20a%20fully%20convolutional%20encoder%2Fdecoder%20structure%20aimed,size%20via%20an%20upsampling%20method.) model architecture are supported.
 
-ImageC expects a `rdf.yaml` file beside the weight file.
+ImageC expects a `rdf.yaml` file beside the weight file (`.pt`, `.onnx`).
 This resource definition file according to the bio image zoo schema [rdf definition](https://bioimage-io.github.io/spec-bioimage-io/bioimageio_schema_latest/index.html) describes the model input and output parameters required by ImageC for correct interpretation of the prediction output.
 
 After downloading a new model, either from [ImageC AI models](https://imagec.org/ai-models.html) or [BioImage Model Zoo](https://bioimage.io/#/), unzip the content and copy the unpacked folder to the `./models` directory {{icon_open}} of the ImageC installation directory.
@@ -1796,7 +1752,74 @@ Website: https://imagec.org{ site.baseurl }/docs/stable/commands/measurement/mea
 
 ---
 
-> Underconstruction Coming soon!
+The distance measure command can be used to measure the distance between all objects of two different object classes.
+Five different distances are calculated for each object combination: center to center, center to surface min, center to surface max, surface to surface min, surface to surface. 
+The euclid-distance is used for distance calculation.
+
+<a href="{{ site.baseurl }}/images/commands/distance-measure.drawio.svg" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/distance-measure.drawio.svg" style="width: 50%" alt="Loading ..."/></a>
+
+
+ImageC calculates the distance between all objects within the two given classes.
+In reality, however, often only a fraction of the calculated distances are required. 
+Typically, for example, the distance between spots and the cell wall would be calculated, but only the distance between those spots and the cell wall where the spots are also located within the respective cell are of interest.
+
+For that reason ImageC allows to specify a condition for the distance calculation.
+Following conditions are supported:
+
+
+Condition                   |Description
+------------                |--------------
+All                         |The distance between all objects of the given classes is calculated.
+Intersecting                |Only those objects that intersect with each other have their distances calculated.
+Same parent                 |If the "From" and "To" object have the same parent the distance is calculated.
+To object is parent of From |If the "To" object ID is same to the "From" object parent ID.
+
+## All
+
+No condition is used for calculating the distance between the given object classes.
+
+
+
+> Warning Be careful using the command without condition. The number of calculated distances may increase very fast.
+
+The example below calculated the distance between the class of green objects and red objects without any condition.
+
+<a href="{{ site.baseurl }}/images/commands/distance-measure-all.drawio.svg" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/distance-measure-all.drawio.svg" style="width: 80%" alt="Loading ..."/></a>
+
+## Intersecting
+
+Only those objects that intersect with each other have their distances calculated.
+This condition is typically used to calculate the distance between spots taken up by a cell and the cell's wand and centre.
+
+This example shows the usage of the `Intersecting` condition to calculate the distance from the `spot` objects to the `cell` objects.
+
+<a href="{{ site.baseurl }}/images/commands/distance-measure-intersect.drawio.svg" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/distance-measure-intersect.drawio.svg" style="width: 80%" alt="Loading ..."/></a>
+
+
+## Same parent
+
+If the "From" and "To" object have the same parent the distance is calculated.
+This condition is typically used to calculate the distance between objects within an other object, e.g. the distance between spots and nucleus within a cell.
+
+> Warning To use this condition a `Reclassify` command using the intersecting filter has to be applied before using the distance measurement.
+> Using the `Reclassify` using th intersecting filter sets the parent ID. If the command is not applied before no parent ID is set and the distance measurement with this condition will not work.
+
+This example shows the usage of the `Same parent` condition to calculate the distance from the `spot` objects to the `nucleus` objects inside a cell
+
+<a href="{{ site.baseurl }}/images/commands/distance-measure-same-parent.drawio.svg" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/distance-measure-same-parent.drawio.svg" style="width: 80%" alt="Loading ..."/></a>
+
+
+
+## To object is parent of From
+
+If the "To" object ID is same to the "From" object parent ID.
+This condition can be used after a `Reclassify` using the intersection filter to calc the distance between objects which are intersecting.
+The result is similar than using the `Intersecting` condition but allows have more control of the intersecting properties.
+In addition, the distance between two different object classes can be calculated from the intersection that was calculated a few pipeline steps earlier, which does not directly intersect with the distance measurement step.
+
+
+> Warning To use this condition a `Reclassify` command using the intersecting filter has to be applied before using the distance measurement.
+> Using the `Reclassify` using th intersecting filter sets the parent ID. If the command is not applied before no parent ID is set and the distance measurement with this condition will not work.
 
 
 
