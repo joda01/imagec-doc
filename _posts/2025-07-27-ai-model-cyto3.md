@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Cellpose (cyto3)"
-author: Joachim Danmayr
+author: Carsen Stringer & Marius Pachitariu
 excerpt: Cellpose (cyto3) model for cell segmentation
-thumb: "images/blog/thumbs/cellpose.png"
+thumb: "images/blog/thumbs/cellpose.webp"
 tags: ["AI models"]
 ---
 

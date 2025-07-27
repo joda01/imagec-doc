@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cell Segmentation"
-author: Joachim Danmayr
+author: ImageC Team
 excerpt: YOLOv5 model for brightfield cell segmentation
 thumb: "images/blog/thumbs/ai_cell_brightfield.webp"
 tags: ["AI models"]
