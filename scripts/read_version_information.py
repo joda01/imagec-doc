@@ -66,7 +66,7 @@ def read_version():
             key="linuxcuda"   
         if asset["name"] == "imagec-x64-win-cpu-bundle.zip":
             key="wincpu"   
-        if asset["name"] == "imagec-x64-win-cude-bundle.7z":
+        if asset["name"] == "imagec-x64-win-cuda-bundle.7z":
             key="wincuda"   
 
         outData[key]["name"] = asset["name"]
