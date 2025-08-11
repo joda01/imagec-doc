@@ -2,6 +2,8 @@ import requests
 import json
 import os
 import yaml
+from collections import defaultdict
+
 
 
 def sync_version(yaml_file, version, sha256, dateTime):
@@ -52,10 +54,40 @@ def read_version():
 
     data = response.json()
 
+    outData = defaultdict(dict)
+
+    for asset in data["assets"]:
+        key="no"
+        if asset["name"] == "imagec-arm64-macos-cpu-bundle.zip":
+            key="macoscpu"
+        if asset["name"] == "imagec-x64-linux-cpu-bundle.zip":
+            key="linuxcpu"
+        if asset["name"] == "imagec-x64-linux-cuda-bundle.7z":
+            key="linuxcuda"   
+        if asset["name"] == "imagec-x64-win-cpu-bundle.zip":
+            key="wincpu"   
+        if asset["name"] == "imagec-x64-win-cude-bundle.7z":
+            key="wincuda"   
+
+        outData[key]["name"] = asset["name"]
+        sizeMB = float(asset["size"])/1000000
+        if sizeMB < 1000:
+            outData[key]["size"] = str(int(sizeMB))+" MB"
+        else:
+            size = sizeMB/1000
+            outData[key]["size"] = f"{size:.2f} GB"
+
+        outData[key]["sha256"] = asset["digest"]
+        outData[key]["download"] = asset["browser_download_url"]
+    
+    outData["version"] = data.get("tag_name")
+    outData["timestamp"] = data.get("published_at")
+    # Write the dynamic JSON object to file
+    with open("_data/releases.json", "w") as f:
+        json.dump(outData, f, indent=4)
+
     sync_version("_config.yml", data.get("tag_name"), "", data.get("published_at"))
-    write_version_to_json("_data/release_linux_x64.json", data.get("tag_name"), "", data.get("published_at"))
-    write_version_to_json("_data/release_macos_arm64.json", data.get("tag_name"), "", data.get("published_at"))
-    write_version_to_json("_data/release_win_x64.json", data.get("tag_name"), "", data.get("published_at"))
+
 
 
 print("Update versions ...")

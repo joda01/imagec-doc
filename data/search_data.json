@@ -41,6 +41,14 @@
 			"type": "blog"
 		},
 		{
+			"title": "Cellpose (cyto3)",
+			"text": "the weight file of cellpose cyto3 for usage with imagec after download unzip and copy the whole folder into imagec_installation_directory models language-sql highlight download site baseurl downloads cyto3 zip",
+			"category": " Posts",
+			"url": "/2025/07/27/ai-model-cyto3",
+			"blurb": "The weight file of cellpose(cyto3) for usage with ImageC. After download unzip and copy the whole folder into:...",
+			"type": "blog"
+		},
+		{
 			"title": "Classification",
 			"text": "the concept behind imagec is to run pipelines containing image pre-processing and object segmentation steps with the goal of extracting regions of interest from the input images for each extracted object the origin information image image channel z-stack and t-stack and some metrics are stored in advanced each object is classified for object statistics calculation and later quantification for classification imagec provides the annotations object class every object is annotated with exact one object class classes the first step before creating pipelines or starting the analysis is to define which classes are needed for object classification in your application using the classification tab link docs stable first_steps operation md classification-tab classes represents the populations which should be distinguished use the plus button to add a new class in addition to the color the name and the default displayed metrics for the class can be specified using the symbol allows to group classes for a better reading in the selection tab instead of manually specifying all required classes imagec provides the ability to populate the classification settings from the image channel information using the magic stick button bestpractice it is a best practice to use the fluorophor as prefix followed by the object type dapi nucleus cy5 spots cy spots-in-cell for processed objects use the process operator coloc cy5cy7-spots classification presets imagec also allows to create classification presets by selecting a preset from the drop down of the plus button a classification preset is a set of predefined classes which can be loaded and shared with others the idea behind a preset is making results easier comparable by using the same nomenclator for each analysis using the save as template option allows to create a new preset from an existing settings",
 			"category": "Fundamentals",
@@ -290,10 +298,10 @@
 		},
 		{
 			"title": "Resources and Limits",
-			"text": "minimum hardware requirements more is always better component minimum ----------- ---------- cpu 64 bit 1 ghz dual core preferred 2 ghz ram 2 gb of free ram 0 5 gb for each additional cpu core storage 500 mb free storage for installation screen minimum recommended resolution 1528x980 graphic card optional nvidia graphical card with cuda support limits see section image formats link docs stable fundamentals image_formats md for a list of supported image formats limit default value --- --- max classes 32 max image series 10 max image channels 10 max z-stack images 65535 max t-stack images 2 billion max number of objects 1 billion max number of pipelines 65535 maximum tile size 46340x46340",
+			"text": "minimum hardware requirements for cpu only variant component minimum ----------- ---------- cpu 64 bit 2 ghz dual core ram 2 gb of free ram 0 5 gb for each additional cpu core storage 500 mb free storage for installation screen minimum recommended resolution 1528x980 graphic card optional nvidia graphical card with cuda support minimum hardware requirements for cuda variant variant component minimum ----------- ---------- cpu 64 bit 2 ghz quad core ram 4 gb of free ram 0 5 gb for each additional cpu core storage 4 gb free storage for installation screen minimum recommended resolution 1528x980 gpu ram 8 gb of free ram on the graphics card cuda version cuda 12 8 or newer supported graphic cards series architecture compute capability geforce models included ------------------------- ------------------ ------------------------------------------------------------------------- rtx 50 blackwell cc 12 0 5090 5080 5070 ti 5070 5060 ti 5060 rtx 40 ada lovelace cc 8 9 4090 4080 4070 ti 4070 4060 ti 4060 4050 rtx 30 ampere cc 8 6 3090 ti 3090 3080 ti 3080 3070 ti 3070 3060 ti 3060 3050 ti 3050 rtx 20 turing cc 7 5 2080 ti 2080 2070 super 2070 2060 super 2060 limits see section image formats link docs stable fundamentals image_formats md for a list of supported image formats limit default value --- --- max classes 32 max image series 10 max image channels 10 max z-stack images 65535 max t-stack images 2 billion max number of objects 1 billion max number of pipelines 65535 maximum tile size 46340x46340",
 			"category": "Technical",
 			"url": "/docs/stable/technical/limits",
-			"blurb": "Minimum hardware requirements. More is always better ;) ... Component | Minimum ----------- |---------- CPU |64 bit,...",
+			"blurb": "Minimum hardware requirements for CPU only variant: Component | Minimum ----------- |---------- CPU |64 bit, 2 GHz...",
 			"type": "documentation"
 		},
 		{
