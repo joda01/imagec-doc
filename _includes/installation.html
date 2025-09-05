@@ -79,7 +79,8 @@ MacOS automatically quarantines applications that do not pay a fee to Apple for 
 We have to remove imagec from this quarantine.
 
 <p>
-First try to start the application which let macOS move it to quarantine.<br>
+First move the downloaded <code>imagec</code> folder from <code>Downloads</code> to the <code>Applications</code> folder.
+Try to start the application which let macOS move it to quarantine.<br>
 Now open a terminal and type: <code>xattr -d com.apple.quarantine imagec.app</code> to remove imagec from the quarantine.
 </p>
 
