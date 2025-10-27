@@ -32,7 +32,7 @@ jobs:
             ./build.sh
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: imagec-doc-html
           path: _site
