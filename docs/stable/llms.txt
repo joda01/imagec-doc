@@ -10,6 +10,7 @@
 
 - [Fill holes](https://imagec.org{ site.baseurl }/docs/stable/commands/binary_image_processing/fill_holes)
 - [Morphological transform](https://imagec.org{ site.baseurl }/docs/stable/commands/binary_image_processing/morphological_transform)
+- [Pixel classifier](https://imagec.org{ site.baseurl }/docs/stable/commands/binary_image_processing/pixel_classifier)
 - [Threshold](https://imagec.org{ site.baseurl }/docs/stable/commands/binary_image_processing/threshold)
 - [Watershed](https://imagec.org{ site.baseurl }/docs/stable/commands/binary_image_processing/watershed)
 
@@ -70,6 +71,10 @@
 - [Metrics](https://imagec.org{ site.baseurl }/docs/stable/fundamentals/metrics)
 - [Objects](https://imagec.org{ site.baseurl }/docs/stable/fundamentals/objects)
 - [Pipelines](https://imagec.org{ site.baseurl }/docs/stable/fundamentals/pipelines)
+
+## Machine_Learning
+
+- [Machine learning](https://imagec.org{ site.baseurl }/docs/stable/machine_learning/overview)
 
 ## Documentation
 

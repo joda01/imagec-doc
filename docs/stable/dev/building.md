@@ -33,4 +33,3 @@ First time you want to build, please contact us and request access to the artifa
 4. Execute `./build_linux.sh --build`
 
 The build artifacts are placed into `./build/build/output`
-

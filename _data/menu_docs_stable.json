@@ -120,6 +120,10 @@
                   "url": "threshold"
                 },
                 {
+                  "page": "Pixel classifier",
+                  "url": "pixel_classifier"
+                },
+                {
                   "page": "Watershed",
                   "url": "watershed"
                 },
@@ -210,6 +214,15 @@
               ]
             }
           ]
+        },
+        {
+          "page": "Machine learning",
+          "slug": "machine_learning",
+          "subfolderitems": [
+            {
+              "page": "Overview",
+              "url": "overview"
+            }]
         },
         {
           "page": "Tutorials",
