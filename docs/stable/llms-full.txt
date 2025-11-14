@@ -1141,11 +1141,48 @@ This includes a database file called `results.icdb` containing all the quantifie
 
 # Machine learning
 
-Website: https://imagec.org{ site.baseurl }/docs/stable/machine_learning/overview
+Website: https://imagec.org{ site.baseurl }/docs/stable/machine_learning/training
 
 ---
 
-ImageC has a bui
+ImageC can be used to train simple AI models. 
+These models can then be used for pixel classification in your pipelines.
+
+In the actual version of ImageC two types of models are available: Random Forest Trees and Artificial Neuronal Network Multi Layer Perceptron (ANN MLP).
+In general it is recommended to use ANN MLP, since using deep learning networks is the more modern approach and is much more optimized in terms of execution time.
+
+However, the process of training a model is always the same, regardless of which model type is used.
+Both Random Forest and MLP models are trained using supervised learning. 
+Accordingly, labeled input data must be supplied so the models can compute the model weights during the training process.
+
+## Create training data
+
+First of all select the `Image directory` in the Project tab where your images are stored in.
+Select one representative image from your images.
+
+Once the image has been opened in ImageC, the labelling tools can be used to mark the areas of the image showing signal and those that do not.
+Then, switch to the `Classification` tab and add as many classes as you need to differentiate between them.
+In this simple example we just distinguish between signal and no signal.
+
+Select the `None` class and mark a couple of representative areas in the image where no signal is shown.
+Then select the `Signal` class and mark areas in the images showing a signal.
+
+
+<a href="{{ site.baseurl }}/images/ml/screenshot_labeling.png" data-lightbox="image"><img src="{{ site.baseurl }}/images/ml/screenshot_labeling.png" style="width: 80%" alt="Loading ..."/></a>
+
+> Tip Use the shortcut `Esc` to switch to the "Move tool", use `S` to switch to the "Select tool", use `R` to draw a rectangle, `O` to draw a oval and `P` to draw a polygon.
+
+
+After finished the labeling open the Machine Learning dialog by clicking on the button in the toolbar.
+Choose the wanted classifier (model type), the features to train and which classes to use for training.
+
+Press the `Train` button to start the training.
+All trained models are stored in the project directory in the folder `imagec/models`.
+
+<a href="{{ site.baseurl }}/images/ml/screenshot_ml_dialog.png" data-lightbox="image"><img src="{{ site.baseurl }}/images/ml/screenshot_ml_dialog.png" style="width: 40%" alt="Loading ..."/></a>
+
+
+## Features
 
 
 
@@ -2112,7 +2149,17 @@ Also the number of classes does not need to be limited to just two (foreground a
 A pixel classifier assigns a specific class or category to each pixel in an image, a task known as semantic segmentation. 
 
 For building a pixel classifier, machine learning algorithms can be used.
-ImageC provides a couple of such algorithms which are documentation in section [threshold]({% link docs/stable/machine_learning/overview.md %}).
+ImageC provides a couple of ml algorithms which are documentation in section [Machine Learning]({% link docs/stable/machine_learning/training.md %}).
+
+Using the `Pixel classifier` command pre-trained models can be loaded.
+The pixel classifier command takes a 16-bit grayscale image as input and produces a binary image, where each pixel's value corresponds to the recognized class.
+
+An object classifier can be run after the pixel classifier to extract objects from the categorized pixels.
+
+>  The pixel classifier transforms a grayscale image to a classified image, whereby each pixel $$p_x$$ gets a value from $$c=\{0...N\}$$ with c is the class the pixel belongs to.
+>
+> <a href="{{ site.baseurl }}/images/commands/pixel-classifier.drawio.svg" data-lightbox="image"><img src="{{ site.baseurl }}/images/commands/pixel-classifier.drawio.svg" style="width: 50%" alt="Loading ..."/></a>
+>
 
 
 

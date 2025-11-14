@@ -623,6 +623,11 @@ body.landing{
 						height: 64px;
 						width: 64px;
 					}
+					&.mlp{
+						background-image: url("{{ site.baseurl }}/images/icons/mlp.svg");
+						height: 64px;
+						width: 64px;
+					}
 					&.live{
 						background-image: url("{{ site.baseurl }}/images/icons/live.svg");
 						height: 64px;

@@ -74,7 +74,7 @@
 
 ## Machine_Learning
 
-- [Machine learning](https://imagec.org{ site.baseurl }/docs/stable/machine_learning/overview)
+- [Machine learning](https://imagec.org{ site.baseurl }/docs/stable/machine_learning/training)
 
 ## Documentation
 

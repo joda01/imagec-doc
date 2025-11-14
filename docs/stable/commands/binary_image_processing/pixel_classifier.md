@@ -16,7 +16,7 @@ Also the number of classes does not need to be limited to just two (foreground a
 A pixel classifier assigns a specific class or category to each pixel in an image, a task known as semantic segmentation. 
 
 For building a pixel classifier, machine learning algorithms can be used.
-ImageC provides a couple of ml algorithms which are documentation in section [Machine Learning]({% link docs/stable/machine_learning/overview.md %}).
+ImageC provides a couple of ml algorithms which are documentation in section [Machine Learning]({% link docs/stable/machine_learning/training.md %}).
 
 Using the `Pixel classifier` command pre-trained models can be loaded.
 The pixel classifier command takes a 16-bit grayscale image as input and produces a binary image, where each pixel's value corresponds to the recognized class.
