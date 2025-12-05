@@ -2,6 +2,10 @@
 
 > Comprehensive documentation for ImageC, a high throughput image processing application.
 
+## Cli
+
+- [Command Line Interface](https://imagec.org{ site.baseurl }/docs/stable/cli/cli)
+
 ## Commands
 
 - [Overview](https://imagec.org{ site.baseurl }/docs/stable/commands/overview)
@@ -74,7 +78,7 @@
 
 ## Machine_Learning
 
-- [Machine learning](https://imagec.org{ site.baseurl }/docs/stable/machine_learning/training)
+- [Training](https://imagec.org{ site.baseurl }/docs/stable/machine_learning/training)
 
 ## Documentation
 

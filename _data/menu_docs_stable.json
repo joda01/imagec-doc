@@ -225,6 +225,10 @@
             }]
         },
         {
+          "page": "Command Line Interface",
+          "url": "cli/cli.html"
+        },
+        {
           "page": "Tutorials",
           "slug": "tutorials",
           "subfolderitems": [
