@@ -70,7 +70,7 @@ body_class: landing nowrap
 			<div class="featurebox">
 				<div class="icon liver"></div>
 				<h3>Analysis of histological images</h3>
-				<p>ImageC enables the analysis of huge histological images, taken by fluorescence and light microscopy. e.g.: Color picker enables to distinguish cellular compartments based on color.</p>
+				<p>ImageC enables the analysis of histological images due the support of whole slide images, taken by fluorescence and light microscopy. There is no need to split or preprocess the images. ImageC takes care of all the necessary preprocessing steps, including tile and pyramid support.</p>
 				<a href="{% link docs/stable/fundamentals/image_formats.md %}#big-images" class="textbutton arrow-right">Read more</a>
 			</div>
 			<div class="featurebox">
@@ -81,8 +81,8 @@ body_class: landing nowrap
 			</div>
 			<div class="featurebox">
 				<div class="icon layer"></div>
-				<h3>Multi channel images</h3>
-				<p>ImageC automatically extracts underlying image infos (e.g. channel infos, Z-stack infos, etc. ) using OME-XML which allows to directly use multi channel (c, t and z-stack) images.</p>
+				<h3>Multi channel images and Videos</h3>
+				<p>ImageC automatically extracts underlying image infos (e.g. channel infos, Z-stack infos, etc. ) using OME-XML which allows to directly use multi channel images handling z-stack as well as the possibility to analyze complete videos (t-tack).</p>
 				<a href="{% link docs/stable/fundamentals/image_formats.md %}#image-planes" class="textbutton arrow-right">Read more</a>
 			</div>
 			<div class="featurebox">
@@ -144,7 +144,7 @@ body_class: landing nowrap
 			<div class="featurebox">
 				<div class="icon chip"></div>
 				<h3>AI driven object detection</h3>
-				<p>In addition to classical image processing and thresholding algorithms ImageC supports object detection and classification based on AI. ImageC supports the ONNX container format with net hight and with of 640 x 640 and a stride size of 3.</p>
+				<p>In addition to classical image processing and thresholding algorithms ImageC supports object detection and classification based on AI. ImageC can read ONNX container as well as Pytorch pt format using U-Net, Cyto3, StarDist or YOLO5 model architecture</p>
 				<a href="{% link docs/stable/commands/classification/classifier_ai.md %}" class="textbutton arrow-right">Read more</a>
 			</div>
 
@@ -184,7 +184,7 @@ body_class: landing nowrap
 	</div>
 </section>
 
-<!--{% include quick_installation.html %}-->
+<!--{% include quick_installation.html %} -->
 <!--
 <section class="blog">
 	<div class="wrap">
@@ -232,7 +232,7 @@ body_class: landing nowrap
 		<h1>Upcoming events</h1>
 		<div class="newstileswrap">
 			{% for event in future_events limit:2 %}
-			{% assign random_number = forloop.index | modulo: 3 | plus: 1 %} <!-- Generiert Werte von 1 bis 3 -->
+			{% assign random_number = forloop.index | modulo: 3 | plus: 1 %}
 			{% assign tag_classes = event.tags | join: ' ' %}
 			<div class="eventpreview postpreview {{ tag_classes | downcase | slugify }}"
 				data-title="{{ event.title | escape }}">
@@ -275,7 +275,7 @@ body_class: landing nowrap
 
 <section class="hidden">
 
-	<!--LOGO ANIMATIoN-->
+	<!--LOGO ANIMATIoN -->
 	<script type="module">
 		import { animate, svg, stagger,createTimeline } from '{{ site.baseurl }}/js/anime.esm.min.js';
 		
