@@ -4,9 +4,9 @@ description: ImageC alias EVAnalyzer 2 is a high throughput image processing app
   for biological science.
 baseurl: null
 url: https://imagec.org
-current_short_imagec_version: 0.0.5
-preview_short_imagec_version: 0.0.5
-current_imagec_version: 0.0.5
+current_short_imagec_version: 0.0.6
+preview_short_imagec_version: 0.0.6
+current_imagec_version: 0.0.6
 current_imagec_hash: ''
 current_snapshot_version: stable
 livereload: true

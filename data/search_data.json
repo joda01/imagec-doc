@@ -186,10 +186,10 @@
 		},
 		{
 			"title": "Measure intensity",
-			"text": "underconstruction coming soon",
+			"text": "per default only object metrics are measured and stored by imagec with the measure intensity command it is possible to measure the image intensity of the detected areas of interest imagec allows you to select the channels for which the intensity should be measured whether or not a z-projection should be applied and which z-stack should be measured",
 			"category": "Measurement",
 			"url": "/docs/stable/commands/measurement/measure_intensity",
-			"blurb": "",
+			"blurb": "Per default only object metrics are measured and stored by ImageC. With the measure intensity command it is possible...",
 			"type": "documentation"
 		},
 		{
@@ -226,10 +226,10 @@
 		},
 		{
 			"title": "Object transform",
-			"text": "underconstruction coming soon",
+			"text": "the object transform command takes existing objects and transform the size or shape of these objects the resulting objects can either be assigned to a new class or override the existing objects actually five transform functions are supported scale scale changes the size of the objects depending on the given factor a factor of 2 for example doubles the sizes of the given objects min circle draws a fitting circle around each object with the given radius as minimum circle size draw circle draws a circle with fixed size around each object fit ellipse draws a fitting ellipse around each object optionally a scaling factor for the ellipse can be defined",
 			"category": "Object Processing",
 			"url": "/docs/stable/commands/object_processing/object_transform",
-			"blurb": "",
+			"blurb": "The object transform command takes existing objects and transform the size or shape of these objects. The resulting...",
 			"type": "documentation"
 		},
 		{
@@ -242,10 +242,10 @@
 		},
 		{
 			"title": "Objects to binary",
-			"text": "underconstruction coming soon",
+			"text": "the object to binary command uses the objects of the first operand applies the selected function combination with the objects from the second operand and creates a binary image of the result this command is useful if once detected objects should be further processed with image processing commands",
 			"category": "Object Processing",
 			"url": "/docs/stable/commands/object_processing/objects_to_binary",
-			"blurb": "",
+			"blurb": "The object to binary command uses the objects of the First operand applies the selected function / combination with...",
 			"type": "documentation"
 		},
 		{
@@ -338,18 +338,18 @@
 		},
 		{
 			"title": "Save control image",
-			"text": "underconstruction coming soon",
+			"text": "the save control image allows to save an image with the given objects as overlay at any step within the pipeline control images can help to debug or verify the pipelines steps and allow a better understanding of the processing steps take in mind that storing control images may reduce the speed of pipelines execution",
 			"category": "Object Processing",
 			"url": "/docs/stable/commands/object_processing/save_control_image",
-			"blurb": "",
+			"blurb": "The save control image allows to save an image with the given objects as overlay at any step within the pipeline....",
 			"type": "documentation"
 		},
 		{
 			"title": "Spot count",
-			"text": "underconstruction coming soon",
+			"text": "the spot count template was migrated from evanalyzer1 and provides a simple pipelines for detecting evs spots in fluorescence microscopy images spots are detected in one image channel using the ev pipeline while the tetraspeck pipeline locates reference beads in another channel to ensure accurate ev identification all spots matching tetraspeck bead positions are filtered out ev detection tetraspeck advanced below the json representation of the template project is shown this json can be used together with the imagec cli link docs stable cli cli md functionality to script the detection process configschema https imagec org schemas v1 analyze-settings json imagesetup imagetilesettings tileheight 4096 tilewidth 4096 series 0 tstackhandling eachone zstackhandling exactone imagecmeta buildtime 2025-05-18 08 49 40 imagecversion v1 0 0-beta 17 meta author melanie schuerz organization university of salzburg color b91717 group evanalyzer icon modifiedat 2025-05-19t08-10-55 name spot count notes count the number of spots in an image channel revision 1 0 tags fluorescence count uid pipelines disabled false history locked false meta color b91717 group ev icon name ev detection notes 1 output class can be renamed in classification tab ch1 can be e g gfp n2 select ev image channel n3 adapt manual threshold n4 object can be gated by size circularity in classifier n revision coun tags ev evs extracellular vesicle uid pipelinesetup cstackindex -2 defaultclassid 0 source fromfile tstackindex -1 zprojection maxintensity zstackindex -1 pipelinesteps rollingball ballsize 4 balltype paraboloid disabled false locked true blur kernelsize 3 mode blur repeat 2 disabled false locked true threshold modelclasses cvalue 0 method manual pixelclassid 1 thresholdmax 65535 thresholdmin 200 disabled false locked false watershed maximumfindertolerance 0 5 disabled false locked true classify detectionhierarchy inner modelclasses filters intensity imagein imageplane cstack -1 tstack -1 zstack -1 memoryid none zprojection maxintensity -1 minintensity -1 metrics maxparticlesize -1 mincircularity 0 10000000149011612 minparticlesize 3 outputclass pixelclassid 1 outputclassnomatch none probabilityhandicap 1 0 disabled false locked false measureintensity inputclasses planesin imageplane cstack -1 tstack -1 zstack -1 memoryid none zprojection disabled false locked true saveimage canvas classesin inputclass paintboundingbox false paintobjectid false style filled compression 1 nameprefix ev subfolder images imagename disabled false locked true disabled true history locked false meta color b91717 group ev icon name tetraspeck notes this pipeline steps enables the removal of calibration beads e g tetraspeck that are fluorescent in all channels n1 enable pipeline n2 select tetraspeck image channel channel showing only tetraspecks n3 adapt manual threshold n4 within the reclassify command select the channels where tetraspeck need to be removed revision tags ev evs extracellular vesicle uid pipelinesetup cstackindex -2 defaultclassid 5 source fromfile tstackindex -1 zprojection maxintensity zstackindex -1 pipelinesteps rollingball ballsize 4 balltype paraboloid disabled false locked true blur kernelsize 3 mode blur repeat 2 disabled false locked true threshold modelclasses cvalue 0 method manual pixelclassid 1 thresholdmax 65535 thresholdmin 200 disabled false locked false watershed maximumfindertolerance 0 5 disabled false locked true classify detectionhierarchy outer modelclasses filters intensity imagein imageplane cstack -1 tstack -1 zstack -1 memoryid none zprojection maxintensity -1 minintensity -1 metrics maxparticlesize -1 mincircularity 0 0 minparticlesize 5 outputclass pixelclassid 1 outputclassnomatch none probabilityhandicap 1 0 disabled false locked false reclassify hierarchymode createtree inputclasses intensity imagein imageplane cstack -1 tstack -1 zstack -1 memoryid none zprojection maxintensity -1 minintensity -1 intersection filterlogic 0 inputclassesintersectwith 5 minintersection 0 10000000149011612 metrics maxparticlesize -1 mincircularity -1 0 minparticlesize -1 mode reclassifymove newclassid none disabled false locked false projectsettings address city country email firstname lastname organization postalcode streetaddress classification classes classid 0 color 33cfff defaultmeasurements measurechannel count stats off measurechannel areasize stats avg measurechannel circularity stats avg measurechannel intensitysum stats avg measurechannel intensityavg stats avg name ch1 spot notes classid 5 color 66ff33 defaultmeasurements measurechannel count stats off name tetraspeck spot notes configschema https imagec org schemas v1 classification-settings json meta color b91717 icon name user defined notes revision tags uid experimentsettings experimentid experimentname experiment notes 1 define working directory all images in the respective directory will be analyzed with the same pipeline n2 if you have a plate-format design n -group your images per well n -define well order how images are taken on the t t microscope plates filenameregex _ 0-9 _ 0-9 groupby off imagefolder name notes plateid 0 platesetup cols 0 rows 0 wellimageorder 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 workingdirectory",
 			"category": "Evanalyzer",
 			"url": "/docs/stable/tutorials/evanalyzer/spot_count",
-			"blurb": "",
+			"blurb": "The Spot Count template was migrated from EVAnalyzer1 and provides a simple pipelines for detecting EVs/spots in...",
 			"type": "documentation"
 		},
 		{

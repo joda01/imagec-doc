@@ -2,39 +2,39 @@
     "no": {
         "name": "imagec-x64-win-cuda-bin.zip",
         "size": "22 MB",
-        "sha256": "sha256:a5aafe661bafb9cc734171fca7320fa27f18018c4c9eb83ee64c920455b2a74c",
-        "download": "https://github.com/joda01/imagec/releases/download/0.0.5/imagec-x64-win-cuda-bin.zip"
+        "sha256": "sha256:c974875b85a47ce410b78518f483460604a16091b9144f655f0877588e5355c8",
+        "download": "https://github.com/joda01/imagec/releases/download/0.0.6/imagec-x64-win-cuda-bin.zip"
     },
     "macoscpu": {
         "name": "imagec-arm64-macos-cpu-bundle.zip",
         "size": "204 MB",
-        "sha256": "sha256:a217af6820bdbef4dc4d9554c9dccee7eebcf27ec19cace26a4311470211d945",
-        "download": "https://github.com/joda01/imagec/releases/download/0.0.5/imagec-arm64-macos-cpu-bundle.zip"
+        "sha256": "sha256:3dbbebc85a2a8e9f498de0c479ce3a4803bbf35aeee0098a99d78a80a204756c",
+        "download": "https://github.com/joda01/imagec/releases/download/0.0.6/imagec-arm64-macos-cpu-bundle.zip"
     },
     "linuxcpu": {
         "name": "imagec-x64-linux-cpu-bundle.zip",
         "size": "252 MB",
-        "sha256": "sha256:fd8bf46f2669311aafefa3c3e7dfcf430b8ac0eb42c36328351267941b64f492",
-        "download": "https://github.com/joda01/imagec/releases/download/0.0.5/imagec-x64-linux-cpu-bundle.zip"
+        "sha256": "sha256:0392902a7656c2492c5044fa1b3b8bbd1fa77f17a8d9efa604ab9a85771cf336",
+        "download": "https://github.com/joda01/imagec/releases/download/0.0.6/imagec-x64-linux-cpu-bundle.zip"
     },
     "linuxcuda": {
         "name": "imagec-x64-linux-cuda-bundle.7z",
         "size": "1.73 GB",
-        "sha256": "sha256:70d63251a103efdeeefbdb8a3e2fff73b3952fba232034b16cd8bac2b0b5cb70",
-        "download": "https://github.com/joda01/imagec/releases/download/0.0.5/imagec-x64-linux-cuda-bundle.7z"
+        "sha256": "sha256:13b84a72a35ce5def4db8a2e5149befb71e223c3b7f82914a674f0c054665518",
+        "download": "https://github.com/joda01/imagec/releases/download/0.0.6/imagec-x64-linux-cuda-bundle.7z"
     },
     "wincpu": {
         "name": "imagec-x64-win-cpu-bundle.zip",
         "size": "200 MB",
-        "sha256": "sha256:b40ce1868f5ef580c3dd03b04e80d01c269fa423a3fba955ab57952ad05808a3",
-        "download": "https://github.com/joda01/imagec/releases/download/0.0.5/imagec-x64-win-cpu-bundle.zip"
+        "sha256": "sha256:ec69131a4923d2bc4e92fb9cf4b5f965f045b639b953654d56651d8342bd21b0",
+        "download": "https://github.com/joda01/imagec/releases/download/0.0.6/imagec-x64-win-cpu-bundle.zip"
     },
     "wincuda": {
         "name": "imagec-x64-win-cuda-bundle.7z",
         "size": "1.79 GB",
-        "sha256": "sha256:81599b4b8ba277a6272c0e48de9416136ad1206bf624e4e9c635e14eddff6fe1",
-        "download": "https://github.com/joda01/imagec/releases/download/0.0.5/imagec-x64-win-cuda-bundle.7z"
+        "sha256": "sha256:8bc54c49d53b9ce8b706f38ce48e2f7aafe6f2e707840da336760b87d61d721a",
+        "download": "https://github.com/joda01/imagec/releases/download/0.0.6/imagec-x64-win-cuda-bundle.7z"
     },
-    "version": "0.0.5",
-    "timestamp": "2025-12-05T16:04:34Z"
+    "version": "0.0.6",
+    "timestamp": "2025-12-07T14:25:14Z"
 }
