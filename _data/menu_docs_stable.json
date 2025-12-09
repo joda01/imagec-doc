@@ -237,6 +237,10 @@
               "url": "overview"
             },
             {
+              "page": "Pipeline Setup Guide",
+              "url": "pipeline_from_scratch"
+            },
+            {
               "page": "EVAnalyzer",
               "slug": "evanalyzer",
               "url": "evanalyzer/index",
