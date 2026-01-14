@@ -13,35 +13,44 @@ This guide takes you through your first steps with ImageC, helping you create yo
 > Tip Please read [Installation]({% link docs/installation/index.html %}) first and run ImageC on your computer before starting with this tutorial.
 
 
-After download the correct ImageC bundle for your computer, unzip the downloaded data and use the `imagec` for Linux and macOS resp. `imagec.exe` for Windows to start ImageC.
+After download, unzip the downloaded data and use the `imagec` for Linux and macOS resp. `imagec.exe` for Windows to start ImageC.
 The start page will be shown once ImageC is successfully launched.
 
 ![images/screenshot_start_screen.png](images/screenshot_start_screen.png)
 
+As a start screen, an empty project, or predefined pipelines optimized for Image analysis within the EV-field (EVAnalyzer) can be loaded. Please find further information on the predefined pipelines under [EVAnalyzer]({% link docs/stable/tutorials/evanalyzer/index.html %}). These pipelines provide an example for pipelines with image processing, object detection and colocalization. 
+Previously used settings and results can easily be loaded under "Open file". 
 
+
+**Let's start with an empty project:** 
 The tabs in the navigation pane on the left hand side are used to enter basic settings.
 Navigate from the left `Project` tab over the `Image` to the `Classification` tab.
 Once all settings in these tabs are done, you can start creating image processing pipelines in the `Pipeline` tab.
 
 ## Project {#project-tab}
 
-Starting with the project settings, basic information about the experiment and the used image setting must be done.
+Starting with the project settings, basic information about the experiment and the used image setting must be entered.
 
 
 |Title                   |Description                                                      | Mandatory
 |-------------           |-----------------------                                          |---------- |
-|Image directory         |Storage Directory of the images to be analyzed.                  |x          |
+|Image directory         |Storage Directory of the images to be analyzed. All images found within this directory are analyzed using the same pipeline.                   |x          |
 |Job name                |Name of the job to identify the run (auto generated if empty).   |x          |
-|Grouping                |Images may be left ungrouped, or can be grouped by Filename regex or Directory.|x |
-|Plate size              |Size of the uses microscopy plate. Open the plate settings dialog to define the well order.                               |x|
+|Grouping                |Images may be left ungrouped, or can be grouped by Filename regex or Folder.|x |
+|Plate size              |If images are sorted based on microscopy plate designes, the size of the used microscopy plate needs to be entered. Image layout within the well can be defined within the plate settings dialog.                              
 
+### Image directory
 
+In `Image Directory` the image folder with all "to be analyzed" images is selected. Within this folder, ImageC will perform a recursive folder search to find all supported image files.
+All found image-files are listed in the `Images` panel.
+
+> Tip See section [Images](#images) for a full list of all supported image formats.
 
 ### Image Grouping {#image-grouping-tab}
 
-When grouping by `Foldername` or `Filename` is selected ImageC will group the images based on these settings, displays the images grouped by Well in the results and calculates the statistics based on the determined group.
+Images can be grouped by `Foldername` or `Filename`, resulting into image grouping based on the selected grouping parameters and the calculation of statistics within the selected the group. 
 
-Filename grouping uses regex (regular expressions) to extract the position on the plate and the position of the image in the well from the image filename.
+Grouping based on filename can, for example be helpful when cell culture plates are imaged and the images should be grouped by wells. e.g. for 96 well plate A1-H12. Filename grouping uses regex (regular expressions) to extract the position on the plate and the position of the image in the well from the image filename.
 Extracted are: plate `row` and `column` position and the image `index` in the well.
 
 A change of the grouping settings after analysis is currently not supported by ImageC. 
@@ -67,24 +76,17 @@ A typical series of file names for the regex {regexp}`_((.)([0-9]+))_([0-9]+)` m
 > 
 > To experiment with regular expressions, have a look at [regex101](https://regex101.com/).
 
+> Best Practice Example for folder, filename and plate grouping
 
-
-### Image directory
-
-The `Image Directory` should be set to the folder where the images to be analyzed are stored.
-ImageC will perform a recursive folder search using the selected `Image Directory` as the base folder to find all supported image files.
-All found files are listed in the `Images` panel.
-
-> Tip See section [Images](#images) for a full list of all supported image formats.
 
 ## Images {#images-tab}
 
 Once a image directory has been selected and the folder scan is complete, all the images found will be listed in the table located in the `Images` tab.
 
-By clicking on an image the image meta information of the selected image is loaded and displayed in the properties table below.
+By clicking on an image the image is selected and meta information is loaded and displayed in the properties table below.
 The image selected in this tab is also the image used in the pipeline preview.
 
-To the top a search field allows to filter the images in the list against its filename.
+To the bottom of the tab bar, a search field allows to filter the images in the list against its filename.
 
 ![images/screenshot_images.png](images/screenshot_images.png)
 
@@ -95,15 +97,18 @@ First before creating pipelines and starting the analysis the object classes mus
 
 ![images/screenshot_classification.png](images/screenshot_classification.png)
 
-A separate object class must be defined for each different object type and population to be extracted from the images.
-Example object classes might be: `dapi@nucleus`, `cy7@spot`, `cy5@spot`, `coloc@cy7cy5`.
+
+A separate object class must be defined for each object type to be extracted from the images. 
+
+> Best practice If I want to detect Protein A and Protein B and I want to see if Protein A colocalizes with Protein B, I have to define "Protein A" and "Protein B" and additionally I have a group of "ProteinA-coloc-ProteinB" and "ProteinA-non-coloc-ProteinB" to seperate the population of all Protein A to the ones that are colocalizing and the ones that are not. Then I am able to seperatly look at features of all of these classes.
+> 
 ImageC allows to either define your own classes, load a preset of classes from a template or try to automatically populate classes, using the magic stick button, based on the image meta data and channels.
 
-> Tip Class names can consist of two parts, separated by an `@`. The first part is used to sort the classes in the drop down boxes to help you keep track of them.
+> Tip Class names can consist of two parts, separated by an `@`. The first part is used to sort the classes in the drop down boxes to help you keep track of them. Example object classes might be: `proteinA@all`, `proteinA@coloc_proteinB`, `proteinA@noncoloc_proteinB`. - then all proteinA classes are grouped together.
 
 Double click on a class opens the Class editor.
-The Class Editor is used to define the class name and the color used for all detected objects of this class.
-In addition the Metrics section allows to define the object metrics to be displayed per default in the results view.
+The Class Editor is used to define the class name and the color used for the preview of the detected objects.
+In addition the Metrics section shows all parameters measured for the objectallows to define the object metrics to be displayed per default in the results view.
 However, the measurement settings per object class can be changed at any time without having to rerun the analyses.
 
 > Double click on a class opens the pipeline editor.
