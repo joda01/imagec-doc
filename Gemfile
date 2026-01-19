@@ -34,7 +34,7 @@ gem "jekyll-theme-tactile", "0.2.0"
 gem "jekyll-theme-time-machine", "0.2.0"
 gem "jekyll-titles-from-headings", "0.5.3"
 gem "kramdown-parser-gfm", "1.1.0"
-gem "kramdown", "2.5.1"
+gem "kramdown", "2.5.2"
 gem "liquid", "4.0.4"
 
 gem "safe_yaml", "1.0.5"
