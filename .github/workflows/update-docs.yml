@@ -20,13 +20,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Get latest release tag from imagec
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        id: get_release
-        run: |
-          python3 ./scripts/read_version_information.py
-
       - name: Generate docs
         run: |
             ./build.sh

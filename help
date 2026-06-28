@@ -1,3 +1,0 @@
-[CSV sniffer]({% post_url 2023-10-27-csv-sniffer %})
-[“friendly SQL”]({% link docs/stable/sql/dialect/friendly_sql.md %})
-`⟨database_filename⟩`{:.language-sql .highlight}

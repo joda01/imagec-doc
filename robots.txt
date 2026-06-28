@@ -1,11 +1,2 @@
----
----
-Sitemap: https://imagec.org/sitemap.xml
-
 User-agent: *
-{% for version in site.data.versions -%}
-{% if version.version != "stable" %}
-Disallow: {{ site.baseurl }}/docs/{{ version.version }}
-{%- endif %}
-{%- endfor %}
 Allow: /

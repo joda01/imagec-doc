@@ -1,5 +1,8 @@
 # ImageC doc
 
+ImageC has been renamed to EVAnalyzer. This site now only serves a
+notice page redirecting visitors from imagec.org to https://evanalyzer.org.
+
 
 ## Deploy build docker image
 
